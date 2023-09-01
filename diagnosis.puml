@@ -1,0 +1,40 @@
+@startuml
+
+title Preliminary Problem Diagnosis;
+
+start
+#LightSteelBlue:Meter;
+if (missing?) then(no)
+    if(Meter <= 0?) then(yes)
+        #Moccasin:We can say that\nthe site is off;
+    else(no)
+        #Linen:The site should be on;
+        if (voltage <= 0?) then(yes)
+            #Moccasin:The voltmeter might\nbe malfunctioning;
+        else(no)
+        endif
+
+    endif
+
+else(yes)
+    #LightSteelBlue:Voltage;
+    :Check voltage values\non the specific day;
+    if(half voltage values in the day > 0?) then(yes)
+    note left:The standard could\nbe further discussed
+        if (voltage <= 0?) then(yes)
+            #Moccasin:The site is probably off;
+        else(no)
+            #Linen:The site is probably on;
+        endif
+        
+    else(no)
+        #Moccasin:The voltmeter migh\nbe malfunctioning;
+    endif
+
+
+    
+endif
+stop
+        
+
+@enduml

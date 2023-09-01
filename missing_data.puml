@@ -1,0 +1,43 @@
+@startuml  
+
+title Detecting Missing Data
+
+start
+fork
+    #LightSteelBlue:Irradiance;
+    note left: Data are always\nneeded in the\nIrradiance column
+    :Check if there is\nany missing value\nwithin this column;
+    if(missing?) then(yes)
+        :Replace missing\nvalues with -999;
+        #MistyRose:Document issues in Data Issues sheet;
+    else(no)    
+        #LightSteelBlue: Temperature & Wind;
+        if(Irradiance >= 100?) then(yes)
+            if(missing?) then(yes)
+            :Replace missing/nvalues with -999;
+            #MistyRose:Document issues in Data Issues sheet;
+            else(no)
+            endif
+        else(no)
+        endif
+
+    endif
+    
+fork again
+    #LightSteelBlue:Meter;
+    note left: Data are always\nneeded in the\nIrradiance column
+    :Check if there is\nany missing value\nwithin this column;
+    if(missing?) then(yes)
+        #LightSteelBlue:Inverter;
+        :Check if all inverter\nvalues corresponding\nto the missing meter\nvalues are present;
+        if(all present?) then(yes)
+        :Sum the inverter\nvalues and fill the\nresult into Meter;
+        else(no)
+        #MistyRose:Document issues in Data Issues sheet;
+        endif
+    else(no)
+    endif
+end fork
+stop
+@enduml
+
