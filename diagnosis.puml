@@ -1,6 +1,6 @@
 @startuml
 
-title Preliminary Problem Diagnosis;
+title Preliminary Problem Diagnosis
 
 start
 #LightSteelBlue:Meter;
