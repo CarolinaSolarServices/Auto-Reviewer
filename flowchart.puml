@@ -7,13 +7,14 @@ start
 partition #HoneyDew "ColumnCorrection"{
     :Read the header of the data file;
     :Identify the index of each desired column based on its name;
-    :1. Find index of 'date-time'
-    2. Find index of 'POA Irradiance (W/m2)'
-    3. Find index of 'ambient temperature (°C)'
-    4. Find index of 'wind speed (m/s)'
-    5. Find index of 'meter voltage (V)'
-    6. Find index of 'meter AC power (W)';
+    :1. Find index of 'Time'
+    2. Find index of 'POA Irradiance'
+    3. Find index of 'Ambient Temperature'
+    4. Find index of 'Wind Speed'
+    5. Find index of 'Meter Voltage'
+    6. Find index of 'Meter AC power';
     note right: Depend on the standardization\nwork on column names.
+    :Dynamically rename the inverter columns based on how many there are;
     :Create a new table structure according to the standard column order;
     :Transfer data from the original table to the new table based on the identified indices, in the desired order;
 
@@ -22,16 +23,14 @@ partition #HoneyDew "ColumnCorrection"{
 partition #AliceBlue "DetectingMissingData"{
 fork
     #LightSteelBlue:Irradiance;
-    note left: Data are always\nneeded in the\nIrradiance column
+    note left: Data are always\nneeded in the\nIrradiance column\nduring daytime
     :Check if there is\nany missing value\nwithin this column;
-    if(missing?) then(yes)
-        :Replace missing values with -999;
-        note left: "-999" is a placeholder\nindicating there's an\nerror or missing data
-        #MistyRose:Document issues in Data Issues sheet;
-        note left: By documenting this,\nsomeone can later\ninvestigate why data\nwas missing
-    else(no)    
-
-        #LightSteelBlue: Temperature & Wind;
+    :Replace missing values with -999;
+    note left: "-999" is a placeholder\nindicating there's an\nerror or missing data
+    #MistyRose:Document issues in Data Issues sheet;
+    note left: By documenting,\nsomeone can later\ninvestigate why data\nwas missing
+    #LightSteelBlue: Temperature & Wind;
+    note left: Temperature and Wind data matter only when 
         if(Irradiance >= 100?) then(yes)
             if(missing?) then(yes)
             :Replace missing values with -999;
@@ -40,11 +39,11 @@ fork
         else(no)
         endif
 
-    endif
+
     
 fork again
     #LightSteelBlue:Meter;
-    note left: Data are always\nneeded in the\nIrradiance column
+    note left: Data are always needed\nin the Meter column\nwhen the corresponding\nIrrradiance value is above 0
     :Check if there is\nany missing value\nwithin this column;
     if(missing?) then(yes)
         #LightSteelBlue:Inverter;
@@ -103,10 +102,10 @@ partition #Snow "FurtherProcessing" {
     :For any rows that still have missing data;
     floating note right: To be refined...
     if(Irradiance >= 100?) then(yes)
-        if(The site is off or not communicating?) then(yes)
+        if(The site is off or not communicating?) then(no)
             fork
             :For missing voltage;
-            :Fill with 0;
+            :Fill with values comparable to the rest of the dataset;
             fork again
             :For each missing inverter;
             #IMPLEMENTATION:According to more detailed inverter\nanalysis in the previous section;
@@ -119,11 +118,8 @@ partition #Snow "FurtherProcessing" {
                 endif
             end fork
         else(no)
-            :Check for data gaps in voltage columns;
-            if(yes) then
-                :Fill with values comparable to the rest of the dataset;
-            else(no)
-            endif
+            :Inverters & Voltages;
+            :Fill with 0;
         endif
     else(no)
     endif
