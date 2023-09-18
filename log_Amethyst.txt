@@ -1,8 +1,28 @@
+
+I.
+
+
 All good! The 'POA Irradiance' column has no missing values.
 
-All good! The Ambient Temperature column has no missing values when POA Irradiance >= 100.
 
-All good! The Wind Speed column has no missing values when POA Irradiance >= 100.
+II.
 
-All good! The 'Meter Power' column has no missing values.
+
+All good! When POA Irradiance >= 100, the Ambient Temperature column has no missing values .
+
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+
+III.
+
+
+All good! The 'Meter Power' column has no missing values during daytime.
+
+
+IV.
+
+
+None
 
