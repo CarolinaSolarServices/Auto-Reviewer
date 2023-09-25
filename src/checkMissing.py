@@ -9,27 +9,23 @@ def check_missing_irradiance(df):
         df["POA Irradiance"].fillna(-999, inplace=True)
         missing_rows = df.loc[missing_rows.index]
 
-        info = get_info(missing_rows)
         log(
             f"Detected missing values in the 'POA Irradiance' column.\n"
-            f"These have been filled with a placeholder value of -999.\n"
-            f"Details of all missing rows:\n{info}"
+            f"All have been filled with a placeholder value of -999."
         )
 
         missing_during_day = missing_rows[missing_rows["Day/Night"] == "Day"]
         if not missing_during_day.empty:
             info_day = get_info(missing_during_day)
             log(
-                f"\nHere are missing values during the daytime.\n"
+                f"Here are missing values during the daytime.\n"
                 f"Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.\n"
                 f"\n{info_day}"
             )
 
         else:
             log(
-                f"It seems that all the missing values occur during nighttime hours.\n"
-                f"These nighttime omissions are not critical and can be safely overlooked for most analyses."
-                f"Therefore, there is no need to document this discrepancy in the 'Data Issues' spreadsheet.\n"
+                f"It seems that all the missing values occur during night time hours.\n"
             )
 
     else:
@@ -69,7 +65,7 @@ def check_and_autofill_Meter(df):
         (df["Meter Power"].isna())
         & (
             (df["POA Irradiance"] > 0)
-            | ((df["POA Irradiance"].isna()) & (df["Day/Night"] == "Day"))
+            | ((df["POA Irradiance"] == -999) & (df["Day/Night"] == "Day"))
         )
     ]
 
@@ -144,8 +140,10 @@ def check_and_autofill_inverter_and_voltage(df, off_dates):
     still_missing_index = df[df[columns_to_check].isna().any(axis=1)].index
     if not missing_off_index.empty:
         log(
-            f"The missing 'Inverter' and 'Meter Voltage' values in the following rows have been auto-filled with 0.\n"
-            f"{get_info(df.loc[missing_off_index].drop(columns = 'Date'))}"
+            f"The missing 'Inverter' and 'Meter Voltage' values in the following rows have been auto-filled with 0, "
+            f"since the work order indicates that the site was non-operational on those particular days. "
+            f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
+            f"{get_info(df.loc[missing_off_index].drop(columns = 'Date'))}\n"
         )
     else:
         log(
@@ -157,7 +155,7 @@ def check_and_autofill_inverter_and_voltage(df, off_dates):
         important_still_missing = still_missing[
             (still_missing["POA Irradiance"] > 0)
             | (
-                (still_missing["POA Irradiance"].isna())
+                (still_missing["POA Irradiance"] == -999)
                 & (still_missing["Day/Night"] == "Day")
             )
         ]

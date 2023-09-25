@@ -1,36 +1,21 @@
 
 I.
 
-
 Detected missing values in the 'POA Irradiance' column.
-These have been filled with a placeholder value of -999.
-Details of all missing rows:
-+-------+---------------------+----------------+-------------+------------+-------------+---------------+------------+------------+------------+------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Power | Meter Voltage | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+-------------+---------------+------------+------------+------------+------------+-----------+
-|  775  | 2023-08-09 01:15:00 |     -999.0     |     nan     |    nan     |     nan     |      nan      |    nan     |    nan     |    nan     |    nan     |   Night   |
-+-------+---------------------+----------------+-------------+------------+-------------+---------------+------------+------------+------------+------------+-----------+
-
-It seems that all the missing values occur during nighttime hours.
-These nighttime omissions are not critical and can be safely overlooked for most analyses.Therefore, there is no need to document this discrepancy in the 'Data Issues' spreadsheet.
-
+All have been filled with a placeholder value of -999.
+It seems that all the missing values occur during night time hours.
 
 
 II.
 
-
 All good! When POA Irradiance >= 100, the Temperature column has no missing values .
-
 
 All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
 
 
-
 III.
 
-
 Detected missing 'Meter Power' values during daytime.
-
 The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.
 These have been filled with a placeholder value of -999.
 Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
@@ -60,9 +45,7 @@ Summary of missing dates:
 2023-08-19: 11 missing
 
 
-
 IV.
-
 
 Information from work order:
 +-------+-----------+-------+---------------------+--------------------------+--------------------------------------+------------------------------------------+
@@ -72,11 +55,9 @@ Information from work order:
 |  266  | Agate Bay | 27554 | 2023-08-19 22:15:00 | Aug 20, 2023 08:20:00 AM |                 nan                  | Agate Bay - Site - Offline (Grid Outage) |
 +-------+-----------+-------+---------------------+--------------------------+--------------------------------------+------------------------------------------+
 
-
 V.
 
-
-The missing 'Inverter' and 'Meter Voltage' values in the following rows have been auto-filled with 0.
+The missing 'Inverter' and 'Meter Voltage' values in the following rows have been auto-filled with 0, since the work order indicates that the site was non-operational on those particular days. For more insights and to cross-verify, please refer to the relevant work order records.
 +-------+---------------------+----------------+-------------+------------+-------------+---------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Power | Meter Voltage | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+-------------+---------------+------------+------------+------------+------------+-----------+
@@ -235,4 +216,3 @@ The missing 'Inverter' and 'Meter Voltage' values in the following rows cannot b
 |  1845 | 2023-08-20 04:45:00 |      2.0       |    62.62    |  3.173333  |     0.0     |    12.28778   |    nan     |    nan     |    nan     |    nan     |   Night   |
 |  1846 | 2023-08-20 05:00:00 |      2.0       |    61.93    |  4.416667  |     0.0     |    12.26311   |    nan     |    nan     |    nan     |    nan     |   Night   |
 +-------+---------------------+----------------+-------------+------------+-------------+---------------+------------+------------+------------+------------+-----------+
-

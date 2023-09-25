@@ -7,7 +7,7 @@ from checkMissing import missing, check_and_autofill_inverter_and_voltage
 from checkWorkorder import fetch_workorder, get_off_dates
 
 
-file_path = "../data/2023-08-01-2023-08-31_Agate Bay Monthly.csv"
+file_path = "../data/2023-08-01-2023-08-31_Albertson Monthly.csv"
 site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 
 
@@ -36,7 +36,7 @@ def main():
     site_df.to_csv(f"../output/exportedData/{site_name}.csv", index=False)
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
         for message in log_messages:
-            file.write(message + "\n\n")
+            file.write(message + "\n")
 
 
 if __name__ == "__main__":

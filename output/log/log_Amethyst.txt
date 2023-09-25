@@ -1,0 +1,19 @@
+
+I.
+
+All good! The 'POA Irradiance' column has no missing values.
+
+II.
+
+All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+III.
+
+All good! The 'Meter Power' column has no missing values during daytime.
+
+IV.
+
+No missing records to be fetched from the work order.
