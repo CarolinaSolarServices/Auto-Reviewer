@@ -1,0 +1,26 @@
+**Unstarted Tasks Tasks**
+- To be added
+
+**Completed**
+- [x]  Change the source of Fiix report file
+- [x]  Apply the precondition of irradiance >= 0(daytime) to the check for missing meter values
+- [x]  Determine if it’s during daytime or night when there is missing irradiance data
+
+**In Progress**
+- [ ]  Check inverter & voltage missing values - trying to extract and use info out from work order records to determine how to cope with missing inverter & voltage values
+- [ ]  Test on other more datasets
+
+**Identified Corner Cases**
+
+- [x]  Missing temperature and wind speed columns
+	[x] modify the function for column name standardization
+	[x] add a condition check before processing the temperature and wind speed data
+
+**Working Notes**
+
+- Would like to use day/night to determine whether it’s necessary to highlight the missing data in the Irradiance as well as the Meter Power columns. Currently using the approximate location info of Chapel Hill to retrieve sun times for now; will use more precise latitude and longitude data for each site in the future.
+    
+- Is there any way to make up for the columns for temperature and wind speed if they are missing in the original datafile?
+
+**GitHub Link**
+https://github.com/syuu-syuu/carolinasolar.git
