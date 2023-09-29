@@ -39,11 +39,11 @@ def check_and_autofill_temperature_and_wind(df):
     condition_value = 100
     columns_to_check = ["Temperature", "Wind Speed"]
     for col in columns_to_check:
-        condition_rows = df[df["POA Irradiance"] >= condition_value]
-        missing_rows = condition_rows[condition_rows[col].isna()]
-        if not missing_rows.empty:
-            df.loc[missing_rows.index, col] = -999
-            missing_info = get_info(missing_rows)
+        missing_rows = df[df[col].isna()]
+        df[col].fillna(-999, inplace=True)
+        condition_rows = missing_rows[missing_rows["POA Irradiance"] >= condition_value]
+        if not condition_rows.empty:
+            missing_info = get_info(condition_rows)
             log(
                 f"Detected missing values in the {col} column when {'POA Irradiance'} >= {condition_value}.\n"
                 f"These have been filled with a placeholder value of -999.\n"
@@ -61,11 +61,14 @@ def check_and_autofill_temperature_and_wind(df):
 
 def check_and_autofill_Meter(df):
     log("\nIII.\n")
-    missing_meters = df[
-        (df["Meter Power"].isna())
-        & (
-            (df["POA Irradiance"] > 0)
-            | ((df["POA Irradiance"] == -999) & (df["Day/Night"] == "Day"))
+
+    missing_rows = df[df["Meter Power"].isna()]
+    df["Meter Power"].fillna(-999, inplace=True)
+    condition_rows = missing_rows[
+        (missing_rows["POA Irradiance"] > 0)
+        | (
+            (missing_rows["POA Irradiance"] == -999)
+            & (missing_rows["Day/Night"] == "Day")
         )
     ]
 
@@ -74,14 +77,13 @@ def check_and_autofill_Meter(df):
     filled = []
     unfilled = []
 
-    if not missing_meters.empty:
+    if not condition_rows.empty:
         log(f"Detected missing 'Meter Power' values during daytime.")
-        for index, row in missing_meters.iterrows():
+        for index, row in condition_rows.iterrows():
             if not row[inverter_cols].isna().any():
                 df.loc[index, "Meter Power"] = row[inverter_cols].sum()
                 filled.append(df.loc[index])
             else:
-                df.loc[index, "Meter Power"] = -999
                 unfilled.append(df.loc[index])
 
         filled_df = pd.DataFrame(filled)
