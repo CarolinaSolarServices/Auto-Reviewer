@@ -119,6 +119,10 @@ def check_and_autofill_Meter(df):
     return None
 
 
+def check_and_autofill_inverter_and_voltage(df):
+    pass
+
+
 def missing(df):
     return (
         df.pipe(check_missing_irradiance)
@@ -127,47 +131,47 @@ def missing(df):
     )
 
 
-def check_and_autofill_inverter_and_voltage(df, off_dates):
-    log("\nV.\n")
-    df["Date"] = df["Timestamp"].dt.date
-    mask = df["Date"].isin(off_dates)
-    columns_to_check = ["Meter Voltage"] + [
-        col for col in df.columns if col.startswith("Inverter_")
-    ]
-    # Indexes of records where there are missing values for voltage and inverter columns,
-    # and the dates fall in the off_dates.
-    missing_off_index = df[mask & df[columns_to_check].isna().any(axis=1)].index
-    df.loc[mask, columns_to_check] = df.loc[mask, columns_to_check].fillna(0)
+# def check_and_autofill_inverter_and_voltage(df, off_dates):
+#     log("\nV.\n")
+#     df["Date"] = df["Timestamp"].dt.date
+#     mask = df["Date"].isin(off_dates)
+#     columns_to_check = ["Meter Voltage"] + [
+#         col for col in df.columns if col.startswith("Inverter_")
+#     ]
+#     # Indexes of records where there are missing values for voltage and inverter columns,
+#     # and the dates fall in the off_dates.
+#     missing_off_index = df[mask & df[columns_to_check].isna().any(axis=1)].index
+#     df.loc[mask, columns_to_check] = df.loc[mask, columns_to_check].fillna(0)
 
-    still_missing_index = df[df[columns_to_check].isna().any(axis=1)].index
-    if not missing_off_index.empty:
-        log(
-            f"The missing 'Inverter' and 'Meter Voltage' values in the following rows have been auto-filled with 0, "
-            f"since the work order indicates that the site was non-operational on those particular days. "
-            f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
-            f"{get_info(df.loc[missing_off_index].drop(columns = 'Date'))}\n"
-        )
-    else:
-        log(
-            f"No missing 'Inverter' and 'Meter Voltage' values detected on the off days."
-        )
+#     still_missing_index = df[df[columns_to_check].isna().any(axis=1)].index
+#     if not missing_off_index.empty:
+#         log(
+#             f"The missing 'Inverter' and 'Meter Voltage' values in the following rows have been auto-filled with 0, "
+#             f"since the work order indicates that the site was non-operational on those particular days. "
+#             f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
+#             f"{get_info(df.loc[missing_off_index].drop(columns = 'Date'))}\n"
+#         )
+#     else:
+#         log(
+#             f"No missing 'Inverter' and 'Meter Voltage' values detected on the off days."
+#         )
 
-    if not still_missing_index.empty:
-        still_missing = df.loc[still_missing_index].drop(columns="Date")
-        important_still_missing = still_missing[
-            (still_missing["POA Irradiance"] > 0)
-            | (
-                (still_missing["POA Irradiance"] == -999)
-                & (still_missing["Day/Night"] == "Day")
-            )
-        ]
-        log(
-            f"The missing 'Inverter' and 'Meter Voltage' values in the following rows cannot be handled due to lack of information.\n"
-            f"{get_info(important_still_missing)}"
-        )
-    else:
-        log(
-            f"And No missing 'Inverter' and 'Meter Voltage' values detected for the whole dataset!"
-        )
+#     if not still_missing_index.empty:
+#         still_missing = df.loc[still_missing_index].drop(columns="Date")
+#         important_still_missing = still_missing[
+#             (still_missing["POA Irradiance"] > 0)
+#             | (
+#                 (still_missing["POA Irradiance"] == -999)
+#                 & (still_missing["Day/Night"] == "Day")
+#             )
+#         ]
+#         log(
+#             f"The missing 'Inverter' and 'Meter Voltage' values in the following rows cannot be handled due to lack of information.\n"
+#             f"{get_info(important_still_missing)}"
+#         )
+#     else:
+#         log(
+#             f"And No missing 'Inverter' and 'Meter Voltage' values detected for the whole dataset!"
+#         )
 
-    return df
+#     return df

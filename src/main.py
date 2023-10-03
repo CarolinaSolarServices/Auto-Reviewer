@@ -3,11 +3,11 @@ from getInfo import log_messages, log
 from readData import read_site
 from renameColumn import rename
 from normalizeData import normalize
-from checkMissing import missing, check_and_autofill_inverter_and_voltage
-from checkWorkorder import fetch_workorder, get_off_dates
+from checkMissing import missing
+from checkWorkorder import fetch_workorder
 
 
-file_path = "../data/2023-08-01-2023-08-31_Albertson Monthly.csv"
+file_path = "../data/2023-08-01-2023-08-31_Agate Bay Monthly.csv"
 site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 
 
@@ -20,16 +20,16 @@ def main():
 
     log("\nIV.\n")
     if missing_dates:
-        matched_records = fetch_workorder(missing_dates, site_name)
-        off_dates = get_off_dates(matched_records)
-        if off_dates:
-            site_df = check_and_autofill_inverter_and_voltage(site_df, off_dates).drop(
-                columns="Date"
-            )
-        else:
-            log(
-                "No off dates found in the work order for days where missing meter power cannot be auto-filled."
-            )
+        fetch_workorder(missing_dates, site_name)
+        # off_dates = get_off_dates(matched_records)
+        # if off_dates:
+        #     site_df = check_and_autofill_inverter_and_voltage(site_df, off_dates).drop(
+        #         columns="Date"
+        #     )
+        # else:
+        #     log(
+        #         "No off dates found in the work order for days where missing meter power cannot be auto-filled."
+        #     )
     else:
         log("No missing records to be fetched from the work order.")
 

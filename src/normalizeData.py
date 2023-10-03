@@ -1,5 +1,6 @@
 import pandas as pd
 from suntime import Sun
+from getGeocoding import getGeocoding
 
 
 # Convert the datetime string to a datetime object
@@ -20,14 +21,6 @@ def custom_to_datetime(df):
     raise ValueError(
         f"No suitable format found for the 'Timestamp' column."
     )  # raise error if no suitable format is found
-
-
-def getGeocoding(site_name):
-    df = pd.read_csv("../data/geoCoding.csv")
-    row = df.loc[df["Site Name"] == site_name]
-    if row.empty:
-        return None, None
-    return row.iloc[0]["Latitude"], row.iloc[0]["Longitude"]
 
 
 def determine_day_night(row, site_name):

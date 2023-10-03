@@ -1,1 +1,0 @@
-file_path = "../data/2023-08-01-2023-08-31_Agate Bay Monthly.csv"
