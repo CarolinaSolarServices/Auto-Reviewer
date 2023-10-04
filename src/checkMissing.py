@@ -155,13 +155,13 @@ def check_and_autofill_inverter_and_voltage(df):
         if column_count > 12:
             subset = pd.concat(
                 [
-                    important_still_missing.iloc[:, :9],
-                    important_still_missing.iloc[:, -3:],
+                    df[important_condition].iloc[:, :9],
+                    df[important_condition].iloc[:, -3:],
                 ],
                 axis=1,
             )
         else:
-            subset = important_still_missing
+            subset = df[important_condition]
         log(f"Here are filled records within the daytime.\n" f"{get_info( subset)}")
 
     important_still_missing = df[
