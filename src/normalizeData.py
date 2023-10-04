@@ -1,16 +1,22 @@
 import pandas as pd
 from suntime import Sun
 from getGeocoding import getGeocoding
+from getInfo import get_info
 
 
 # Convert the datetime string to a datetime object
 def custom_to_datetime(df):
     formats = [
-        "%m/%d/%Y %I:%M:%S %p",  # MM/DD/YYYY HH:MM:SS AM/PM
-        "%m/%d/%Y %H:%M:%S",  # MM/DD/YYYY 24-hour
-        "%Y-%m-%d %H:%M:%S",  # YYYY-MM-DD 24-hour
-        "%d/%m/%Y %H:%M:%S",  # DD/MM/YYYY 24-hour
-        # Feel free to add more formats as needed
+        "%m/%d/%Y %I:%M:%S %p",
+        "%m/%d/%Y %H:%M:%S",
+        "%Y-%m-%d %H:%M:%S",
+        "%d/%m/%Y %H:%M:%S",
+        "%m/%d/%y %H:%M:%S",
+        "%m/%d/%y %H:%M",
+        "%m-%d-%Y %H:%M:%S",
+        "%m-%d-%y %H:%M:%S",
+        "%m-%d-%Y %H:%M",
+        "%m-%d-%y %H:%M",
     ]
     for fmt in formats:
         try:

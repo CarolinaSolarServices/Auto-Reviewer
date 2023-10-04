@@ -16,7 +16,11 @@ def check_missing_irradiance(df):
 
         missing_during_day = missing_rows[missing_rows["Day/Night"] == "Day"]
         if not missing_during_day.empty:
-            info_day = get_info(missing_during_day)
+            subset = pd.concat(
+                [missing_during_day.iloc[:, :10], missing_during_day.iloc[:, -3:]],
+                axis=1,
+            )
+            info_day = get_info(subset)
             log(
                 f"Here are missing values during the daytime.\n"
                 f"Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.\n"
@@ -125,13 +129,16 @@ def check_and_autofill_inverter_and_voltage(df):
         col for col in df.columns if col.startswith("Inverter_")
     ]
     missing_condition = df[columns_to_check].isna().any(axis=1)
-    fill_condition = missing_condition & (
-        ((df["POA Irradiance"] != -999) & (df["POA Irradiance"] <= 0))
-        | ((df["Meter Power"] != -999) & (df["Meter Power"] <= 0))
+    fill_condition = ((df["POA Irradiance"] != -999) & (df["POA Irradiance"] <= 0)) | (
+        (df["Meter Power"] != -999) & (df["Meter Power"] <= 0)
     )
     important_condition = (df["POA Irradiance"] > 0) | (
         (df["POA Irradiance"] == -999) & (df["Day/Night"] == "Day")
     )
+    # subset = pd.concat([df.iloc[:, :10], df.iloc[:, -3:]], axis=1)
+    # log(f"{get_info(subset)}")
+
+    # log("\n")
 
     if not df[missing_condition & fill_condition].empty:
         df.loc[missing_condition & fill_condition, columns_to_check] = df.loc[
@@ -141,27 +148,36 @@ def check_and_autofill_inverter_and_voltage(df):
         log(
             f"{(missing_condition & fill_condition).sum()} rows with missing voltage or inverter values have been auto-filled with 0."
         )
-        if not df[missing_condition & fill_condition & important_condition].empty:
-            log(
-                f"Here are filled records within the daytime.\n"
-                f"{get_info( df[important_condition & missing_condition & fill_condition])}"
-            )
+
+        # if not df[missing_condition & fill_condition].empty:
+        #     print_df = df[missing_condition & fill_condition]
+        subset = pd.concat(
+            [df[important_condition].iloc[:, :9], df[important_condition].iloc[:, -3:]],
+            axis=1,
+        )
+        log(f"Here are filled records within the daytime.\n" f"{get_info( subset)}")
 
     important_still_missing = df[
         df[columns_to_check].isna().any(axis=1) & important_condition
     ]
     if not important_still_missing.empty:
+        subset = pd.concat(
+            [important_still_missing.iloc[:, :9], important_still_missing.iloc[:, -3:]],
+            axis=1,
+        )
         log(
-            f"The missing voltage or inverter values in the following rows cannot be filled.\n"
+            f"\nThe missing voltage or inverter values in the following rows cannot be filled.\n"
             f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
-            f"{get_info(important_still_missing)}"
+            f"{get_info(subset)}"
         )
 
 
 def missing(df):
     df = df.pipe(check_missing_irradiance).pipe(check_and_autofill_temperature_and_wind)
+
     df, missing_dates = df.pipe(check_and_autofill_Meter)
-    check_and_autofill_inverter_and_voltage(df)
+    df = check_and_autofill_inverter_and_voltage(df)
+
     return missing_dates
 
 
