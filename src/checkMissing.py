@@ -151,10 +151,17 @@ def check_and_autofill_inverter_and_voltage(df):
 
         # if not df[missing_condition & fill_condition].empty:
         #     print_df = df[missing_condition & fill_condition]
-        subset = pd.concat(
-            [df[important_condition].iloc[:, :9], df[important_condition].iloc[:, -3:]],
-            axis=1,
-        )
+        column_count = df.shape[1]
+        if column_count > 12:
+            subset = pd.concat(
+                [
+                    df[important_condition].iloc[:, :9],
+                    df[important_condition].iloc[:, -3:],
+                ],
+                axis=1,
+            )
+        else:
+            subset = df[important_condition]
         log(f"Here are filled records within the daytime.\n" f"{get_info( subset)}")
 
     important_still_missing = df[
@@ -165,6 +172,17 @@ def check_and_autofill_inverter_and_voltage(df):
             [important_still_missing.iloc[:, :9], important_still_missing.iloc[:, -3:]],
             axis=1,
         )
+        column_count = df.shape[1]
+        if column_count > 12:
+            subset = pd.concat(
+                [
+                    df[important_condition].iloc[:, :9],
+                    df[important_condition].iloc[:, -3:],
+                ],
+                axis=1,
+            )
+        else:
+            subset = df[important_condition]
         log(
             f"\nThe missing voltage or inverter values in the following rows cannot be filled.\n"
             f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
