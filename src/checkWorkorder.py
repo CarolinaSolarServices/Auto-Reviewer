@@ -7,22 +7,22 @@ from getInfo import log, format_workorder
 def is_any_date_in_range(start, end, mark, missing_dates):
     if pd.notna(end):
         date_range = pd.date_range(start, end).date.tolist()
-        print(date_range)
+        # print(date_range)
     elif pd.notna(mark):
         date_range = pd.date_range(start, mark).date.tolist()
-        print(date_range)
+        # print(date_range)
     else:
         date_range = [start.date()]
-        print(date_range)
+        # print(date_range)
 
     return any(date in missing_dates for date in date_range)
 
 
 def convert_time(time_str, local_timezone, target_timezone):
     dt = pd.to_datetime(time_str, format="%b %d, %Y %I:%M:%S %p")
-    print(f"dt original: {dt}")
+    # print(f"dt original: {dt}")
     dt = getEST(dt, local_timezone, target_timezone)
-    print(f"dt converted: {dt}")
+    # print(f"dt converted: {dt}")
 
     return dt
 
