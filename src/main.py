@@ -6,8 +6,8 @@ from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
 
-
-file_path = "../data/2023-08-01-2023-08-31_Agate Bay Monthly.csv"
+file_name = "2023-08-01-2023-08-31_Agate Bay Monthly.csv"
+file_path = "../data/" + file_name
 site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 
 
@@ -33,7 +33,7 @@ def main():
     else:
         log("No missing records to be fetched from the work order.")
 
-    site_df.to_csv(f"../output/exportedData/{site_name}.csv", index=False)
+    site_df.to_csv(f"../output/exportedData/{file_name}.csv", index=False)
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
         for message in log_messages:
             file.write(message + "\n")
