@@ -1,0 +1,119 @@
+getInfo.py line 15
+field_names = ["Index"] + rows.columns.tolist()
+print(field_names)
+['Index', 'Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed', 'Meter Power', 'Meter Voltage', 'Inverter_1', 'Inverter_2', 'Day/Night', 'Inverter_1', 'Inverter_2', 'Day/Night']
+
+
+main line 17 
+print(site_df.columns)
+Index(['Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed',
+       'Meter Power', 'Meter Voltage', 'Inverter_1', 'Inverter_2',
+       'Day/Night'],
+      dtype='object')
+
+renameColumn 
+def rename(df):
+    df = column_others(df)
+    print(df.columns)
+    df = column_temperature(df)
+    df = column_wind(df)
+    df = column_voltage(df)
+    df = column_inverter(df)
+    df = column_reorder(df)
+
+    return df
+
+Index(['Timestamp', 'POA Irradiance', 'Weather station module temperature',
+       'Weather station ambient temperature', 'Max wind speed - VAISALA_1',
+       'Production meter L-N voltage', 'Meter Power',
+       'Inverter 1, AC Active Power (Total)'],
+      dtype='object')
+
+
+renameColumn 
+def rename(df):
+    df = column_others(df)
+    df = column_temperature(df)
+    print(df.columns)
+    df = column_wind(df)
+    df = column_voltage(df)
+    df = column_inverter(df)
+    df = column_reorder(df)
+
+    return df
+
+
+Index(['Timestamp', 'POA Irradiance', 'Temperature',
+       'Max wind speed - VAISALA_1', 'Production meter L-N voltage',
+       'Meter Power', 'Inverter 1, AC Active Power (Total)'],
+      dtype='object')
+
+
+renameColumn 
+def rename(df):
+    df = column_others(df)
+    df = column_temperature(df)
+    df = column_wind(df)
+    print(df.columns)
+    df = column_voltage(df)
+    df = column_inverter(df)
+    df = column_reorder(df)
+
+    return df
+
+
+Index(['Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed',
+       'Production meter L-N voltage', 'Meter Power',
+       'Inverter 1, AC Active Power (Total)'],
+      dtype='object')
+
+renameColumn 
+def rename(df):
+    df = column_others(df)
+    df = column_temperature(df)
+    df = column_wind(df)
+    df = column_voltage(df)
+    print(df.columns)
+    df = column_inverter(df)
+    df = column_reorder(df)
+
+    return df
+
+Index(['Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed',
+       'Meter Voltage', 'Meter Power', 'Inverter 1, AC Active Power (Total)'],
+      dtype='object')
+
+
+renameColumn 
+def rename(df):
+    df = column_others(df)
+    df = column_temperature(df)
+    df = column_wind(df)
+    df = column_voltage(df)
+    df = column_inverter(df)
+    print(df.columns)
+    df = column_reorder(df)
+
+    return df
+
+Index(['Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed',
+       'Meter Voltage', 'Meter Power', 'Inverter_1'],
+      dtype='object')
+
+
+
+renameColumn 
+def rename(df):
+    df = column_others(df)
+    df = column_temperature(df)
+    df = column_wind(df)
+    df = column_voltage(df)
+    df = column_inverter(df)
+    df = column_reorder(df)
+    print(df.columns)
+
+    return df
+
+Index(['Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed',
+       'Meter Power', 'Meter Voltage', 'Inverter_1'],
+      dtype='object')

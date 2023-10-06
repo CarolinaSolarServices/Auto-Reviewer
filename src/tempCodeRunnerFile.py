@@ -6,7 +6,7 @@ from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
 
-file_name = "2023-09-01-2023-09-30_Woodline Monthly.csv"
+file_name = "2023-09-01-2023-09-30_Sheep Monthly.csv"
 file_path = "../data/" + file_name
 site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 
@@ -14,7 +14,7 @@ site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 def main():
     sitedata = read_site(file_path)
     site_df = sitedata.pipe(rename).pipe(normalize, site_name)
-
+    print(site_df.columns)
     # Check and autofill columns of 'irradiance,' 'temperature,' 'wind speed,' and 'meter power',
     # and return the missing dates where missing meter power cannot be auto-filled.
     missing_dates = missing(site_df)
