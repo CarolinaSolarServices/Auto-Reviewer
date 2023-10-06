@@ -6,7 +6,7 @@ from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
 
-file_name = "2023-09-01-2023-09-30_Woodline Monthly.csv"
+file_name = "2023-09-01-2023-09-30_Soluga IV Monthly.csv"
 file_path = "../data/" + file_name
 site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 

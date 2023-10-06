@@ -106,8 +106,8 @@ def column_reorder(df):
         "POA Irradiance",
         "Temperature",
         "Wind Speed",
-        "Meter Power",
         "Meter Voltage",
+        "Meter Power",
     ] + inverter_columns
     df = df[columns_order]
 
