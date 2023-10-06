@@ -1,6 +1,6 @@
 import pandas as pd
 from readData import read_workorder
-from getGeocoding import getGeocoding, getTimeZone, getEST
+from getGeocoding import getGeocoding, getTimeZone, getTargetTime
 from getInfo import log, format_workorder
 
 
@@ -21,7 +21,7 @@ def is_any_date_in_range(start, end, mark, missing_dates):
 def convert_time(time_str, local_timezone, target_timezone):
     dt = pd.to_datetime(time_str, format="%b %d, %Y %I:%M:%S %p")
     # print(f"dt original: {dt}")
-    dt = getEST(dt, local_timezone, target_timezone)
+    dt = getTargetTime(dt, local_timezone, target_timezone)
     # print(f"dt converted: {dt}")
 
     return dt

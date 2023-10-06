@@ -1,7 +1,6 @@
 import pandas as pd
 from suntime import Sun
-from getGeocoding import getGeocoding
-from getInfo import get_info
+from getGeocoding import getGeocoding, getTargetTime, getTimeZone
 
 
 # Convert the datetime string to a datetime object
@@ -29,23 +28,50 @@ def custom_to_datetime(df):
     )  # raise error if no suitable format is found
 
 
-def determine_day_night(row, site_name):
-    lat, lng = getGeocoding(site_name)
-    if lat is None or lng is None:
+def determine_day_night(row, lat, lng, tz):
+    if lat is None or lng is None or tz is None:
         return "Unknown"
-    sun = Sun(lat, lng)
-    date = row["Timestamp"].date()
-    sr = sun.get_local_sunrise_time(date).time()
-    ss = sun.get_local_sunset_time(date).time()
-    time = row["Timestamp"].time()
-    if sr <= time <= ss:
-        return "Day"
     else:
-        return "Night"
+        sun = Sun(lat, lng)
+        date = row["Timestamp"].date()
+        sr = sun.get_sunrise_time(date)
+        ss = sun.get_sunset_time(date)
+        sr_local = getTargetTime(pd.Timestamp(sr), "UTC", tz)
+        ss_local = getTargetTime(pd.Timestamp(ss), "UTC", tz)
+        if sr_local.time() <= row["Timestamp"].time() <= ss_local.time():
+            return "Day"
+        else:
+            return "Night"
+
+        # print(f"sunrise UTC: {sr_time}, sunset UTC: {ss_time}\n")
+        # Combine the date with the sunrise and sunset times
+        # sr_datetime = datetime.datetime.combine(date, sr_time)
+        # ss_datetime = datetime.datetime.combine(date, ss_time)
+        # Convert them to Timestamps and then adjust the timezones
+        # sr = getTargetTime(pd.Timestamp(sr_datetime), "UTC", tz)
+        # ss = getTargetTime(pd.Timestamp(ss_datetime), "UTC", tz)
+        # print(f"sunrise time: {sr}, sunset time: {ss}\n")
+        # time = row["Timestamp"].time()
+
+        # observer = ephem.Observer()
+        # observer.lat, observer.lon = lat, lng
+        # observer.date = row["Timestamp"].date()
+        # sunrise = observer.previous_rising(ephem.Sun()).datetime()
+        # sunset = observer.next_setting(ephem.Sun()).datetime()
+        # print(f"Sunrise: {sunrise}, Sunset: {sunset}")
+        # time = row["Timestamp"].time()
+        # if sunrise <= time <= sunset:
+        #     return "Day"
+        # else:
+        #     return "Night"
 
 
 def normalize(df, site_name):
     df = custom_to_datetime(df)
-    df["Day/Night"] = df.apply(lambda row: determine_day_night(row, site_name), axis=1)
+    lat, lng = getGeocoding(site_name)
+    tz = getTimeZone(lat, lng)
+    df["Day/Night"] = df.apply(
+        lambda row: determine_day_night(row, lat, lng, tz), axis=1
+    )
 
     return df

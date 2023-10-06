@@ -11,12 +11,16 @@ def getGeocoding(site_name):
 
 
 def getTimeZone(latitude, longitude):
-    tf = TimezoneFinder()
-    return tf.timezone_at(lng=longitude, lat=latitude)
+    if latitude and longitude:
+        tf = TimezoneFinder()
+        return tf.timezone_at(lng=longitude, lat=latitude)
+
+    return None
 
 
-def getEST(original_time, local_timezone, target_timezone):
-    local_time = original_time.tz_localize(local_timezone)
-    target_time = local_time.tz_convert(target_timezone)
+def getTargetTime(original_time, original_timezone, target_timezone):
+    if original_time.tzinfo is None:
+        original_time = original_time.tz_localize(original_timezone)
+    target_time = original_time.tz_convert(target_timezone)
 
     return target_time
