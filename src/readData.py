@@ -30,5 +30,5 @@ def read_site(file_path):
 
 
 def read_workorder():
-    workorder = pd.read_csv("../data/WorkOrder.csv", skiprows=0, header=0)
+    workorder = pd.read_csv("../data/(PE)OpenedWOs.csv", skiprows=0, header=0)
     return workorder

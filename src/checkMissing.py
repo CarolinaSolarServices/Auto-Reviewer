@@ -133,10 +133,6 @@ def check_and_autofill_inverter_and_voltage(df):
     important_condition = (df["POA Irradiance"] > 0) | (
         (df["POA Irradiance"] == -999) & (df["Day/Night"] == "Day")
     )
-    # subset = pd.concat([df.iloc[:, :10], df.iloc[:, -3:]], axis=1)
-    # log(f"{get_info(subset)}")
-
-    # log("\n")
 
     if not df[missing_condition & fill_condition].empty:
         df.loc[missing_condition & fill_condition, columns_to_check] = df.loc[
@@ -149,8 +145,10 @@ def check_and_autofill_inverter_and_voltage(df):
 
         # if not df[missing_condition & fill_condition].empty:
         #     print_df = df[missing_condition & fill_condition]
-        subset = get_subset(df[important_condition & fill_condition])
-        log(f"Here are filled records within the daytime.\n" f"{get_info( subset)}")
+        subset = get_subset(
+            df[important_condition & fill_condition & missing_condition]
+        )
+        log(f"Here are filled records within the daytime.\n" f"{get_info(subset)}")
 
     important_still_missing = df[
         df[columns_to_check].isna().any(axis=1) & important_condition

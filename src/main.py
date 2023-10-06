@@ -34,7 +34,7 @@ def main():
     else:
         log("No missing records to be fetched from the work order.")
 
-    site_df.to_csv(f"../output/exportedData/{file_name}.csv", index=False)
+    site_df.to_csv(f"../output/exportedData/{file_name}", index=False)
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
         for message in log_messages:
             file.write(message + "\n")
