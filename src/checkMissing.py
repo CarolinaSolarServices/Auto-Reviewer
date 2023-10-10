@@ -19,7 +19,7 @@ def check_missing_irradiance(df):
             subset = get_subset(missing_during_day)
             info_day = get_info(subset)
             log(
-                f"Here are missing values during the daytime.\n"
+                f"Here are missing values during the daytime.(Only showing the first 20 records.)\n"
                 f"Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.\n"
                 f"\n{info_day}"
             )
@@ -48,7 +48,7 @@ def check_and_autofill_temperature_and_wind(df):
             missing_info = get_info(subset)
             log(
                 f"Detected missing values in the {col} column when {'POA Irradiance'} >= {condition_value}.\n"
-                f"These have been filled with a placeholder value of -999.\n"
+                f"These have been filled with a placeholder value of -999. (Only showing the first 20 records.)\n"
                 f"There is no need to document this discrepancy in the 'Data Issues' spreadsheet.\n"
                 f"Details of missing rows:\n{missing_info}"
             )
@@ -93,7 +93,7 @@ def check_and_autofill_Meter(df):
 
         if not filled_df.empty:
             log(
-                f"The missing 'Meter Power' values in the following rows have been auto-filled based on the sum of inverter values.\n"
+                f"The missing 'Meter Power' values in the following rows have been auto-filled based on the sum of inverter values.(Only showing the first 20 records.)\n"
                 f"{get_info(get_subset(filled_df))}"
             )
 
@@ -106,7 +106,7 @@ def check_and_autofill_Meter(df):
                 [f"{date}: {count} missing" for date, count in missing_by_day.items()]
             )
             log(
-                f"The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.\n"
+                f"The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.(Only showing the first 20 records.)\n"
                 f"These have been filled with a placeholder value of -999.\n"
                 f"Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.\n"
                 f"{info}\n"
@@ -142,13 +142,19 @@ def check_and_autofill_inverter_and_voltage(df):
         log(
             f"{(missing_condition & fill_condition).sum()} rows with missing voltage or inverter values have been auto-filled with 0."
         )
-
+        # log(f"{get_info(df.loc[missing_condition & fill_condition])}")
         # if not df[missing_condition & fill_condition].empty:
         #     print_df = df[missing_condition & fill_condition]
         subset = get_subset(
             df[important_condition & fill_condition & missing_condition]
         )
-        log(f"Here are filled records within the daytime.\n" f"{get_info(subset)}")
+        if not subset.empty:
+            log(
+                f"Here are filled records within the daytime.(Only showing the first 20 records.)\n"
+                f"{get_info(subset)}"
+            )
+        else:
+            log("There were no records filled out during the daytime.")
 
     important_still_missing = df[
         df[columns_to_check].isna().any(axis=1) & important_condition
@@ -156,7 +162,7 @@ def check_and_autofill_inverter_and_voltage(df):
     if not important_still_missing.empty:
         subset = get_subset(important_still_missing)
         log(
-            f"\nThe missing voltage or inverter values in the following rows cannot be filled.\n"
+            f"\nThe missing voltage or inverter values in the following rows cannot be filled.(Only showing the first 20 records.)\n"
             f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
             f"{get_info(subset)}"
         )

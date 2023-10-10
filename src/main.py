@@ -5,13 +5,20 @@ from renameColumn import rename
 from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
-
-file_name = "2023-09-01-2023-09-30_Valley Creek Monthly.csv"
-file_path = "../data/" + file_name
-site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
+import sys
+import os
 
 
 def main():
+    if len(sys.argv) > 1:
+        file_name = sys.argv[1]
+    else:
+        print("Error: No file name provided.")
+        sys.exit(1)
+
+    file_path = "../data/" + file_name
+    site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
+
     sitedata = read_site(file_path)
     site_df = sitedata.pipe(rename).pipe(normalize, site_name)
 
@@ -34,7 +41,10 @@ def main():
     else:
         log("No missing records to be fetched from the work order.")
 
-    site_df.to_csv(f"../output/exportedData/{file_name}", index=False)
+    output_directory = "../output/exportedData/"
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+    site_df.to_csv(f"../output/exportedData/{os.path.basename(file_name)}", index=False)
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
         for message in log_messages:
             file.write(message + "\n")
