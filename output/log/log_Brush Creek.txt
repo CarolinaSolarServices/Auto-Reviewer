@@ -1,0 +1,26 @@
+
+I.
+
+All good! The 'POA Irradiance' column has no missing values.
+
+II.
+
+All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+III.
+
+All good! The 'Meter Power' column has no missing values during daytime.
+
+IV.
+
+1292 rows with missing voltage or inverter values have been auto-filled with 0.
+There were no records filled out during the daytime.
+
+All good! No more missing voltage or inverter values during daytime!
+
+V.
+
+No missing records to be fetched from the work order.
