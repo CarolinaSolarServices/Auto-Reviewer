@@ -35,6 +35,10 @@ def get_subset(rows):
     else:
         subset = rows
 
+    row_count = rows.shape[0]
+    if row_count > 20:
+        subset = subset.iloc[:20, :]
+
     return subset
 
 
