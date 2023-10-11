@@ -9,14 +9,7 @@ import sys
 import os
 
 
-def main():
-    if len(sys.argv) > 1:
-        file_name = sys.argv[1]
-    else:
-        print("Error: No file name provided.")
-        sys.exit(1)
-
-    file_path = "../data/" + file_name
+def process_files(file_path):
     site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 
     sitedata = read_site(file_path)
@@ -44,10 +37,16 @@ def main():
     output_directory = "../output/exportedData/"
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
-    site_df.to_csv(f"../output/exportedData/{os.path.basename(file_name)}", index=False)
+    site_df.to_csv(f"../output/exportedData/{os.path.basename(file_path)}", index=False)
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
         for message in log_messages:
             file.write(message + "\n")
+
+
+def main(directory="../data"):
+    for csv_file in os.scandir(directory):
+        if csv_file.name.endswith("Monthly.csv") and csv_file.is_file():
+            process_files(csv_file.path)
 
 
 if __name__ == "__main__":
