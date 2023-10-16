@@ -12,11 +12,12 @@ def log(message):
 
 # Print detailed information of selected rows with pretty format
 # 'rows' is actually a df
-def get_info(rows):
+def get_info(df):
+    sub_df = get_subset(df)
     table = PrettyTable()
-    table.field_names = ["Index"] + rows.columns.tolist()
+    table.field_names = ["Index"] + sub_df.columns.tolist()
 
-    for index, row in rows.iterrows():
+    for index, row in sub_df.iterrows():
         table.add_row([index + 2] + row.tolist())
 
     return table
