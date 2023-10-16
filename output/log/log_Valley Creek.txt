@@ -27,7 +27,7 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-3 rows with missing voltage or inverter values have been auto-filled with 0.
+9 rows with missing voltage or inverter values have been auto-filled with 0.
 Here are filled records within the daytime.(Only showing the first 20 records.)
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Day/Night |

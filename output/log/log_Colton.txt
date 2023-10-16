@@ -19,6 +19,8 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
+6 rows with missing voltage or inverter values have been auto-filled with 0.
+There were no records filled out during the daytime.
 
 All good! No more missing voltage or inverter values during daytime!
 

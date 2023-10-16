@@ -43,7 +43,7 @@ Here are filled records within the daytime.(Only showing the first 20 records.)
 |  700  | 2023-09-08 06:30:00 |    1.682234    |   50.04859  |     0      |      0.0      |  -5.891973  | 0.007879397  |   0.00338    | 0.009931323 | 0.006969291 |  0.01386889 |  Unknown  |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+--------------+--------------+-------------+-------------+-------------+-----------+
 
-The missing voltage or inverter values in the following rows cannot be filled.(Only showing the first 20 records.)
+The missing daytime voltage or inverter values in the following rows cannot be filled.(Only showing the first 20 records.)
 For more insights and to cross-verify, please refer to the relevant work order records.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+-------------+-------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_10 | Inverter_11 | Inverter_8 | Inverter_9 | Day/Night |
