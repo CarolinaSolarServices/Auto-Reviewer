@@ -48,7 +48,7 @@ def column_wind(df):
 def column_voltage(df):
     voltage = [col for col in df.columns if "voltage" in col.lower()]
     if len(voltage) > 1:
-        less_missing = min(voltage, key=lambda col: df[col].isna().sum)
+        less_missing = min(voltage, key=lambda col: df[col].isna().sum())
         df.rename(columns={less_missing: "Meter Voltage"}, inplace=True)
     elif voltage:
         df.rename(columns={voltage[0]: "Meter Voltage"}, inplace=True)
