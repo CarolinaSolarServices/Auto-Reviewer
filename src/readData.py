@@ -22,7 +22,8 @@ def read_site(file_path):
     if header_index is None:
         error_message = "Header not found in the file."
         log(error_message)
-        raise ValueError("Header not found in the file.")
+        print(error_message)
+        exit()
 
     # The index of the found header is exactly the number of rows to skip when reading the data
     df = pd.read_csv(file_path, skiprows=header_index, header=0)

@@ -1,5 +1,6 @@
 from getInfo import log, get_info
 import numpy as np
+import pandas as pd
 
 
 def check_missing_irradiance(df):
@@ -28,8 +29,8 @@ def check_missing_irradiance(df):
     else:
         log("All good! The 'POA Irradiance' column has no missing values.")
 
-    # If POA Irradiance > 0, modify any corresponding "Day/Night" info to "Day".
-    condition_day_2 = df["POA Irradiance"] > 0
+    # If POA Irradiance > 1, modify any corresponding "Day/Night" info to "Day".
+    condition_day_2 = df["POA Irradiance"] > 1
     df.loc[condition_day_2, "Day/Night"] = "Day"
 
     return df
@@ -160,6 +161,7 @@ def check_and_autofill_inverter_and_voltage(df):
     # If meter power is less than the sum of inverter values and the difference is within a range,
     # the missing inverters can be off.
     condition_still_missing_inv_after2 = df[inverter_cols].isna().any(axis=1)
+
     condition_inv_off = (df["Meter Power"] <= (df[inverter_cols].sum(axis=1))) & (
         round(df["Meter Power"] / (df[inverter_cols].sum(axis=1))) == 1
     )
@@ -188,19 +190,29 @@ def check_and_autofill_inverter_and_voltage(df):
     for index, row in df.loc[condition_still_missing_inv_after3].iterrows():
         INV_sum = row[inverter_cols].sum()
         non_missing_count = row[inverter_cols].notna().sum()
-        if (row["Meter Power"] >= INV_sum) & (non_missing_count > 0):
+        if (row["Meter Power"] > INV_sum) & (non_missing_count > 0):
             missing_count = row[inverter_cols].isna().sum()
-            INV_avg = INV_sum / (missing_count + non_missing_count)
-            estimate_on = round((row["Meter Power"] - INV_sum) / INV_avg)
-            to_be_filled = (
-                min(estimate_on, (missing_count + non_missing_count))
-                - non_missing_count
-            )
-            if to_be_filled == missing_count:
-                row[:, inverter_cols].fillna(1, inplace=True)
-                filled.append(index)
-            else:
+            INV_avg = INV_sum / (non_missing_count)
+
+            try:
+                estimate_on = round((row["Meter Power"] * 1.03 / INV_avg))
+
+                to_be_filled = (
+                    min(estimate_on, (missing_count + non_missing_count))
+                    - non_missing_count
+                )
+                # print(to_be_filled)
+                # print(missing_count)
+                if to_be_filled == missing_count:
+                    df.loc[index, inverter_cols] = row[inverter_cols].fillna(1)
+                    # print("Filled")
+                    # print(row)
+                    filled.append(index)
+                else:
+                    unfilled.append(index)
+            except:
                 unfilled.append(index)
+
     if len(filled) > 0:
         log(
             f"{len(filled)} rows with missing inverter values have been auto-filled with 1."
