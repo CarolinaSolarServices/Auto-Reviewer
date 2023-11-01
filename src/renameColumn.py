@@ -102,7 +102,10 @@ def column_inverter(df):
 
 
 def column_reorder(df):
-    inverter_columns = sorted(col for col in df.columns if "Inverter" in col)
+    inverter_columns = sorted(
+        (col for col in df.columns if "Inverter" in col),
+        key=lambda s: int(s.split("_")[1]),
+    )
     columns_order = [
         "Timestamp",
         "POA Irradiance",

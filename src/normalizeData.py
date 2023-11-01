@@ -16,7 +16,7 @@ def custom_to_datetime(df):
         "%m-%d-%y %H:%M:%S",
         "%m-%d-%Y %H:%M",
         "%m-%d-%y %H:%M",
-        "%m/%d/%Y %H:%M",
+        "%Y-%m-%d %H:%M",
     ]
     for fmt in formats:
         try:

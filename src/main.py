@@ -1,11 +1,10 @@
-import pandas as pd
-from getInfo import log_messages, log
+import getInfo
+from getInfo import log
 from readData import read_site
 from renameColumn import rename
 from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
-import sys
 import os
 
 
@@ -39,14 +38,15 @@ def process_files(file_path):
         os.makedirs(output_directory)
     site_df.to_csv(f"../output/exportedData/{os.path.basename(file_path)}", index=False)
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
-        for message in log_messages:
+        for message in getInfo.log_messages:
             file.write(message + "\n")
 
 
 def main(directory="../data"):
     for csv_file in os.scandir(directory):
-        if csv_file.name.endswith("Monthly.csv") and csv_file.is_file():
+        if csv_file.name.endswith("Monthly.csv"):
             process_files(csv_file.path)
+            getInfo.log_messages = []
 
 
 if __name__ == "__main__":
