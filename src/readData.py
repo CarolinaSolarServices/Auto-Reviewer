@@ -27,6 +27,16 @@ def read_site(file_path):
 
     # The index of the found header is exactly the number of rows to skip when reading the data
     df = pd.read_csv(file_path, skiprows=header_index, header=0)
+    # print(df.loc[0,:])
+    # Check whether the second row in the dataframe is an extra unit row
+    if pd.isna(df.iloc[0, 0]):
+        df.drop(index = 0, inplace=True)
+        df.reset_index(drop=True, inplace=True) # Resetting the index after dropping the row
+    
+    cols_to_convert = df.columns[df.columns != 'Timestamp']
+    df[cols_to_convert] = df[cols_to_convert].apply(pd.to_numeric, errors='coerce')
+
+
     return df
 
 

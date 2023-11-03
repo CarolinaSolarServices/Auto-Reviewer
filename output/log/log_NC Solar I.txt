@@ -1,0 +1,101 @@
+
+I.
+
+Detected 7 missing values in the 'POA Irradiance' column.
+All have been filled with a placeholder value of -999.
+Detected 7 missing values during the daytime.
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records here.)
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  1572 | 2023-10-17 08:30:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1573 | 2023-10-17 08:45:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1574 | 2023-10-17 09:00:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1575 | 2023-10-17 09:15:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1576 | 2023-10-17 09:30:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1577 | 2023-10-17 09:45:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1578 | 2023-10-17 10:00:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+
+II.
+
+All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+III.
+
+Detected 7 missing 'Meter Power' values during daytime.
+The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.(Only showing the first 20 records.)
+These have been filled with a placeholder value of -999.
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |    Date    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+|  1572 | 2023-10-17 08:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
+|  1573 | 2023-10-17 08:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
+|  1574 | 2023-10-17 09:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
+|  1575 | 2023-10-17 09:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
+|  1576 | 2023-10-17 09:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
+|  1577 | 2023-10-17 09:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
+|  1578 | 2023-10-17 10:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-17 |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+
+Summary of missing dates:
+2023-10-17: 7 missing
+
+
+IV.
+
+7 rows with missing voltage or inverter values have been auto-filled with -999.Details of filled rows (only showing the first 20 records here):
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  1572 | 2023-10-17 08:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1573 | 2023-10-17 08:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1574 | 2023-10-17 09:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1575 | 2023-10-17 09:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1576 | 2023-10-17 09:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1577 | 2023-10-17 09:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1578 | 2023-10-17 10:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+10 rows with missing voltage or inverter values have been auto-filled with 0.
+Here are filled records within the daytime.(Only showing the first 20 records.)
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  147  | 2023-10-02 12:15:00 |    804.3566    |   84.43913  |    2.0     |      0.0      |   637.3134  |  343.0984  |    nan     |  340.0699  |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+1 rows with missing inverter values have been auto-filled with 1.Only showing the first 20 records here.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  1570 | 2023-10-17 08:00:00 |    115.6267    |   45.54864  |    0.0     |      0.0      |   131.3756  |    1.0     |  22.47884  |    1.0     |  38.7469   |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+1 rows with missing inverter values should have more inverters on.But it is hard to decide how many more inverters should be on based on the data.Showing the first 20 records during daytime here for your reference.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  146  | 2023-10-02 12:00:00 |    789.4157    |   84.52322  |    2.0     |      0.0      |   1142.987  |  343.0897  |    nan     |  339.4503  |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+Besides, there are still 11 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  146  | 2023-10-02 12:00:00 |    789.4157    |   84.52322  |    2.0     |      0.0      |   1142.987  |  343.0897  |    nan     |  339.4503  |    nan     |    Day    |
+|  147  | 2023-10-02 12:15:00 |    804.3566    |   84.43913  |    2.0     |      0.0      |   637.3134  |  343.0984  |    nan     |  340.0699  |    nan     |    Day    |
+|  1571 | 2023-10-17 08:15:00 |    181.1223    |   47.83211  |    0.0     |      0.0      |   5.863838  |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1572 | 2023-10-17 08:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1573 | 2023-10-17 08:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1574 | 2023-10-17 09:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1575 | 2023-10-17 09:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1576 | 2023-10-17 09:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1577 | 2023-10-17 09:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1578 | 2023-10-17 10:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1579 | 2023-10-17 10:15:00 |    553.5696    |   59.23272  |    0.0     |      0.0      |   104.2472  |  289.1899  |  205.5454  |    nan     |  79.71378  |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+
+V.
+
+No work orders found for site NC Solar I on the missing dates.

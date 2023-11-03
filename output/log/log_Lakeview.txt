@@ -1,0 +1,96 @@
+
+I.
+
+Detected 2 missing values in the 'POA Irradiance' column.
+All have been filled with a placeholder value of -999.
+It seems that all the missing values occur during night time hours.
+
+
+II.
+
+All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+III.
+
+Detected 5 missing 'Meter Power' values during daytime.
+The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.(Only showing the first 20 records.)
+These have been filled with a placeholder value of -999.
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |    Date    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+|  332  | 2023-10-04 10:30:00 |    836.0202    |   57.18303  |  13.52128  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-04 |
+|  333  | 2023-10-04 10:45:00 |    816.1826    |   57.98115  |  13.40975  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-04 |
+|  748  | 2023-10-08 18:30:00 |   0.9830937    |   65.9101   |  2.074093  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  749  | 2023-10-08 18:45:00 |   -0.5367947   |   65.4724   |  1.834221  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  750  | 2023-10-08 19:00:00 |   -0.6603899   |   64.87785  |  1.767581  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  751  | 2023-10-08 19:15:00 |   -0.7184592   |   63.70631  |  1.770264  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  752  | 2023-10-08 19:30:00 |    -0.45595    |   62.14394  |  2.727482  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  753  | 2023-10-08 19:45:00 |   -0.8307247   |   62.85246  |  3.601557  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  754  | 2023-10-08 20:00:00 |   -0.8310006   |   63.12888  |  3.97967   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  755  | 2023-10-08 20:15:00 |   -0.7875648   |   61.53129  |  4.050097  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  756  | 2023-10-08 20:30:00 |   -0.8267748   |   60.58789  |  4.235111  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  757  | 2023-10-08 20:45:00 |   -0.8921542   |   58.5921   |  2.822925  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  758  | 2023-10-08 21:00:00 |   -0.8033476   |   57.71875  |  2.747889  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  759  | 2023-10-08 21:15:00 |   -0.6289787   |   57.08923  |  3.32992   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  760  | 2023-10-08 21:30:00 |    -0.82639    |   56.48302  |  3.736879  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  761  | 2023-10-08 21:45:00 |   -0.7290971   |   56.81498  |  2.270853  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  762  | 2023-10-08 22:00:00 |   -0.2912553   |   51.32274  |  1.910773  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  763  | 2023-10-08 22:15:00 |   -0.4127927   |   49.6275   |  2.405392  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  764  | 2023-10-08 22:30:00 |   -0.295972    |   49.85212  |  2.326874  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
+|  765  | 2023-10-08 22:45:00 |   -0.4163054   |   47.24194  |  2.916009  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  | 2023-10-08 |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+
+Summary of missing dates:
+2023-10-04: 2 missing
+2023-10-08: 22 missing
+2023-10-09: 29 missing
+2023-10-31: 2 missing
+
+
+IV.
+
+55 rows with missing voltage or inverter values have been auto-filled with -999.Details of filled rows (only showing the first 20 records here):
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  332  | 2023-10-04 10:30:00 |    836.0202    |   57.18303  |  13.52128  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  333  | 2023-10-04 10:45:00 |    816.1826    |   57.98115  |  13.40975  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  748  | 2023-10-08 18:30:00 |   0.9830937    |   65.9101   |  2.074093  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  749  | 2023-10-08 18:45:00 |   -0.5367947   |   65.4724   |  1.834221  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  750  | 2023-10-08 19:00:00 |   -0.6603899   |   64.87785  |  1.767581  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  751  | 2023-10-08 19:15:00 |   -0.7184592   |   63.70631  |  1.770264  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  752  | 2023-10-08 19:30:00 |    -0.45595    |   62.14394  |  2.727482  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  753  | 2023-10-08 19:45:00 |   -0.8307247   |   62.85246  |  3.601557  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  754  | 2023-10-08 20:00:00 |   -0.8310006   |   63.12888  |  3.97967   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  755  | 2023-10-08 20:15:00 |   -0.7875648   |   61.53129  |  4.050097  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  756  | 2023-10-08 20:30:00 |   -0.8267748   |   60.58789  |  4.235111  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  757  | 2023-10-08 20:45:00 |   -0.8921542   |   58.5921   |  2.822925  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  758  | 2023-10-08 21:00:00 |   -0.8033476   |   57.71875  |  2.747889  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  759  | 2023-10-08 21:15:00 |   -0.6289787   |   57.08923  |  3.32992   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  760  | 2023-10-08 21:30:00 |    -0.82639    |   56.48302  |  3.736879  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  761  | 2023-10-08 21:45:00 |   -0.7290971   |   56.81498  |  2.270853  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  762  | 2023-10-08 22:00:00 |   -0.2912553   |   51.32274  |  1.910773  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  763  | 2023-10-08 22:15:00 |   -0.4127927   |   49.6275   |  2.405392  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  764  | 2023-10-08 22:30:00 |   -0.295972    |   49.85212  |  2.326874  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  765  | 2023-10-08 22:45:00 |   -0.4163054   |   47.24194  |  2.916009  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+48 rows with missing voltage or inverter values have been auto-filled with 0.
+There were no records filled out during the daytime.
+Besides, there are still 5 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+|  332  | 2023-10-04 10:30:00 |    836.0202    |   57.18303  |  13.52128  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  333  | 2023-10-04 10:45:00 |    816.1826    |   57.98115  |  13.40975  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  748  | 2023-10-08 18:30:00 |   0.9830937    |   65.9101   |  2.074093  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |  Unknown  |
+|  797  | 2023-10-09 06:45:00 |    1.545916    |   50.23788  |  2.797495  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  798  | 2023-10-09 07:00:00 |    21.72073    |   49.24372  | 0.5575574  |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+
+V.
+
+No work orders found for site Lakeview on the missing dates.

@@ -29,11 +29,14 @@ def check_missing_irradiance(df):
     else:
         log("All good! The 'POA Irradiance' column has no missing values.")
 
+    # non_numeric_rows = df[df['POA Irradiance'].apply(lambda x: not isinstance(x, (int, float)))]
+    # print(non_numeric_rows['POA Irradiance'])   
     # If POA Irradiance > 1, modify any corresponding "Day/Night" info to "Day".
     condition_day_2 = df["POA Irradiance"] > 1
     df.loc[condition_day_2, "Day/Night"] = "Day"
 
     return df
+
 
 
 def check_and_autofill_temperature_and_wind(df):

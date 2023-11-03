@@ -45,6 +45,7 @@ def process_files(file_path):
 def main(directory="../data"):
     for csv_file in os.scandir(directory):
         if csv_file.name.endswith("Monthly.csv"):
+            print(csv_file.name)
             process_files(csv_file.path)
             getInfo.log_messages = []
 

@@ -16,17 +16,19 @@ def custom_to_datetime(df):
         "%m-%d-%y %H:%M:%S",
         "%m-%d-%Y %H:%M",
         "%m-%d-%y %H:%M",
-        "%Y-%m-%d %H:%M",
     ]
+
     for fmt in formats:
         try:
             df["Timestamp"] = pd.to_datetime(df["Timestamp"], format=fmt)
-            return df  # return DataFrame if the format matches
+
+            # print(df[df["Timestamp"].isna()])
+
+            return df
         except ValueError:  # if the format doesn't match, continue to the next format
             continue
-    raise ValueError(
-        f"No suitable format found for the 'Timestamp' column."
-    )  # raise error if no suitable format is found
+    # Quit the program if no suitable format is found
+    raise ValueError("No suitable format found for the 'Timestamp' column.")
 
 
 def determine_day_night(row, lat, lng, tz):
@@ -71,8 +73,9 @@ def normalize(df, site_name):
     df = custom_to_datetime(df)
     lat, lng = getGeocoding(site_name)
     tz = getTimeZone(lat, lng)
-    df["Day/Night"] = df.apply(
-        lambda row: determine_day_night(row, lat, lng, tz), axis=1
-    )
+    new_columns = df.apply(lambda row: determine_day_night(row, lat, lng, tz), axis=1)
+    new_columns_df = pd.DataFrame(new_columns, columns=["Day/Night"])
+
+    df = pd.concat([df, new_columns_df], axis=1)
 
     return df

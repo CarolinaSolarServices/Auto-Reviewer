@@ -117,3 +117,32 @@ def rename(df):
 Index(['Timestamp', 'POA Irradiance', 'Temperature', 'Wind Speed',
        'Meter Power', 'Meter Voltage', 'Inverter_1'],
       dtype='object')
+
+
+
+Traceback (most recent call last):
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/src/main.py", line 54, in <module>
+    main()
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/src/main.py", line 49, in main
+    process_files(csv_file.path)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/src/main.py", line 15, in process_files
+    site_df = sitedata.pipe(rename).pipe(normalize, site_name)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 6140, in pipe
+    return common.pipe(self, func, *args, **kwargs)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/common.py", line 497, in pipe
+    return func(obj, *args, **kwargs)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/src/renameColumn.py", line 138, in rename
+    .pipe(column_reorder)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 6140, in pipe
+    return common.pipe(self, func, *args, **kwargs)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/common.py", line 497, in pipe
+    return func(obj, *args, **kwargs)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/src/renameColumn.py", line 117, in column_reorder
+    df = df[columns_order]
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 3902, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6114, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/zhouzhongle/Downloads/CarolinaSolar/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6178, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Timestamp', 'POA Irradiance'] not in index"
