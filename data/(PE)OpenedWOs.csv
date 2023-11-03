@@ -1,503 +1,406 @@
 Site Name,WO#,Fault/Event Start,Fault End,Date When Marked Complete/Incomplete,Description
-Cottonwood,27819,"Sep 01, 2023 03:28:00 AM","Sep 01, 2023 08:30:00 AM",,Cottonwood site offline due to transfer trip
-Sophie,27821,"Sep 01, 2023 07:00:00 AM","Sep 01, 2023 01:30:00 PM",,INV 2 offline with inlet pressure fault
-Briarwood,27825,"Sep 01, 2023 07:00:00 AM","Sep 06, 2023 02:00:00 PM",,INV A.08 - Offline (33 - Floating capacitor pre-charge relay fault)
-Bartow,27829,"Sep 01, 2023 07:00:00 AM","Sep 01, 2023 02:41:00 PM","Sep 06, 2023 12:23:00 PM",INV 1D-4 offline (Bus differential high)
-"Franklin Solar, LLC",27787,"Sep 01, 2023 07:35:00 AM","Sep 01, 2023 10:46:00 AM","Sep 01, 2023 10:46:00 AM",Franklin - Leyline UAV Inspection
-,27185,"Sep 01, 2023 08:16:00 AM","Sep 01, 2023 05:00:00 PM",,EA-802 Zero Turn Maintenance by Hour Reading
-,27691,"Sep 01, 2023 08:17:00 AM",,,Landscaping West vegetative equipment hour meter reading entry
-Bighorn,28099,"Sep 01, 2023 08:42:00 AM",,,Install sign at gate
-Brush Creek,28101,"Sep 01, 2023 08:44:00 AM",,,Install sign at gate
-Drift Creek,28102,"Sep 01, 2023 08:45:00 AM",,,Install sign at gate
-Minke,28103,"Sep 01, 2023 08:47:00 AM",,,Install sign at gate
-Pika,28104,"Sep 01, 2023 08:48:00 AM",,,Install sign at gate
-Bartow,27831,"Sep 01, 2023 09:00:00 AM","Sep 19, 2023 04:05:00 PM","Sep 20, 2023 09:29:00 AM",INV 1A-8 clipping at 41 kW (external fan error)
-Sonne Two,27820,"Sep 01, 2023 09:18:00 AM","Sep 15, 2023 11:29:00 AM",,Sonne Two - 21qty Combiners - Underperforming 5-50%/ea
-Cedar Grove Property,27889,"Sep 01, 2023 09:29:00 AM","Sep 29, 2023 07:50:00 AM",,Cedar Grove - September Sheep Tasks
-Walgreens - Warrenton,27709,"Sep 01, 2023 10:20:00 AM",,,"Walgreens - Warrenton - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Walgreens - Wilsonville,27710,"Sep 01, 2023 10:20:00 AM",,,"Walgreens - Wilsonville - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Kohl's Beaverton,27571,"Sep 01, 2023 10:21:00 AM","Sep 12, 2023 06:24:00 PM",,"Kohl's Beaverton - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Providence Health Newberg,27573,"Sep 01, 2023 10:21:00 AM",,,"Providence Health Newberg - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Albertson,27824,"Sep 01, 2023 10:30:00 AM","Sep 01, 2023 03:40:00 PM","Sep 04, 2023 11:07:00 AM",INV 2 offline with GFDI tripped 
-,27450,"Sep 01, 2023 11:34:00 AM","Sep 26, 2023 02:08:00 PM",,Monthly CB check
-,27826,"Sep 01, 2023 01:14:00 PM","Sep 01, 2023 03:00:00 PM",,"RTV general servicing (replace tires, check general operation, ect). "
-Langley,27828,"Sep 01, 2023 01:36:00 PM",,,combiner 5.6 offline
-Adams,27897,"Sep 01, 2023 01:40:00 PM",,,INV 1-6 (No Comms) - PE Daily Production Confirmation (Meter Compairson)
-Bartow,27830,"Sep 01, 2023 01:45:00 PM","Sep 01, 2023 02:41:00 PM","Sep 06, 2023 12:28:00 PM",INV 1C-7 offline
-Multnomah - JBY Facility,27570,"Sep 01, 2023 02:22:00 PM","Sep 19, 2023 01:25:00 PM",,"Multnomah - JBY Facility - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Adams,27841,"Sep 01, 2023 02:30:00 PM","Sep 14, 2023 08:20:00 AM",,INV 10 offline (bus imbalance)
-Bartow,27838,"Sep 01, 2023 02:45:00 PM","Sep 06, 2023 03:08:00 PM",,INV 1C-6 offline (grid phase voltage out of range)
-Bartow,27839,"Sep 01, 2023 02:45:00 PM","Sep 06, 2023 03:08:00 PM",,INV 2D-3 offline (grid phase voltage out of range)
-Bartow,27840,"Sep 01, 2023 02:45:00 PM","Sep 06, 2023 03:08:00 PM",,INV 3C-4 offline (grid phase voltage out of range)
-NC 102,27834,"Sep 01, 2023 03:00:00 PM","Sep 02, 2023 11:00:00 AM",,Inv 25 faulted and not producing.  Communication Fault codes 
-Anderson,27836,"Sep 01, 2023 03:00:00 PM","Sep 06, 2023 10:17:00 AM",,INV 10 oiffline with bus differential high fault
-Facile Solar,27833,"Sep 01, 2023 03:06:00 PM",,,"UAV Follow Up @ Facile: 2 Failed Modules, 20 Damaged Modules"
-Cottonwood,27843,"Sep 01, 2023 03:55:00 PM","Sep 01, 2023 05:45:00 PM",,Site offline (transfer trip)
-Agate Bay,27835,"Sep 01, 2023 04:04:00 PM",,,"Agate Bay - Combiners 1.03, 2.10 and 3.14 - Underperforming 10-15%/ea"
-Weaver,27842,"Sep 01, 2023 04:45:00 PM",,,INVs 9-16 offline (islanding)
-Lakeview,27849,"Sep 01, 2023 08:51:00 PM","Sep 02, 2023 08:35:00 AM",,Site offline
-Chiloquin,27851,"Sep 01, 2023 10:15:00 PM","Sep 02, 2023 08:35:00 AM",,Site offline
-Merrill,27850,"Sep 02, 2023 01:07:00 AM","Sep 02, 2023 08:36:00 AM",,Site offline
-Turkey Hill,27852,"Sep 02, 2023 01:07:00 AM","Sep 02, 2023 08:39:00 AM",,Site offline
-Soluga IV,27846,"Sep 02, 2023 06:30:00 AM","Sep 02, 2023 09:00:00 AM",,INV 2 offline
-Soluga IV,27847,"Sep 02, 2023 06:30:00 AM","Sep 02, 2023 09:00:00 AM",,INV 4 offline
-Sadiebrook,27848,"Sep 02, 2023 06:30:00 AM","Sep 02, 2023 10:00:00 AM",,INV 3 offline
-Adams,27882,"Sep 02, 2023 07:00:00 AM","Sep 14, 2023 09:02:00 AM",,INV 16 offline (Open loop self detection failure)
-Starvation Solar I,27853,"Sep 02, 2023 11:15:00 AM","Sep 05, 2023 04:30:00 PM",,INV 5 offline
-,27885,"Sep 02, 2023 12:00:00 PM",,"Sep 06, 2023 03:34:00 PM",Repair tractor - drop tank for fuel issue
-Woodline,27911,"Sep 02, 2023 02:45:00 PM","Sep 06, 2023 11:30:00 AM",,Inverter 1 Offline
-"Kaiser Creek Solar, LLC",27856,"Sep 02, 2023 06:30:00 PM","Sep 20, 2023 03:00:00 PM",,Trackers stalled and not reachable
-Collier,27855,"Sep 02, 2023 06:45:00 PM","Sep 02, 2023 10:00:00 PM",,INV 3 offline
-Chiloquin,27883,"Sep 02, 2023 07:00:00 PM",,,INV 10.12 not communicating
-Brush Creek,27860,"Sep 02, 2023 10:45:00 PM","Sep 03, 2023 04:35:00 PM",,Site offline
-Drift Creek,27861,"Sep 02, 2023 10:45:00 PM","Sep 03, 2023 03:54:00 PM",,Site offline
-"Carnes Creek Solar, LLC",27859,"Sep 02, 2023 11:05:00 PM","Sep 03, 2023 03:55:00 PM",,Site offline (Modem is not communicating)
-Gauss,27858,"Sep 03, 2023 09:11:00 AM","Sep 03, 2023 10:58:00 AM",,Site offline (transfer trip)
-Sheep,27864,"Sep 03, 2023 12:30:00 PM","Sep 06, 2023 06:14:00 PM",,Site not communicating
-Chiloquin,27884,"Sep 03, 2023 01:30:00 PM","Sep 19, 2023 02:06:00 PM",,"INVs 7.5, 8.1, 8.2, 8.4, 8.6, 8.8, 8.10, 8.12, 8.14, 9.1, 9.3, 9.5, 9.7, 9.9, 9.11, 9.13, 10.1, 10.2, 10.4, 10.6, 10.8, 10.10, 10.14, 11.1, 11.3, 11.5, 11.7, 11.9, 11.11, and 11.13 are not communicating (related to TGWs 7 & 8)"
-Quarter Horse,27896,"Sep 03, 2023 02:30:00 PM","Sep 29, 2023 12:30:00 PM","Sep 29, 2023 03:35:00 PM",INV A1-05 offline 
-Pamlico,27886,"Sep 03, 2023 02:45:00 PM","Sep 05, 2023 10:00:00 AM","Sep 05, 2023 11:23:00 AM",INV 1 is not communicating
-Tiburon,27862,"Sep 03, 2023 05:07:00 PM","Sep 03, 2023 05:25:00 PM",,Site oflfine
-Gauss,27863,"Sep 03, 2023 05:45:00 PM","Sep 03, 2023 10:15:00 PM",,Site offline (transfer trip)
-Cottonwood,27881,"Sep 04, 2023 02:00:00 AM","Sep 04, 2023 10:00:00 AM",,Site offline (transfer trip)
-ASPP2,27901,"Sep 04, 2023 06:00:00 AM","Sep 05, 2023 03:00:00 PM",,Site is offline (not communicating)
-,27865,"Sep 04, 2023 07:47:00 AM","Sep 05, 2023 12:58:00 PM","Sep 06, 2023 07:46:00 AM",Landscaping East vegetative equipment hour meter reading entry
-Penny Hill,27698,"Sep 04, 2023 08:00:00 AM",,"Sep 28, 2023 01:18:00 PM","Penny Hill - Annual Inspection
+Sadiebrook,28412,"Oct 01, 2023 08:00:00 AM","Oct 17, 2023 10:14:00 AM","Oct 17, 2023 02:57:00 PM",CB 3.14 (3.02 in the DAS) offline
+Princeton,28350,"Oct 01, 2023 08:30:00 AM","Oct 02, 2023 03:00:00 PM",,INV 1 - Offline (Ground Fault [GF])
+NC Solar I,28056,"Oct 02, 2023 07:00:00 AM","Oct 17, 2023 11:00:00 AM",,NC Solar I - NESM/Radian Semi-Annual Inspection
+,28189,"Oct 02, 2023 07:00:00 AM",,,EA-816 Altoz TRX766i Hourly Maintenance Schedule
+,28190,"Oct 02, 2023 07:00:00 AM",,"Oct 06, 2023 04:21:00 PM",EA-703 MX5800 Tractor Hourly Maintenance
+,28316,"Oct 02, 2023 07:00:00 AM",,"Oct 02, 2023 04:00:00 PM",Vehicle Quarterly Inspection - VEH-308
+,28322,"Oct 02, 2023 07:00:00 AM",,"Oct 02, 2023 04:00:00 PM",Vehicle Quarterly Inspection - VEH-110
+,28335,"Oct 02, 2023 07:00:00 AM",,"Oct 20, 2023 01:39:00 PM","Truck #307 - State Inspection 
+VIN 1FD8X3HN7NEC01724"
+,28336,"Oct 02, 2023 07:00:00 AM",,"Oct 03, 2023 01:36:00 PM",Vehicle Quarterly Inspection - VEH-307
+,28346,"Oct 02, 2023 07:00:00 AM","Oct 02, 2023 10:00:00 AM","Oct 02, 2023 02:00:00 PM",Vehicle Quarterly Inspection - VEH-007
+,28348,"Oct 02, 2023 07:00:00 AM",,"Oct 02, 2023 03:57:00 PM",Vehicle Quarterly Inspection - VEH-112
+,28369,"Oct 02, 2023 07:00:00 AM",,"Oct 02, 2023 04:00:00 PM",Truck 110-Oil Change 
+Wingo Park,27789,"Oct 02, 2023 07:15:00 AM","Oct 02, 2023 03:42:00 PM","Oct 02, 2023 04:00:00 PM",Wingo Park - Contec UAV Inspection
+Four Oaks,28304,"Oct 02, 2023 07:53:00 AM","Oct 25, 2023 03:00:00 PM",,"Mow/graze, spot spray as needed"
+Bartow,27971,"Oct 02, 2023 08:00:00 AM","Oct 19, 2023 04:40:00 PM","Oct 24, 2023 08:32:00 AM","Bartow - Alchemy Annual Inspection
 See Files tab for a list of which 25% of equipment to inspect for each inspection."
-Meeks,27699,"Sep 04, 2023 08:00:00 AM",,"Sep 29, 2023 03:28:00 PM","Meeks - Alchemy Annual Inspection
+Schell,28065,"Oct 02, 2023 08:00:00 AM",,"Oct 24, 2023 11:42:00 AM",Schell - NESM/Exus Annual Inspection
+,28355,"Oct 02, 2023 08:00:00 AM","Oct 06, 2023 05:00:00 PM",,NCEMC Project Engineering
+Woodsdale,28459,"Oct 02, 2023 08:04:00 AM","Oct 09, 2023 07:43:00 AM",,"Mow/graze, spot spray as needed"
+Faison,28406,"Oct 02, 2023 08:05:00 AM","Oct 03, 2023 02:00:00 PM",,Review Spark Solar's string repair work. 
+PCSP 3,28384,"Oct 02, 2023 09:59:00 AM","Oct 17, 2023 11:44:00 AM",,INV A - Intermittent Offline
+Cottonwood,28382,"Oct 02, 2023 10:00:00 AM","Oct 02, 2023 10:43:00 AM",,Site offline due to transfer trip
+Adams Neilson,28374,"Oct 02, 2023 10:09:00 AM",,,"NTE 16
+Investigate Intermittent Comms on pad 1.2
+Inverter 2.11 has had no comms after the RMA swap"
+Adams Neilson,28375,"Oct 02, 2023 10:11:00 AM",,,"NTE #17
+Re-Energize XFMR 17
+"
+Adams Neilson,28377,"Oct 02, 2023 10:12:00 AM",,,"NTE 18
+Testing of pad 7 meter and Comms"
+Cedar Grove Property,28376,"Oct 02, 2023 10:13:00 AM",,,Sheep Tasks - October 2023
+Starvation Ridge Collector Station,28378,"Oct 02, 2023 11:00:00 AM","Nov 04, 2023 05:00:00 PM",,"Data Surge - Starvation (SIM suspended for overuse, No Comms) and Best Lane Collectors (doubled normal monthly use)"
+Starvation Solar I,28380,"Oct 02, 2023 11:00:00 AM",,,Starvation - Site - No Comms
+Briarwood,28379,"Oct 02, 2023 11:30:00 AM","Oct 03, 2023 08:55:00 AM",,INV 6 - Offline (010 - AC Power Failure)
+Best Lane Collector Station,28381,"Oct 02, 2023 12:20:00 PM","Oct 02, 2023 05:00:00 PM",,Best Lane Collector (+ Solar Sites) - No Comms
+Walgreens - Salem - 124 Lancaster,27324,"Oct 02, 2023 03:00:00 PM","Oct 03, 2023 02:00:00 PM",,"Walgreens - Salem - 124 Lancaster - Omnidian Annual Inspection
 
-See Files tab for a list of which 25% of equipment to inspect for each inspection."
-"Fruitland Creek Solar, LLC",27317,"Sep 04, 2023 10:00:00 AM","Aug 09, 2023 01:28:00 PM",,Fruitland Creek - hep Petra Semi-Annual Inspection
-Walgreens - Cornelius,27328,"Sep 04, 2023 10:00:00 AM","Sep 13, 2023 02:58:00 PM",,"Walgreens - Cornelius - Omnidian Annual Inspection
+Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT NOT included.
+
+Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
+Walgreens - Salem - 1992 Lancaster,27325,"Oct 02, 2023 03:00:00 PM","Oct 03, 2023 05:00:00 PM",,"Walgreens - Salem - 1992 Lancaster - Omnidian Annual Inspection
 
 Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
 
 Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Walgreens - Hillsboro,27330,"Sep 04, 2023 10:00:00 AM","Sep 13, 2023 05:26:00 PM",,"Walgreens - Hillsboro - Omnidian Annual Inspection
+Brush Creek,27979,"Oct 02, 2023 03:00:00 PM","Oct 26, 2023 02:00:00 PM",,Brush Creek - Pine Gate Renewables Semi Annual Inspection
+Bighorn,27980,"Oct 02, 2023 03:00:00 PM","Oct 25, 2023 03:52:00 PM",,Bighorn - Pine Gate Renewables Annual Inspection
+Turkey Hill,28186,"Oct 02, 2023 03:00:00 PM","Oct 05, 2023 03:45:00 PM",,Turkey Hill - NESM/Exus Annual Inspection
+,28371,"Oct 02, 2023 03:00:00 PM",,"Oct 02, 2023 03:20:00 PM","Inspection ""Fail"": Check Turn Signals and Headlights Follow on work order for ""WO 28348"" (triggered by SM1899) for VEH-112 by jtwilliams.
+Technician notes: Broken headlight"
+Agate Bay,28383,"Oct 03, 2023 02:12:00 AM","Oct 03, 2023 08:48:00 AM",,Agate Bay - Site - Offline
+,28352,"Oct 03, 2023 07:00:00 AM",,,Landscaping East vegetative equipment hour meter reading entry
+,28359,"Oct 03, 2023 07:00:00 AM",,"Oct 03, 2023 01:36:00 PM",Landscaping South vegetative equipment hour meter reading entry
+Gold Mine,28063,"Oct 03, 2023 07:07:00 AM","Oct 05, 2023 11:57:00 AM",,Gold Mine - Soltage Annual (+Triannual) Inspection
+Woodline,27983,"Oct 03, 2023 10:00:00 AM","Oct 06, 2023 03:40:00 PM",,Woodline - Pine Gate Renewables Semi Annual Inspection
+Progress Energy - Sutton,28385,"Oct 03, 2023 10:00:00 AM",,"Oct 20, 2023 09:03:00 AM","Mow array and buffer, spot spray as needed
+-Photos BEFORE and AFTER- to include but limited to in-between the arrays, perimeter, around combiners and inverter pads, etc."
+Dayton Cutoff,28392,"Oct 03, 2023 10:00:00 AM",,,Dayton Cutoff - Site - Offline
+,27230,"Oct 03, 2023 11:01:00 AM",,,Ford Escape #006 - State Inspection - TBD / VIN 1FMCU9GD3KUB84839
+Monroe Moore,28411,"Oct 03, 2023 11:37:00 AM",,,Monroe Moore CB C2.02 underperforming
+South Robeson,28389,"Oct 03, 2023 12:15:00 PM",,,INV D.2 offline - not reporting any faults in DAS or Webbox
+Lane,28397,"Oct 03, 2023 01:15:00 PM","Oct 09, 2023 01:15:00 PM","Oct 10, 2023 07:34:00 AM",Lane - CB 5.4 - Offline
+,28388,"Oct 03, 2023 02:00:00 PM",,"Oct 06, 2023 06:23:00 AM",Altoz Zero -Turn Replace front bearing
+"Linkville Solar, LLC",28390,"Oct 03, 2023 03:00:00 PM","Oct 03, 2023 04:40:00 PM",,Take photos of interconnection point
+Walgreens - Salem - 124 Lancaster,28476,"Oct 03, 2023 03:00:00 PM",,,Replace rusty AC fuses
+Merrill,28393,"Oct 03, 2023 07:58:00 PM",,,Investigate Merrill Combiner Underperformance
+Valley Creek,25623,"Oct 04, 2023 12:02:00 AM",,,"Herbicide Application: Array, fenceline, and all pads."
+Davis Lane,28395,"Oct 04, 2023 09:55:00 AM","Oct 05, 2023 03:22:00 PM","Oct 05, 2023 03:32:00 PM",Davis Lane - INV 3 - Offline (6422 -Unspecified HW fault (HW)
+Bartow,28400,"Oct 04, 2023 11:32:00 AM","Oct 04, 2023 01:30:00 PM",,Bartow - Site - Offline
+NC Solar I,28398,"Oct 04, 2023 12:13:00 PM",,,"UAV Follow Up @ NC Solar 1: 3 Combiner Boxes Offline, 51 String Anomalies, 70 Damaged Modules, 78 Failed Modules"
+Lakeview,28401,"Oct 04, 2023 01:25:00 PM","Oct 04, 2023 02:00:00 PM",,Lakeview - Site - Offline
+Valley Creek,28403,"Oct 04, 2023 02:00:00 PM","Oct 05, 2023 03:00:00 PM",,Valley Creek - Mow array and buffer
+Tumbleweed,28410,"Oct 04, 2023 02:30:00 PM",,,Block 3 AC Panels - Breaker Trip - (Duplicate)
+,28402,"Oct 04, 2023 03:19:00 PM",,,Serpentine belt requires replacement
+Tumbleweed,28413,"Oct 04, 2023 05:30:00 PM",,,Block 4 AC Panels - Synchronized AC Breaker Trips
+Ridgeback,28408,"Oct 05, 2023 01:37:00 AM","Oct 05, 2023 08:45:00 AM",,Ridgeback - Site - Offline
+Davis Lane,28363,"Oct 05, 2023 07:00:00 AM","Oct 13, 2023 03:10:00 PM","Oct 13, 2023 04:35:00 PM",Davis Lane - Semi-Annual Inspection
+Wingo Park,28409,"Oct 05, 2023 10:00:00 AM",,,"UAV Follow Up @ Wingo Park: Roughly 5 Strings Offline in Ground Array, 4 Failed Modules on the roof."
+Valley Creek,28069,"Oct 05, 2023 10:42:00 AM","Oct 02, 2023 04:56:00 PM",,Valley Creek - Pine Gate Renewables Semi-Annual Inspection
+Garner Solar,28417,"Oct 05, 2023 01:15:00 PM","Oct 18, 2023 04:00:00 PM",,CBC - Phase 1 & 2 - No Comms
+,28415,"Oct 05, 2023 02:09:00 PM","Oct 10, 2023 02:57:00 PM","Oct 10, 2023 02:57:00 PM",Order 20A midget fuses
+NC Solar I,28599,"Oct 05, 2023 03:30:00 PM","Oct 19, 2023 03:50:00 PM","Oct 20, 2023 04:00:00 PM",INV 1B (1A in the DAS) intermittently offline
+Cottonwood,28423,"Oct 05, 2023 05:30:00 PM","Oct 05, 2023 08:15:00 PM",,Site offline due to transfer trip
+Quarter Horse,28177,"Oct 06, 2023 07:00:00 AM","Oct 06, 2023 04:05:00 PM","Oct 09, 2023 07:29:00 AM",Quarter Horse - Pine Gate Renewables Semi Annual Inspection
+,28422,"Oct 06, 2023 07:00:00 AM",,"Oct 06, 2023 04:00:00 PM",Truck 307-Oil Change
+Little River,28281,"Oct 06, 2023 08:23:00 AM","Oct 17, 2023 03:25:00 PM",,Perform clean vs dirty I/V curve tests at this site.
+Chiloquin,27814,"Oct 06, 2023 11:32:00 AM","Oct 04, 2023 06:26:00 PM",,Chiloquin - NESM/Exus UAV Inspection
+Chiloquin,28426,"Oct 06, 2023 11:38:00 AM",,,"UAV Follow Up @ Chiloquin: 4 String Inverters Offline, 24 String Anomalies, 2 Strings with Electrical Damage, 1 Damaged Module"
+NC Solar II,28427,"Oct 06, 2023 01:45:00 PM",,,"UAV Follow Up @ NC Solar II: 10 String Anomalies, 5 Damaged Modules, 10 Failed Modules"
+Jersey Solar,28428,"Oct 06, 2023 03:11:00 PM",,,Mow ditch area not included in VM scope - see files tab
+Rose Acre Solar Energy Storage,28276,"Oct 06, 2023 05:00:00 PM","Oct 09, 2023 12:54:00 PM","Oct 09, 2023 12:55:00 PM",Mow array and spot spray as needed
+Four Oaks,28429,"Oct 07, 2023 08:00:00 AM","Oct 09, 2023 01:02:00 PM",,INV 2 offline with pump control fault
+Freemont,28433,"Oct 07, 2023 02:30:00 PM","Oct 09, 2023 10:47:00 AM",,INV C under performance - multiple combiners offline
+Chiloquin,28474,"Oct 07, 2023 04:15:00 PM",,,INV 10.03 offline (islanding)
+Cottonwood,28430,"Oct 07, 2023 06:15:00 PM","Oct 08, 2023 09:00:00 AM",,Site offline due to transfer trip
+Amethyst,28431,"Oct 08, 2023 08:00:00 AM","Oct 08, 2023 01:07:00 PM",,INV 1 offline with inlet pressure fault
+Sophie,28432,"Oct 08, 2023 08:00:00 AM","Oct 08, 2023 02:16:00 PM",,INV 3 offline with inlet pressure fault
+Bartow,28437,"Oct 08, 2023 09:15:00 AM","Oct 08, 2023 12:30:00 PM",,Site offline with recloser open
+Starvation Solar I,28438,"Oct 08, 2023 01:45:00 PM","Oct 24, 2023 05:30:00 PM",,Starvation INV 6 offline
+Lakeview,28461,"Oct 08, 2023 09:00:00 PM","Oct 09, 2023 10:15:00 AM",,Lakeview offline with recloser open
+,28419,"Oct 09, 2023 07:00:00 AM",,,"Full service of fluids, filters and blades on Tractor EA 707"
+,28420,"Oct 09, 2023 07:00:00 AM",,"Oct 09, 2023 12:06:00 PM",Full inspection and service
+,28421,"Oct 09, 2023 07:00:00 AM","Oct 09, 2023 11:00:00 AM","Oct 09, 2023 12:05:00 PM"," Full service of fluids, filters and blades on Zero Turn EA 808"
+Locust Grove,28183,"Oct 09, 2023 07:09:00 AM","Oct 09, 2023 12:52:00 PM",,Locust Grove - Contec Semi-Annual Inspection
+Milo,28466,"Oct 09, 2023 07:15:00 AM","Oct 10, 2023 09:30:00 AM",,INV 2 low pressure warning
+Davis Lane,27796,"Oct 09, 2023 07:35:00 AM","Oct 09, 2023 02:00:00 PM","Oct 09, 2023 02:00:00 PM",Davis Lane - NESM/Exus UAV Inspection
+,28440,"Oct 09, 2023 07:45:00 AM",,"Oct 18, 2023 04:24:00 PM",Landscaping East vegetative equipment hour meter reading entry
+Wingo Park,28182,"Oct 09, 2023 08:00:00 AM","Oct 13, 2023 02:31:00 PM",,Wingo Park - Contec Annual Inspection
+,28445,"Oct 09, 2023 08:00:00 AM","Oct 09, 2023 12:00:00 PM","Oct 09, 2023 12:04:00 PM",Landscaping South vegetative equipment hour meter reading entry
+,28471,"Oct 09, 2023 08:00:00 AM",,"Oct 10, 2023 09:06:00 AM",Send Darius's computer and phone w/ accessories
+Nitro,28405,"Oct 09, 2023 08:08:00 AM",,,"Mow/graze, spot spray as needed"
+,28351,"Oct 09, 2023 08:19:00 AM","Oct 10, 2023 03:30:00 PM",,EA-802 Zero Turn Maintenance by Hour Reading
+,28441,"Oct 09, 2023 08:20:00 AM",,,Landscaping West vegetative equipment hour meter reading entry
+,28034,"Oct 09, 2023 08:25:00 AM",,,EA-814 Zero Turn Maintenance by Hour Reading
+Four Oaks,28443,"Oct 09, 2023 08:26:00 AM",,,Four Oaks - NESM/Radian Annual Inspection
+Gastonia Solar,28460,"Oct 09, 2023 08:55:00 AM","Oct 19, 2023 09:42:00 AM",,Replace AC breaker for Pod 2.02.
+,28434,"Oct 09, 2023 09:35:00 AM","Oct 09, 2023 11:54:00 AM",,Truck 308-Oil Change
+Adams Neilson,28465,"Oct 09, 2023 10:39:00 AM",,,"WO 1179494 - Inv 1.5.1 - Conduct RMA Swap
+WO 1179498 - Troubleshoot Inv 1.6.13 - faulted offline
+WO 1179546 - Inv 1.4.20 - Conduct RMA Swap
+WO 1179493 - Inv 1.8.18 - Replace Breaker(tripped after reset)
+"
+Merrill,28070,"Oct 09, 2023 11:00:00 AM","Oct 11, 2023 01:40:00 PM",,Merrill - NESM/Exus Semi-Annual Inspection
+Gastonia Solar,28467,"Oct 09, 2023 11:46:00 AM","Oct 19, 2023 11:04:00 AM",,Inv 2.08.20 - underperforming ~6kW 
+Gastonia Solar,28468,"Oct 09, 2023 11:50:00 AM","Oct 30, 2023 12:40:00 PM",,Inv 2.09.23 - Briefly offline on 10/06 in AM and underperformance 
+,28436,"Oct 09, 2023 11:54:00 AM","Oct 09, 2023 01:49:00 PM","Oct 18, 2023 04:22:00 PM",Zero Turn 816-Pressure clean
+Bartow,28469,"Oct 09, 2023 12:00:00 PM","Oct 09, 2023 01:00:00 PM",,Site offline with recloser open
+Bartow,28424,"Oct 09, 2023 12:26:00 PM","Oct 13, 2023 05:00:00 PM",,Bartow - Weekly Utility Curtailment Tracking (10/07-10/13)
+Manning,28414,"Oct 09, 2023 12:52:00 PM","Oct 10, 2023 12:15:00 PM",,Perform clean vs dirty I/V curve tests at this site.
+Woodsdale,28472,"Oct 09, 2023 01:15:00 PM","Oct 14, 2023 02:00:00 PM",,Woodsdale - Site - Offline (Utility switching)
+Bartow,28568,"Oct 09, 2023 01:15:00 PM","Oct 25, 2023 11:55:00 AM","Oct 25, 2023 12:10:00 PM",INV 1D.6 offline (Bus differential high)
+Woodsdale,28470,"Oct 09, 2023 01:47:00 PM","Oct 09, 2023 01:48:00 PM",,Bill for SPDs purchased on WO25747
+Dayton Cutoff,28066,"Oct 09, 2023 03:00:00 PM","Oct 24, 2023 04:30:00 PM",,Dayton Cutoff - Pine Gate Renewables Annual Inspection
+Mill Creek,28068,"Oct 09, 2023 03:00:00 PM","Oct 23, 2023 02:24:00 PM",,Mill Creek - Pine Gate Renewables Semi-Annual Inspection
+Colton,28475,"Oct 09, 2023 03:00:00 PM",,,Colton site vandalism
+Bighorn,28477,"Oct 09, 2023 03:00:00 PM","Oct 10, 2023 11:56:00 AM",,Bighorn - Mow array and buffer
+,28444,"Oct 09, 2023 04:20:00 PM",,,CSS Campus - Routine Maintenance
+Adams,28473,"Oct 09, 2023 04:40:00 PM","Oct 11, 2023 10:27:00 AM",,INV 10 offline (Internal Communicate Failed)
+,28479,"Oct 10, 2023 07:09:00 AM",,,Tractor w/ Flail Mower - Transmission fluid leak
+Four Oaks,27786,"Oct 10, 2023 08:00:00 AM",,"Oct 10, 2023 12:00:00 PM",Four Oaks - NESM/Radian UAV Inspection
+Weaver,27905,"Oct 10, 2023 08:00:00 AM","Oct 10, 2023 04:00:00 PM","Oct 11, 2023 05:13:00 PM",Mow array and spot spray as needed
+Nitro,28328,"Oct 10, 2023 08:00:00 AM","Oct 10, 2023 12:00:00 PM","Oct 10, 2023 12:00:00 PM",Nitro - NESM/Radian UAV Inspection
+Cottonwood,28480,"Oct 10, 2023 08:45:00 AM","Oct 10, 2023 11:16:00 AM",,Cottonwood - Site - Offline
+Pamlico,28368,"Oct 10, 2023 08:48:00 AM","Oct 10, 2023 01:58:00 PM","Oct 10, 2023 02:10:00 PM",Mow array and spot spray as needed
+Davis Lane,28481,"Oct 10, 2023 09:00:00 AM","Oct 10, 2023 04:19:00 PM","Oct 10, 2023 04:29:00 PM",Site offline / not communicating following utility outage
+Riley Solar I,28483,"Oct 10, 2023 10:10:00 AM","Oct 10, 2023 07:05:00 PM",,INVs 5 & 6 offline (DC Overvoltage)
+"Fruitland Creek Solar, LLC",28482,"Oct 10, 2023 10:30:00 AM",,,Fruitland Creek INV 3 offline
+Silverton,27982,"Oct 10, 2023 12:05:00 PM","Oct 10, 2023 04:00:00 PM",,Silverton - Pine Gate Renewables Annual Inspection
+,28329,"Oct 10, 2023 12:13:00 PM",,,Vehicle Quarterly Inspection - VEH-006
+Sonne Two,28484,"Oct 10, 2023 01:58:00 PM",,,"UAV Follow Up @ Sonne II: 16 String Anomalies, 2 Modules Electrically Damaged"
+,28499,"Oct 11, 2023 07:42:00 AM","Oct 11, 2023 12:08:00 PM","Oct 25, 2023 07:38:00 AM",Trailer wiring Harness repair
+Bani,27933,"Oct 11, 2023 08:00:00 AM","Oct 11, 2023 03:00:00 PM","Oct 11, 2023 05:15:00 PM",Mow array and spot spray as needed
+Davis Lane,28394,"Oct 11, 2023 08:00:00 AM","Oct 11, 2023 12:53:00 PM","Oct 11, 2023 04:33:00 PM",Mow array and spot spray as needed
+"Cosper Creek Solar, LLC",28494,"Oct 11, 2023 08:00:00 AM","Oct 11, 2023 04:28:00 PM",,Cosper Creek - Site Spray
+"Franklin Solar, LLC",28490,"Oct 11, 2023 08:27:00 AM","Oct 26, 2023 11:00:00 AM",,CB 2.14 has a failed contactor in the inverter.
+Gastonia Solar,28491,"Oct 11, 2023 08:51:00 AM","Oct 30, 2023 10:00:00 AM",,"Inv 1.09.23 underperformance. Resolve possible string performance issues, inter-row shading and/or tracker issues."
+Brightwood,28492,"Oct 11, 2023 10:00:00 AM","Oct 11, 2023 10:00:00 AM",,PGR Request: SEL 751 Settings .rdb and Events .cev pull
+,28435,"Oct 11, 2023 11:08:00 AM","Oct 11, 2023 01:47:00 PM","Oct 18, 2023 04:23:00 PM",Tractor 703 -Pressure clean
+Minke,28513,"Oct 11, 2023 12:00:00 PM",,,RMA of 32 Gamechange Nodes
+"Fruitland Creek Solar, LLC",28451,"Oct 11, 2023 12:32:00 PM","Oct 11, 2023 04:43:00 PM",,Fruitland Creek - hep Petra Annual Inspection
+Davis Lane,28496,"Oct 11, 2023 03:00:00 PM","Oct 13, 2023 03:10:00 PM","Oct 13, 2023 04:10:00 PM","UAV Follow Up @ Davis Lane: 3 Damaged Modules, 2 Failed Modules"
+Valley Creek,28529,"Oct 11, 2023 03:00:00 PM",,,"Herbicide Application: Array, fenceline, and all pads."
+Red Oak,28498,"Oct 11, 2023 03:40:00 PM","Oct 12, 2023 09:30:00 AM","Oct 13, 2023 11:47:00 AM",Red Oak INV C1 not communicating after site outage
+Gauss,28506,"Oct 11, 2023 11:00:00 PM","Oct 12, 2023 10:10:00 AM",,Site offline due to transfer trip
+Adams,28501,"Oct 12, 2023 07:41:00 AM",,,Track Adams Inv 10 RMA
+Schell,27921,"Oct 12, 2023 08:00:00 AM","Oct 17, 2023 04:50:00 PM","Oct 18, 2023 04:25:00 PM","Mow array and buffer, spot spray as needed"
+"Railroad Solar Farm, LLC",27976,"Oct 12, 2023 08:00:00 AM","Oct 18, 2023 04:25:00 PM","Oct 18, 2023 04:28:00 PM",Mow array and spot spray as needed
+Gold Mine,28502,"Oct 12, 2023 08:38:00 AM",,,2023 Q4 Punchlist Repairs
+Augusta,28503,"Oct 12, 2023 08:42:00 AM",,,2023 Q3 Punchlist Repairs
+Collier,28507,"Oct 12, 2023 08:45:00 AM","Oct 12, 2023 11:31:00 AM",,Collier - Site - Offline (No Comms/Open Recloser after Grid Operation)
+,28324,"Oct 12, 2023 09:00:00 AM",,,Vehicle Quarterly Inspection - VEH-008
+,28504,"Oct 12, 2023 09:18:00 AM",,,Oil Change
+,28347,"Oct 12, 2023 09:22:00 AM",,,Vehicle Quarterly Inspection - VEH-111
+Garner Solar,28537,"Oct 12, 2023 10:30:00 AM","Oct 18, 2023 04:00:00 PM",,Garner Production Confirmation Tracking
+Ridgeback,28508,"Oct 12, 2023 11:37:00 AM",,,INV A2.2 - Intmt Late Startup (039 - Low insulation resistance)
+Minke,28531,"Oct 12, 2023 12:45:00 PM","Oct 19, 2023 05:15:00 PM",,INVs not communicating after site was re-energized
+Beaufort,28509,"Oct 12, 2023 01:22:00 PM",,"Oct 26, 2023 07:19:00 AM",Mow/trim switchgear area ahead of Annual Outage
+Four Oaks,28511,"Oct 12, 2023 01:45:00 PM",,,"UAV Follow Up @ Four Oaks: 6 String Anomalies, 23 Damaged Modules"
+,28525,"Oct 12, 2023 03:00:00 PM",,,Order Auxiliary Contactor ABB 2 each
+Connley Collector Station,28527,"Oct 12, 2023 03:02:00 PM",,,Pull new oil sample from GSU in December for further testing of CO2 levels. 
+NC Solar I,28528,"Oct 12, 2023 04:00:00 PM","Oct 17, 2023 09:00:00 AM","Oct 27, 2023 07:18:00 AM", XMFR 1 DGA Sample
+Chiloquin,28566,"Oct 12, 2023 04:00:00 PM","Oct 17, 2023 01:44:00 PM",,INV 5.01 offline and not communicating
+Gauss,28534,"Oct 13, 2023 06:15:00 AM","Oct 13, 2023 08:55:00 AM",,Site offline due to transfer trip
+Gastonia Solar,28462,"Oct 13, 2023 10:28:00 AM","Oct 19, 2023 11:41:00 AM",,Inv 2.11.26 underperformance and briefly offline. 
+Collier,28539,"Oct 13, 2023 12:00:00 PM","Oct 13, 2023 04:00:00 PM",,Collier INV 1 offline with unspecified hardware fault
+Nitro,28538,"Oct 13, 2023 02:00:00 PM",,,"UAV Follow Up @ Nitro: 4 String Anomalies, 5 Damaged Modules, 1 Failed Module"
+Brightwood,28185,"Oct 13, 2023 03:00:00 PM",,,Brightwood - Pine Gate Renewables Annual Inspection
+Bartow,28533,"Oct 14, 2023 08:00:00 AM","Oct 20, 2023 05:00:00 PM",,Bartow - Weekly Utility Curtailment Tracking (10/14-10/20)
+Anderson,28540,"Oct 14, 2023 11:05:00 AM","Oct 16, 2023 12:00:00 PM",,INV 15 offline (Bus (sum) Over Voltage (firmware) - Protect0090)
+Siler 421,28541,"Oct 14, 2023 12:50:00 PM","Oct 17, 2023 09:33:00 AM",,Cell modem is intermittently not communicating
+Minnie,28548,"Oct 14, 2023 09:20:00 PM","Nov 02, 2023 08:30:00 AM",,DAS is not communicating
+Cottonwood,28546,"Oct 15, 2023 01:36:00 AM","Oct 15, 2023 08:27:00 AM",,Site offline (transfer trip)
+Riley Solar I,28547,"Oct 15, 2023 10:30:00 AM","Oct 16, 2023 01:53:00 PM",,INV 7 offline
+Agate Bay,28567,"Oct 15, 2023 09:14:00 PM","Oct 16, 2023 09:16:00 AM",,Site offline
+Aulander,28448,"Oct 16, 2023 07:26:00 AM","Oct 23, 2023 12:27:00 PM",,"Aulander - Alchemy Semi-Annual Inspection
+See Files tab for a list of which 25% of equipment to inspect for each inspection.
+SECTION 3"
+,28549,"Oct 16, 2023 07:31:00 AM","Oct 16, 2023 10:50:00 AM","Oct 25, 2023 07:39:00 AM",Landscaping East vegetative equipment hour meter reading entry
+,28556,"Oct 16, 2023 07:32:00 AM",,"Oct 18, 2023 07:20:00 AM",Landscaping South vegetative equipment hour meter reading entry
+PCSP 1,28356,"Oct 16, 2023 07:40:00 AM","Oct 23, 2023 02:20:00 PM",,PCSP 1 - Carolina Solar Energy Annual Inspection
+NC Solar II,28354,"Oct 16, 2023 08:00:00 AM",,"Nov 01, 2023 10:30:00 AM",NC Solar II -NESM/Radian Semi-Annual Inspection
+PCSP 3,28357,"Oct 16, 2023 08:00:00 AM",,,PCSP 3 - Carolina Solar Energy Annual Inspection
+County Home,28360,"Oct 16, 2023 08:00:00 AM","Oct 26, 2023 12:52:00 PM",,County Home - NESM/Exus Semi Annual Inspection
+Samarcand,28564,"Oct 16, 2023 08:00:00 AM",,,Duke MOA Inspections Remediations 
+Newton Grove,28565,"Oct 16, 2023 08:00:00 AM",,,Duke MOA Inspections Remediations 
+Rose Acre Solar Energy Storage,27794,"Oct 16, 2023 08:13:00 AM","Oct 16, 2023 04:00:00 PM","Oct 16, 2023 04:00:00 PM",Rose Acre Solar Energy Storage - NCEMC UAV Inspection
+,28555,"Oct 16, 2023 09:23:00 AM",,,CSS Campus - Routine Maintenance
+,28545,"Oct 16, 2023 09:24:00 AM",,,CSS Campus monthly building inspection
+,28575,"Oct 16, 2023 10:00:00 AM","Oct 31, 2023 04:00:00 PM",,Sand Castle Solar PVsyst
+Walgreens - Sherwood,28570,"Oct 16, 2023 11:34:00 AM",,,Walgreens Sherwood Corrective Maintenance 
+Walgreens - Hillsboro,28571,"Oct 16, 2023 11:38:00 AM","Oct 17, 2023 04:47:00 PM",,Walgreens Hillsboro Corrective Maintenance 
+Minnie,28569,"Oct 16, 2023 12:00:00 PM","Nov 02, 2023 02:00:00 PM",,Site (No Comms) - PE Daily Production Confirmation (DEC call)
+,28619,"Oct 16, 2023 12:00:00 PM","Oct 17, 2023 09:20:00 AM","Oct 20, 2023 01:38:00 PM",Tractor to be pulled out of hole
+"Railroad Solar Farm, LLC",28572,"Oct 16, 2023 01:00:00 PM","Oct 17, 2023 12:20:00 PM","Oct 17, 2023 02:45:00 PM",INV 3A offline (ground fault)
+Merrill,28573,"Oct 16, 2023 01:03:00 PM","Oct 16, 2023 01:51:00 PM",,Site offline (utility trip & reclose)
+Lane,28587,"Oct 16, 2023 01:15:00 PM","Oct 20, 2023 12:00:00 PM","Oct 20, 2023 02:36:00 PM",CB 5.4 offline
+Sheep,27981,"Oct 16, 2023 03:38:00 PM","Oct 04, 2023 03:42:00 PM",,Sheep - Pine Gate Renewables Annual Inspection
+Drift Creek,27978,"Oct 16, 2023 03:50:00 PM","Oct 04, 2023 05:48:00 PM",,Drift Creek - Pine Gate Renewables Semi Annual Inspection
+Colton,27875,"Oct 16, 2023 03:54:00 PM","Oct 09, 2023 03:00:00 PM",,Colton - Pine Gate Renewables Semi-Annual Inspection
+Beaufort,27793,"Oct 16, 2023 03:59:00 PM","Oct 16, 2023 04:00:00 PM","Oct 16, 2023 04:00:00 PM",Beaufort - Capital Power UAV Inspection
+Minke,27877,"Oct 16, 2023 04:12:00 PM","Oct 12, 2023 05:55:00 PM",,Minke - Pine Gate Renewables Annual Inspection
+Chiloquin,28367,"Oct 16, 2023 04:34:00 PM",,,Chiloquin - NESM/Exus Annual Inspection
+Brightwood,28577,"Oct 16, 2023 08:20:00 PM","Oct 17, 2023 12:51:00 PM",,Site offline
+Brush Creek,28576,"Oct 17, 2023 08:36:00 AM",,,Remove and replace dead tress in veg buffer
+Gauss,28583,"Oct 17, 2023 08:55:00 AM","Oct 20, 2023 10:20:00 AM","Oct 20, 2023 02:28:00 PM",INV 1 is not communicating
+Bartow,28579,"Oct 17, 2023 11:47:00 AM","Oct 17, 2023 01:05:00 PM",,Site offline
+Collier,28584,"Oct 17, 2023 01:20:00 PM","Oct 17, 2023 03:32:00 PM",,INV 1 offline (Internal communication error)
+Gastonia Solar,28580,"Oct 17, 2023 01:23:00 PM","Oct 18, 2023 02:02:00 PM",,Escort animal control to remove aggressive dog on site. 
+Gastonia Solar,28581,"Oct 17, 2023 02:21:00 PM","Oct 19, 2023 01:40:00 PM",,Inv 1.06.16 - ~8kW underperformance 
+Gastonia Solar,28582,"Oct 17, 2023 02:25:00 PM",,,"Tracker repairs:
+
+INV 1.08.21 = stuck tracker (see attached).
+INV 2.12.30 = Tracker stowed flat. Return to full service.
+INV 1.04.10 = Tracker stowed flat. Return to full service.
+INV 1.04.11 = Tracker stuck partial East. Return to full service."
+Interstate,27878,"Oct 17, 2023 03:13:00 PM","Oct 10, 2023 06:32:00 PM",,Interstate - Pine Gate Renewables Semi-Annual Inspection
+Beaufort,28585,"Oct 17, 2023 03:46:00 PM","Oct 27, 2023 11:22:00 AM","Oct 27, 2023 11:32:00 AM",Mow site
+Rock Garden Collector Station,28586,"Oct 17, 2023 04:00:00 PM","Oct 23, 2023 03:11:00 PM",,DMZ interface on the site firewall is currently down
+Lakeview,28588,"Oct 17, 2023 05:53:00 PM","Oct 18, 2023 05:08:00 AM",,Lakeview not communicating
+Dairy,28016,"Oct 17, 2023 09:54:00 PM","Oct 17, 2023 01:20:00 PM",,Dairy - Mow array and buffer
+Anderson,28589,"Oct 18, 2023 07:16:00 AM",,,Monitor Inv 09 for continued fan issues. Receive RMA fans and place into Client inventory. 
+Gauss,27984,"Oct 18, 2023 07:19:00 AM","Oct 20, 2023 01:50:00 PM","Oct 25, 2023 07:40:00 AM",Mow array and spot spray as needed
+,28574,"Oct 18, 2023 07:22:00 AM",,"Oct 18, 2023 04:53:00 PM",EA-707 L6060 Tractor Hourly Maintenance
+Davis Lane,28596,"Oct 18, 2023 07:30:00 AM","Oct 18, 2023 10:55:00 AM","Nov 02, 2023 10:32:00 AM","INV 03 - Communication fault - Intmt, Power value stalls and repeats"
+Anderson,28590,"Oct 18, 2023 07:36:00 AM",,,Track Inv 15 RMA
+Sarah,28326,"Oct 18, 2023 08:00:00 AM","Oct 18, 2023 01:00:00 PM","Oct 18, 2023 01:00:00 PM",Sarah - NESM/Radian UAV Inspection
+Gauss,28345,"Oct 18, 2023 08:00:00 AM","Oct 18, 2023 01:00:00 PM","Oct 18, 2023 01:00:00 PM",Gauss - NESM/Exus UAV Inspection
+,28618,"Oct 18, 2023 08:00:00 AM",,"Oct 20, 2023 01:38:00 PM",Repair cross bracing on bush hog 
+L'Oreal-Kentucky,28592,"Oct 18, 2023 08:57:00 AM",,,Two Sungrow inverters are off-line with islanding faults.
+L'Oreal-Kentucky,28591,"Oct 18, 2023 08:58:00 AM",,,PM Inspection of Loreal Facility PV system
+Adams,28593,"Oct 18, 2023 09:08:00 AM",,,Adams Inv 06 - Return defective inverter
+West Newberry,28594,"Oct 18, 2023 09:14:00 AM",,,West Newberry - Inv 26 - Return defective unit to CPS. 
+NC 102,28597,"Oct 18, 2023 11:30:00 AM","Oct 26, 2023 04:00:00 PM","Oct 26, 2023 04:00:00 PM",Inverter and Transformer thermal Imaging 
+Beulaville,28303,"Oct 19, 2023 08:00:00 AM","Oct 19, 2023 12:42:00 PM","Oct 19, 2023 12:45:00 PM",Mow array and spot spray as needed
+Rose Acre Solar Energy Storage,28559,"Oct 19, 2023 08:00:00 AM","Oct 19, 2023 10:00:00 AM",,Rose Acre Solar Energy Storage - NCEMC Annual Inspection
+Walgreens - Milwaukie,27334,"Oct 19, 2023 02:18:00 PM",,,"Walgreens - Milwaukie - Omnidian Annual Inspection
+
+Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
+
+Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
+Walgreens - Lake Oswego,27333,"Oct 19, 2023 02:19:00 PM",,,"Walgreens - Lake Oswego - Omnidian Annual Inspection
 
 Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
 
  Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Quarter Horse,27898,"Sep 04, 2023 01:15:00 PM","Sep 29, 2023 12:30:00 PM","Sep 29, 2023 03:37:00 PM",INV A1-15 offline
-Beulaville,27357,"Sep 05, 2023 07:00:00 AM",,"Sep 08, 2023 11:28:00 AM",Mow array and spot spray as needed
-Cottonwood,27458,"Sep 05, 2023 07:00:00 AM","Sep 13, 2023 01:01:00 AM","Sep 18, 2023 08:45:00 AM","Mow array and buffer, spot spray as needed"
-,27871,"Sep 05, 2023 07:00:00 AM",,"Sep 06, 2023 03:33:00 PM",Landscaping South vegetative equipment hour meter reading entry
-Beaufort,27874,"Sep 05, 2023 07:00:00 AM","Sep 05, 2023 04:09:00 PM","Sep 05, 2023 07:59:00 PM",Beaufort - Capital Power Operator Rounds 
-Lafayette,27358,"Sep 05, 2023 07:01:00 AM","Sep 05, 2023 03:45:00 PM",,"Mow array and buffer, spot spray as needed"
-Davis Lane,27903,"Sep 05, 2023 07:35:00 AM","Sep 07, 2023 10:21:00 AM","Sep 07, 2023 11:51:00 AM",Davis Lane - INV 3 - Offline 
-Jersey Solar,27779,"Sep 05, 2023 07:39:00 AM","Sep 05, 2023 12:48:00 PM","Sep 05, 2023 12:48:00 PM",Jersey - NESM/Exus UAV Inspection
-Cedar Grove Property,27890,"Sep 05, 2023 09:32:00 AM",,,Cedar Grove Property - mow sheep fields w/ bushhog 
-"Cosper Creek Solar, LLC",27893,"Sep 05, 2023 09:45:00 AM","Sep 21, 2023 02:30:00 PM",,Power cycle secondary bluelog
-NC 102,27894,"Sep 05, 2023 10:08:00 AM","Sep 05, 2023 12:00:00 PM",,Investigate inverter 23 comms issue
-Agate Bay,27899,"Sep 05, 2023 01:54:00 PM","Sep 05, 2023 03:09:00 PM",,Site offline (utility trip and reclose)
-Bartow,27900,"Sep 05, 2023 02:00:00 PM","Sep 06, 2023 03:08:00 PM",,"Inverters 3A.8, 3B.3, 3B.5, and 3B.7 offline (Grid Phase Voltage Out of Range)"
-Merrill,27902,"Sep 05, 2023 03:00:00 PM","Sep 25, 2023 01:40:00 PM",,Merrill - Mow array and buffer
-Fort Rock Solar I,27904,"Sep 05, 2023 07:30:00 PM","Sep 06, 2023 05:00:00 PM",,Fort Rock 1 - INV 6 - Offline
-Gastonia Solar,27920,"Sep 06, 2023 06:32:00 AM",,,INV 1.12.32 - Offline (DC side SPD fault)
-Rose Acre Solar Energy Storage,27432,"Sep 06, 2023 07:00:00 AM","Sep 07, 2023 02:04:00 PM","Sep 07, 2023 03:42:00 PM",Mow array and spot spray as needed
-Lane,27912,"Sep 06, 2023 07:00:00 AM","Sep 07, 2023 01:55:00 PM","Sep 07, 2023 03:19:00 PM",Inverter 7 offline (ground fault)
-County Home,27916,"Sep 06, 2023 07:00:00 AM","Sep 20, 2023 10:52:00 AM",,INV 7.03 offline (Interference device)
-,26622,"Sep 06, 2023 07:21:00 AM","Sep 06, 2023 03:00:00 PM",,EA-814 Zero Turn Maintenance by Hour Reading
-Adams,27907,"Sep 06, 2023 07:28:00 AM",,,Repair/replace Inv 06 after thermal event
-Monroe Moore,27816,"Sep 06, 2023 08:20:00 AM","Oct 04, 2023 03:30:00 PM",,"Mow array and buffer, spot spray as needed"
-Strider,27817,"Sep 06, 2023 08:28:00 AM",,,"Mow/graze, spot spray as needed"
-Milo,27818,"Sep 06, 2023 08:29:00 AM",,,"Mow/graze, spot spray as needed"
-Ridgeback,27906,"Sep 06, 2023 08:30:00 AM",,,"Mow/graze, spot spray as needed"
-NC 102,27908,"Sep 06, 2023 08:39:00 AM","Sep 06, 2023 02:30:00 PM","Sep 06, 2023 02:30:00 PM","Inverter 12 off-line with F41, GFDI Fuse Open "
-Montgomery Park - American Can Building,27909,"Sep 06, 2023 09:08:00 AM","Sep 18, 2023 02:13:00 PM",,Inverter 1 zero gen issue
-Montgomery Park Building,27910,"Sep 06, 2023 09:10:00 AM","Sep 18, 2023 12:54:00 PM",,"Inverter C Zero Production
-"
-Woodline,24865,"Sep 06, 2023 10:55:00 AM",,,Woodline - Blue Ridge Power UAV Inspection
-,27914,"Sep 06, 2023 11:00:00 AM",,,Truck 306 - Noise from Engine Compartment
-Cotten Farm,28226,"Sep 06, 2023 12:00:00 PM",,,CB 2.05 underperforming by 50%
-Anderson,27915,"Sep 06, 2023 02:13:00 PM",,,Track RMA for Inv 10
-West Newberry,27917,"Sep 06, 2023 03:06:00 PM","Sep 06, 2023 06:32:00 PM",,"Investigate, inspect, isolate and renergize site if possible after thermal event at Inverter 26."
-Chiloquin,27919,"Sep 06, 2023 06:15:00 PM",,,"Chiloquin - INV 10.12 Thermal Event Response (INVs isolated as of 9/12:  9.01, 9.03, 9.05, 9.07, 10.01, 10.06, 10.08, 10.10, 10.12, 10.14)"
-Gauss,27922,"Sep 07, 2023 04:15:00 AM","Sep 07, 2023 08:28:00 AM",,Site offline (transfer trip)
-Bartow,27926,"Sep 07, 2023 06:45:00 AM",,"Sep 20, 2023 09:54:00 AM",INV 1D-4 - Intermittent Offline (Bus differential high)
-Sheep,27925,"Sep 07, 2023 10:50:00 AM",,,Site is not communicating
-Brightwood,27935,"Sep 07, 2023 11:30:00 AM",,,POI UPS battery is not holding a charge
-Brightwood,27923,"Sep 07, 2023 12:00:00 PM",,,Brightwood Relay Update
-Faison,27924,"Sep 07, 2023 12:44:00 PM",,,"UAV Follow Up @ Faison: 38 String Anomalies, 48 Damaged Modules, 9 Failed Modules"
-,27869,"Sep 07, 2023 01:21:00 PM",,,CSS Campus - Routine Maintenance
-Quarter Horse,27927,"Sep 07, 2023 01:40:00 PM","Sep 29, 2023 12:30:00 PM","Sep 29, 2023 03:38:00 PM",INV A1-19 offline
-NC Solar I,27646,"Sep 07, 2023 04:00:00 PM","Sep 20, 2023 03:15:00 PM","Sep 20, 2023 03:28:00 PM",Mow array and spot spray as needed
-Augusta,27928,"Sep 07, 2023 04:25:00 PM","Sep 07, 2023 06:10:00 PM",,"Augusta - Site - Offline (Storm Event Grid '""Blink"")"
-,27561,"Sep 07, 2023 04:50:00 PM",,,NCEMC Project Engineering
-,27695,"Sep 07, 2023 04:50:00 PM",,,NCEMC Project Engineering
-,27870,"Sep 07, 2023 04:51:00 PM",,,NCEMC Project Engineering
-Monroe Moore,27930,"Sep 07, 2023 06:00:00 PM",,,Monroe Moore - Site - Offline (Grid Outage due to Storm)
-Cottonwood,27931,"Sep 07, 2023 08:45:00 PM","Sep 07, 2023 09:44:00 PM",,Cottonwood - Site - Offline (Transfer Trip)
-Brightwood,28111,"Sep 07, 2023 09:00:00 PM",,,Recloser - Test Remote Operations
-Briarwood,27932,"Sep 07, 2023 10:02:00 PM","Sep 07, 2023 11:07:00 PM",,Briarwood - Site Recloser - Opened and Closed
-Arba Solar Energy Storage,27993,"Sep 08, 2023 10:24:00 AM",,"Sep 15, 2023 02:53:00 PM",Procure and install 5 each SQUARED HLA36150 breakers
-West Newberry,28003,"Sep 08, 2023 10:28:00 AM","Sep 12, 2023 01:25:00 PM",,"1. Invs 1-12 offline - Investigate
-2. Obtain s/n for RMA of failed Inv 26 (need wirebox and inv S/N)
-3. Renergize Inv's 25 & 27, if possible."
-South Robeson,27595,"Sep 08, 2023 11:00:00 AM","Sep 14, 2023 01:30:00 PM","Sep 15, 2023 07:22:00 AM",Mow array and spot spray as needed
-Gauss,27938,"Sep 08, 2023 12:00:00 PM","Sep 08, 2023 12:45:00 PM",,Site offline (transfer trip)
-Faison,27940,"Sep 08, 2023 02:00:00 PM","Sep 18, 2023 01:07:00 PM",,Replace 2 or 3 of the most severely rusted CPT boxes.
-,27941,"Sep 08, 2023 02:12:00 PM",,,"Ford Escape #006 - Vehicle Car Wash
-
-"
-Jersey Solar,27942,"Sep 08, 2023 02:15:00 PM","Sep 18, 2023 03:30:00 PM","Sep 19, 2023 12:53:00 PM","UAV Follow Up @ Jersey: 2 CBs Offline (CB 3-2, CB 3-14), 4 Damaged Modules, 1 Failed Modules"
-Freemont,27944,"Sep 08, 2023 02:30:00 PM","Sep 13, 2023 02:08:00 PM",,Replace and commission Inv A. 
-Cottonwood,27948,"Sep 08, 2023 02:51:00 PM","Sep 08, 2023 04:11:00 PM",,Site offline (transfer trip)
-Faison,27946,"Sep 08, 2023 03:27:00 PM","Sep 14, 2023 11:30:00 AM",,INV 2 offline (Drive Fault - Bus voltage imbalance)
-Adams,27947,"Sep 08, 2023 04:22:00 PM",,,Update Inverter Firmware per Service Bulletin
-Chiloquin,28005,"Sep 08, 2023 06:15:00 PM","Sep 19, 2023 02:00:00 PM",,INV 10.03 - Offline (Islanding)
-Fayetteville PWC,27955,"Sep 09, 2023 07:00:00 AM","Sep 10, 2023 07:00:00 AM",,Fayetteville - INV 3 - Offline (Self-Resolved)
-Ridgeback,27954,"Sep 09, 2023 10:45:00 AM","Sep 09, 2023 02:32:00 PM",,Ridgeback - Site - Offline (Storm Grid Event)
-Facile Solar,27953,"Sep 09, 2023 11:21:00 AM",,,Facile - INV 1 and 2 (No Comms) - INV 3 (Offline - AC Caps)
-Freemont,27950,"Sep 09, 2023 11:59:00 AM","Sep 10, 2023 08:55:00 AM",,"Freemont - INV B - Offline (Inverter OC H34 - Major Fault - Inverter Panel 3,4 Inverter OC H12 - Major Fault - Inverter Panel 1,2)"
-,27952,"Sep 09, 2023 11:59:00 AM",,,"Freemont - INV C - Offline (Inverter OC H34 - Major Fault - Inverter Panel 3,4 Inverter OC H12 - Major Fault - Inverter Panel 1,2)"
-Minke,27992,"Sep 09, 2023 02:45:00 PM",,,Minke - INV 18 - Offline (Grid Phase Voltage Out of Range - GridV.OutLim)
-Chiloquin,28007,"Sep 09, 2023 05:15:00 PM","Sep 19, 2023 02:00:00 PM",,INV 9.06 - Offline (Islanding)
-Briarwood,27989,"Sep 09, 2023 06:00:00 PM","Sep 12, 2023 09:12:00 AM",,Briarwood - INV A.13 - Offline (Islanding)
-Connley Collector Station,27956,"Sep 09, 2023 08:20:00 PM","Sep 10, 2023 07:19:00 AM",,Connley Collector - Site - Offline (Grid Disturbance + VPN Issue)
-Rock Garden Collector Station,27957,"Sep 09, 2023 08:20:00 PM","Sep 10, 2023 07:23:00 AM",,Rock Garden Collector - Site - Offline (Grid Disturbance + VPN Issue)
-Fort Rock Solar I,27961,"Sep 09, 2023 08:20:00 PM","Sep 10, 2023 07:19:00 AM",,Fort Rock 1 - Site - Offline (Grid Disturbance + VPN issue)
-Fort Rock Solar IV,27962,"Sep 09, 2023 08:20:00 PM","Sep 10, 2023 07:23:00 AM",,Fort Rock IV - Site - Offline (Grid Disturbance + VPN Issue)
-Eagle Point,27958,"Sep 09, 2023 10:15:00 PM",,,Eagle Point - INV 1 - Offline (+ Routine Re-charging)
-"Railroad Solar Farm, LLC",27966,"Sep 10, 2023 09:08:00 AM","Sep 11, 2023 04:18:00 PM","Sep 14, 2023 04:18:00 PM",Railroad - INV 2B - Offline (AC Caps)
-"Railroad Solar Farm, LLC",27963,"Sep 10, 2023 11:00:00 AM","Sep 10, 2023 10:30:00 AM",,Railroad - Site - Offline (Grid Event)
-Quarter Horse,27995,"Sep 10, 2023 12:56:00 PM","Sep 29, 2023 12:30:00 PM","Sep 29, 2023 03:39:00 PM",INV B1-06 - Offline
-Briarwood,27967,"Sep 10, 2023 01:30:00 PM","Sep 12, 2023 08:48:00 AM",,Briarwood - INV A.03 - Offline (Grid Overvoltage)
-Bartow,27997,"Sep 10, 2023 02:45:00 PM","Sep 19, 2023 04:00:00 PM","Sep 20, 2023 09:32:00 AM", INV 2A.8  - Offline (Grid Phase Voltage Out of Range - GridV.OutLim)
-Bartow,27998,"Sep 10, 2023 03:10:00 PM","Sep 19, 2023 04:00:00 PM","Sep 20, 2023 09:35:00 AM",INV 1B.3 - Offline (Grid Phase Voltage Out of Range - GridV.OutLim)
-Woodline,28019,"Sep 10, 2023 05:00:00 PM",,,Woodline - INV 1 - Offline
-"Railroad Solar Farm, LLC",27692,"Sep 11, 2023 07:00:00 AM","Oct 04, 2023 02:40:00 PM",,"Railroad - Alchemy Quarterly Inspection
-ALL Equipment and section 3 array for modules, wire management and combiners"
-Facile Solar,27693,"Sep 11, 2023 07:00:00 AM",,,Facile Solar - Green Street Carolinas Annual Inspection
-Pamlico,27726,"Sep 11, 2023 07:00:00 AM","Sep 11, 2023 04:18:00 PM","Sep 11, 2023 04:24:00 PM",Mow array and spot spray as needed
-,27975,"Sep 11, 2023 07:00:00 AM",,"Sep 12, 2023 07:22:00 AM",Landscaping South vegetative equipment hour meter reading entry
-Bartow,28045,"Sep 11, 2023 07:00:00 AM","Sep 27, 2023 07:00:00 PM","Sep 28, 2023 12:18:00 PM",INV 3B-1 - Offline (438 - Insulation Resistance Low)
-"Sandy River Solar, LLC",28088,"Sep 11, 2023 07:00:00 AM","Sep 21, 2023 06:53:00 PM",,Sandy River - Site Mow
-Wolfskin,27985,"Sep 11, 2023 07:28:00 AM","Sep 12, 2023 12:00:00 PM",,Technical Inspection of Wolfskin Site 
-Hobnail,27986,"Sep 11, 2023 07:32:00 AM",,,Technical Inspection of Hobnail Site 
-Bird Dog ,27987,"Sep 11, 2023 07:36:00 AM",,,Technical Inspection of Bird Dog Site 
-Blackwater,27988,"Sep 11, 2023 07:37:00 AM",,,Technical Inspection of Blackwater Site 
-,27968,"Sep 11, 2023 07:47:00 AM","Sep 12, 2023 12:46:00 PM","Sep 13, 2023 07:47:00 AM",Landscaping East vegetative equipment hour meter reading entry
-Starvation Ridge Collector Station,27598,"Sep 11, 2023 08:48:00 AM",,,2023 Substation Inspection - Current Technologies
-Rock Garden Collector Station,27599,"Sep 11, 2023 08:50:00 AM","Sep 21, 2023 09:00:00 PM",,Rock Garden Collector Station - Current Technologies Testing 
-Augusta,27991,"Sep 11, 2023 09:00:00 AM","Sep 12, 2023 10:57:00 AM",,Augusta - INV A.08 - Offline (Grid Undervoltage)
-Adams Neilson,28372,"Sep 11, 2023 09:58:00 AM",,,"WO 1177510  Inverter 1.8.21 - faulted offline
-WO 1177565 Inv 5.1 offline
-WO 1177595 inverter 1.8.18- faulted offline
-WO 1177584 inv1.6.13- faulted offline
-"
-Walgreens - Sherwood,27438,"Sep 11, 2023 10:00:00 AM","Sep 12, 2023 04:31:00 PM",,"Walgreens - Sherwood - Omnidian Annual Inspection
+Walgreens - Newberg,27437,"Oct 19, 2023 02:23:00 PM",,,"Walgreens - Newberg- Omnidian Annual Inspection
 
 Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
 
 Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Walgreens - Tigard,27439,"Sep 11, 2023 10:00:00 AM","Sep 11, 2023 04:12:00 PM",,"Walgreens - Tigard - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Adams Neilson,28373,"Sep 11, 2023 10:04:00 AM",,,"NTE 15 
-1178352 4.20 cycling off
-5.20 offline 
-"
-"Railroad Solar Farm, LLC",28121,"Sep 11, 2023 11:00:00 AM",,,Inv. 1 -offline 
-,26748,"Sep 11, 2023 11:44:00 AM",,,Vehicle Quarterly Inspection - VEH-203
-Briarwood,27990,"Sep 11, 2023 12:09:00 PM",,,Briarwood - INV A.08 - Offline (Duplicate WO)
-Lane,28049,"Sep 11, 2023 12:30:00 PM","Sep 19, 2023 10:00:00 AM","Sep 20, 2023 01:32:00 PM",Lane - CB 5.4 - Offline
-Anderson,28017,"Sep 11, 2023 03:45:00 PM","Sep 22, 2023 03:18:00 PM",,Anderson - INV 10 - Offline
-"Railroad Solar Farm, LLC",27996,"Sep 11, 2023 04:30:00 PM","Sep 19, 2023 04:20:00 PM","Sep 20, 2023 11:21:00 AM",XFMR 1 leaking
-"Fruitland Creek Solar, LLC",27999,"Sep 11, 2023 06:00:00 PM",,,Fruitland Creek - Site Mow
-West Newberry,28010,"Sep 12, 2023 06:55:00 AM",,,Inv 25 & 26 - IRT AC Feeders & DC HR strings & Make Assessment/Restoration Plan
-Davis Lane,27665,"Sep 12, 2023 07:00:00 AM","Sep 12, 2023 03:00:00 PM","Sep 13, 2023 07:53:00 AM",Mow array and spot spray as needed
-Bartow,28008,"Sep 12, 2023 07:00:00 AM",,"Sep 20, 2023 09:38:00 AM",INV 4A.3 - Offline (Bus differential high fault - Fault0110)
-Schell,27795,"Sep 12, 2023 08:00:00 AM","Sep 15, 2023 01:28:00 PM","Sep 15, 2023 01:28:00 PM",Schell - NESM/Exus UAV Inspection
-Weaver,28009,"Sep 12, 2023 05:00:00 PM","Sep 12, 2023 08:40:00 PM",,Weaver - Site - Offline
-Woodsdale,28020,"Sep 12, 2023 07:45:00 PM","Sep 14, 2023 08:00:00 AM",,Site offline with recloser open
-Ridgeback,28012,"Sep 13, 2023 08:18:00 AM","Sep 13, 2023 10:30:00 AM",,Ridgeback - Site - Offline
-"Franklin Solar, LLC",28011,"Sep 13, 2023 08:38:00 AM",,,"UAV Follow Up @ Franklin: 2 Combiner Boxes Offline (C1 & C14), 4 String Anomalies, 2 Damaged Modules"
-Riley Solar I,28013,"Sep 13, 2023 09:00:00 AM","Sep 13, 2023 02:00:00 PM",,Inverter 8 Offline
-Red Oak,27594,"Sep 13, 2023 12:00:00 PM","Sep 14, 2023 06:00:00 PM",,"Mow array and buffer, spot spray as needed"
-Pecan,28015,"Sep 13, 2023 12:27:00 PM",,,CBX’s 36 & 48 underperforming
-"Railroad Solar Farm, LLC",28018,"Sep 13, 2023 05:00:00 PM",,"Sep 18, 2023 08:53:00 AM",Railroad - Site - No Comms
-Adams,27564,"Sep 14, 2023 06:59:00 AM","Sep 21, 2023 10:08:00 AM",,Adams - Soltage Tri-Annual Inspection
-1634,27593,"Sep 14, 2023 07:00:00 AM","Sep 15, 2023 03:48:00 PM","Sep 18, 2023 07:29:00 AM",Mow array and spot spray as needed
-Audrey,28021,"Sep 14, 2023 07:00:00 AM","Sep 14, 2023 01:20:00 PM",,Audrey INV 2 offline with inlet pressure fault
-PCSP 1,28002,"Sep 14, 2023 07:04:00 AM",,,"Mow/graze, spot spray as needed"
-Facile Solar,27959,"Sep 14, 2023 07:06:00 AM",,,"Mow/graze, spot spray as needed"
-Wake RJ3 Solar Energy Storage,28001,"Sep 14, 2023 07:07:00 AM",,,"Mow/graze, spot spray as needed"
-Freemont,28000,"Sep 14, 2023 07:13:00 AM",,,"Mow array and buffer, spot spray as needed"
-Audrey,28023,"Sep 14, 2023 08:17:00 AM",,,Audrey - INV 2 -  (Duplicate)
-Cotten Farm,27785,"Sep 14, 2023 10:32:00 AM","Sep 14, 2023 11:00:00 AM","Sep 14, 2023 11:00:00 AM",Cotten Farm - NESM/Exus UAV Inspection
-Tumbleweed,27240,"Sep 14, 2023 01:00:00 PM","Sep 11, 2023 06:20:00 PM",,Tumbleweed - NESM/Exus UAV Inspection
-Tumbleweed,28024,"Sep 14, 2023 01:12:00 PM",,,"UAV Follow Up @ Tumbleweed: 8 String Inverters Offline, 10 String Anomalies"
-,27784,"Sep 14, 2023 02:48:00 PM",,,Bucket Truck #401 - State Inspection - HV7335 / VIN 1HTJSSKCJ654997
-Woodline,28140,"Sep 14, 2023 04:26:00 PM",,,Replace modules (2?) found on 9/14 and replace/repair 2 motor pigtails that came loose. Can be done on next PM
-Interstate,28035,"Sep 15, 2023 03:45:00 AM","Sep 15, 2023 03:00:00 PM",,"Interstate - Site - Offline (No Comms, Cannot confirm production)"
-Minnie,28030,"Sep 15, 2023 07:10:00 AM","Sep 27, 2023 09:33:00 AM",,"Mow/graze, spot spray as needed"
-Little River,28031,"Sep 15, 2023 08:37:00 AM","Sep 27, 2023 01:00:00 PM",,CB’s 4.4 & 6.6 underperforming
-Ridgeback,28032,"Sep 15, 2023 09:00:00 AM","Sep 15, 2023 09:30:00 AM",,Ridgeback - Site - Offline
-Faison,28036,"Sep 15, 2023 09:15:00 AM",,,Faison - INV 1 - Offline
-,27977,"Sep 15, 2023 11:30:00 AM",,,Landscaping North vegetative equipment hour meter reading entry
-,27936,"Sep 15, 2023 12:14:00 PM","Sep 15, 2023 01:22:00 PM",,VEH 303 - Full break replacement and oil/filter change. 
-,28037,"Sep 15, 2023 01:27:00 PM",,,VEH 300 - fault codes and vehicle is thottling. 
-,28038,"Sep 15, 2023 01:31:00 PM",,,"ASSY SHAFT, HYD.Arm damaged"
-Walgreens - Troutdale,27440,"Sep 15, 2023 01:38:00 PM","Sep 18, 2023 05:37:00 PM",,"Walgreens - Troutdale - Omnidian Annual Inspection
-
-Reference SiteCapture to fill out tasks and complete the assigned Scope of Work. IVCT is NOT included, do not complete these tasks.
-
-Download a copy of the completed report from SiteCapture and upload it to the Files tab once complete."
-Schell,28039,"Sep 15, 2023 01:43:00 PM",,,UAV Follow Up @ Schell: 1 CB Offline (CB C1-12)
-Nitro,27939,"Sep 15, 2023 01:57:00 PM",,,Replace up to three of the most severely rusting CPT boxes 
-Fayetteville PWC,28040,"Sep 15, 2023 02:00:00 PM",,"Sep 18, 2023 01:00:00 PM",Fayetteville - INV 3 - Offline
-Nitro,28134,"Sep 15, 2023 02:24:00 PM",,,Procure spare engine gate driver board for Radian Inventory 
-Sarah,28248,"Sep 16, 2023 08:00:00 AM","Sep 29, 2023 11:00:00 AM",,INV 1 low coolant pressure
-Owen,28041,"Sep 16, 2023 08:05:00 AM","Sep 16, 2023 02:32:00 PM",,Owen - INV 2 - Offline (Inlet Pressure [THM15])
-Bartow,28047,"Sep 16, 2023 08:25:00 AM","Sep 19, 2023 04:00:00 PM","Sep 20, 2023 09:41:00 AM",INV 2C-3 - Offline (Bus differential high fault - Fault0110)
-Connley Collector Station,28042,"Sep 16, 2023 11:00:00 AM","Sep 16, 2023 12:48:00 PM",,Connley and Rock Carden Collectors - No Comms with BPA Utility
-Bartow,28046,"Sep 16, 2023 04:00:00 PM","Sep 27, 2023 07:00:00 PM","Sep 28, 2023 12:25:00 PM","INV 4B-1 - Offline (Static GFCI high)
-"
-Fort Rock Solar I,28043,"Sep 16, 2023 06:30:00 PM","Oct 02, 2023 03:28:00 PM",,Fort Rock 1 - INV 6 - Offline (Hardware Fault)
-Fayetteville PWC,28044,"Sep 16, 2023 07:00:00 PM",,"Sep 18, 2023 12:57:00 PM",INV 15 - Offline
-Bartow,28092,"Sep 17, 2023 07:00:00 AM","Sep 19, 2023 04:00:00 PM","Sep 20, 2023 09:48:00 AM",INV 1D.3 offline (Bus differential high fault)
-Gauss,28051,"Sep 17, 2023 09:30:00 AM","Sep 20, 2023 02:45:00 PM","Sep 20, 2023 03:31:00 PM",All Inverters - No Comms
-Gauss,28050,"Sep 17, 2023 10:56:00 AM","Sep 17, 2023 12:15:00 PM","Sep 21, 2023 03:39:00 PM",Gauss - Site - Offline (Grid Overvoltage)
-Chiloquin,28052,"Sep 17, 2023 04:30:00 PM","Sep 19, 2023 02:00:00 PM",,INVs 9.12 and 9.14 - Offline (Islanding)
-Meeks,27614,"Sep 18, 2023 07:00:00 AM","Sep 18, 2023 06:00:00 PM","Sep 20, 2023 08:06:00 AM",Mow array and spot spray as needed
-NC Solar II,27615,"Sep 18, 2023 07:00:00 AM","Sep 18, 2023 03:27:00 PM","Sep 19, 2023 07:30:00 AM",Mow array and spot spray as needed
-,28053,"Sep 18, 2023 07:00:00 AM","Sep 18, 2023 02:49:00 PM","Sep 20, 2023 08:07:00 AM",Landscaping East vegetative equipment hour meter reading entry
-Jersey Solar,28055,"Sep 18, 2023 07:00:00 AM",,,Jersey - NESM/Exus Annual Inspection
-,28061,"Sep 18, 2023 07:00:00 AM",,"Sep 20, 2023 08:22:00 AM",Landscaping South vegetative equipment hour meter reading entry
-ART 3,27868,"Sep 18, 2023 07:08:00 AM","Sep 18, 2023 03:00:00 PM",,ART 3 - Leyline Semi-Annual Inspection
-"Franklin Solar, LLC",28059,"Sep 18, 2023 07:09:00 AM",,,Franklin - Leyline Annual Inspection
-Strider,28060,"Sep 18, 2023 07:09:00 AM",,,"Strider - Alchemy Quarterly Inspection
+Chiloquin,28612,"Oct 19, 2023 02:24:00 PM",,,INV 7.09 - Offline (RMA)
+Chiloquin,28613,"Oct 19, 2023 02:30:00 PM",,,INV 7.07 - Underperforming ~ 20%
+Pamlico,28849,"Oct 19, 2023 03:00:00 PM",,,CB 1.8 - Underperforming ~20%
+Owen,28457,"Oct 20, 2023 09:43:00 AM","Oct 20, 2023 11:11:00 AM",,"Mow array and buffer, spot spray as needed"
+Augusta,28621,"Oct 20, 2023 11:32:00 AM","Oct 23, 2023 04:25:00 PM",,Update firmware on all site inverters. 
+Briarwood,28622,"Oct 20, 2023 11:36:00 AM","Oct 23, 2023 03:00:00 PM",,Update firmware on all site inverters. 
+Gold Mine,28623,"Oct 20, 2023 11:40:00 AM","Oct 23, 2023 12:20:00 PM",,Update firmware on all site inverters. 
+Beaufort,28624,"Oct 20, 2023 12:00:00 PM",,,"UAV Follow Up @ Beaufort: 5 String Anomalies, 2 Damaged Modules, 3 Failed Modules"
+,28625,"Oct 20, 2023 12:45:00 PM",,,Damage to front bumper wind deflector 
+"Kaiser Creek Solar, LLC",28626,"Oct 20, 2023 01:02:00 PM",,,Split of Kaiser INV 1 Troubleshooting WO 28626
+Ridgeback,28627,"Oct 20, 2023 01:21:00 PM","Oct 20, 2023 01:50:00 PM",,Site offline
+Cottonwood,28628,"Oct 20, 2023 02:15:00 PM","Oct 20, 2023 03:07:00 PM",,Cottonwood - Site - Offline (transfer trip)
+Minke,28512,"Oct 20, 2023 02:24:00 PM",,,"Inspection ""Hot Spots present"": •Thermal Image Inverter terminations, fuses, and OCPD(s) with IR camera - torque any connections found loose or hot as necessary. Only thermal image devices that can be protected with PPE Follow on work order for ""WO 27877"" (triggered by SM1474) for MINK-INV01 by rulloa.
+Technician notes: B phase hot 127 "
+Minke,28514,"Oct 20, 2023 02:26:00 PM",,,"Inspection ""Hot Spots present"": •Thermal Image Inverter terminations, fuses, and OCPD(s) with IR camera - torque any connections found loose or hot as necessary. Only thermal image devices that can be protected with PPE Follow on work order for ""WO 27877"" (triggered by SM1474) for MINK-INV02 by rulloa.
+Technician notes: B and c phase 90 "
+Minke,28515,"Oct 20, 2023 02:48:00 PM",,,"Inspection ""Hot Spots present"": •Thermal Image Inverter terminations, fuses, and OCPD(s) with IR camera - torque any connections found loose or hot as necessary. Only thermal image devices that can be protected with PPE Follow on work order for ""WO 27877"" (triggered by SM1474) for MINK-INV03 by rulloa.
+Technician notes: A phase 128"
+Minke,28516,"Oct 20, 2023 02:49:00 PM",,,"Inspection ""Hot Spots present"": •Thermal Image Inverter terminations, fuses, and OCPD(s) with IR camera - torque any connections found loose or hot as necessary. Only thermal image devices that can be protected with PPE Follow on work order for ""WO 27877"" (triggered by SM1474) for MINK-INV04 by rulloa.
+Technician notes: A phase 130 degree "
+,28629,"Oct 20, 2023 02:59:00 PM","Oct 23, 2023 01:50:00 PM","Oct 24, 2023 07:50:00 AM",LEM HAX2000-S CTS'-ORDER
+"Sandy River Solar, LLC",28364,"Oct 20, 2023 03:00:00 PM",,,Sandy River - hep Petra Annual Inspection
+Fort Rock Solar IV,28631,"Oct 20, 2023 04:10:00 PM","Oct 25, 2023 05:30:00 PM",,INV 6 offline with Hardware Fault
+Augusta,28630,"Oct 20, 2023 05:03:00 PM","Oct 20, 2023 05:20:00 PM",,Augusta offline
+Cottonwood,28632,"Oct 21, 2023 03:23:00 AM","Oct 21, 2023 08:40:00 AM",,Site offline due to transfer trip
+Adams,28669,"Oct 21, 2023 12:00:00 PM","Oct 25, 2023 11:48:00 AM",,Trackers stalled and not communicating
+Wingo Park,28657,"Oct 21, 2023 01:40:00 PM",,,INV 07 (roof) - Offline (8210 - Electric arc detected in 2nd string group)
+Agate Bay,28647,"Oct 22, 2023 12:30:00 PM","Oct 22, 2023 06:15:00 PM",,Site offline due to utility trip and reclose
+South Robeson,28648,"Oct 23, 2023 06:00:00 AM","Oct 23, 2023 01:50:00 PM","Oct 23, 2023 02:10:00 PM",All Inverters + POA - No Comms
+South Robeson,28682,"Oct 23, 2023 06:00:00 AM",,"Nov 01, 2023 07:13:00 AM",Deno weather station not communicating
+Aulander,28649,"Oct 23, 2023 06:15:00 AM","Oct 23, 2023 12:27:00 PM","Oct 23, 2023 02:30:00 PM",INV 2 - Offline (E045 - Door Open AC)
+,28607,"Oct 23, 2023 07:19:00 AM","Oct 23, 2023 09:45:00 AM","Oct 25, 2023 07:39:00 AM",EA-703 MX5800 Tractor Hourly Maintenance
+,28633,"Oct 23, 2023 07:19:00 AM","Oct 23, 2023 08:15:00 AM","Oct 25, 2023 07:39:00 AM",Landscaping East vegetative equipment hour meter reading entry
+,28640,"Oct 23, 2023 07:21:00 AM",,"Oct 25, 2023 07:44:00 AM",Landscaping South vegetative equipment hour meter reading entry
+Sonne Two,28446,"Oct 23, 2023 08:00:00 AM","Nov 02, 2023 12:00:00 PM",,Sonne Two - NESM/Exus Annual Inspection
+ART 3,28650,"Oct 23, 2023 10:03:00 AM",,,AC disconnect overheating feeder. 
+,28651,"Oct 23, 2023 10:29:00 AM",,,West Crew Bushhog - Broken/dull blades & damage stumpjumpers
+Connley Collector Station,24842,"Oct 23, 2023 11:00:00 AM","Oct 26, 2023 08:10:00 PM",,Deenergize and reenergize substation around planned outage #23-02379
+Fort Rock Solar I,24843,"Oct 23, 2023 11:00:00 AM","Oct 26, 2023 08:10:00 PM",,Deenergize and reenergize site around planned outage #23-02379
+Rock Garden Collector Station,24844,"Oct 23, 2023 11:00:00 AM","Oct 26, 2023 08:10:00 PM",,Deenergize and reenergize substation around planned outage #23-02379
+Fort Rock Solar IV,24845,"Oct 23, 2023 11:00:00 AM",,,Deenergize and reenergize site around planned outage #23-02379
+West Newberry,28653,"Oct 23, 2023 11:34:00 AM",,,West Newberry - Site Onboarding
+Red Oak,28654,"Oct 23, 2023 01:20:00 PM","Oct 27, 2023 03:45:00 PM",,Red Oak - Site - Offline 10/23 to 10/27 (Scheduled Switching # DCE23-018607-LOAD)
+Agate Bay,28656,"Oct 23, 2023 02:00:00 PM","Oct 23, 2023 08:30:00 PM",,Agate Bay - Site - Offline (Grid Event)
+Turkey Hill,28655,"Oct 23, 2023 02:02:00 PM",,,Purchase 300 Fuses
+,28660,"Oct 23, 2023 09:00:00 PM","Oct 26, 2023 11:38:00 AM",,URE Exhibit Review
+Bartow,28658,"Oct 24, 2023 07:19:00 AM","Oct 27, 2023 04:40:00 PM","Oct 30, 2023 09:41:00 AM",Site Mow
+Cottonwood,28644,"Oct 24, 2023 07:30:00 AM","Oct 24, 2023 04:19:00 PM",,"Cottonwood - Alchemy Semi-annual Inspection
+SECTION B1
 
 See Files tab for a list of which 25% of equipment to inspect for each inspection."
-Connley Collector Station,27600,"Sep 18, 2023 08:54:00 AM","Sep 23, 2023 12:40:00 AM",,Connley Collector Station - Current Technologies 
-Best Lane Collector Station,27601,"Sep 18, 2023 08:56:00 AM",,,Best Lane Testing - Current Technologies
-,28073,"Sep 18, 2023 10:00:00 AM",,,Replacement Fuses for Substations
-Dairy,28083,"Sep 18, 2023 10:03:00 AM","Sep 18, 2023 10:35:00 PM",,Site offline with recloser open
-Adams,28071,"Sep 18, 2023 10:15:00 AM","Sep 20, 2023 03:12:00 PM",,Complete RMA for Invs 10 & 16
-Thornton,28072,"Sep 18, 2023 10:17:00 AM","Sep 21, 2023 02:52:00 PM","Sep 21, 2023 03:38:00 PM","Inverter 2 shutdown on 9/18/23 with a ""DC Section Error"
-Woodline,28084,"Sep 18, 2023 10:30:00 AM","Sep 18, 2023 10:39:00 PM",,Site offline with recloser open
-West Newberry,28074,"Sep 18, 2023 10:38:00 AM",,,Repair/Replace Inv 26
-Arba Solar Energy Storage,28076,"Sep 18, 2023 11:21:00 AM",,,ARBA Energy Storage: Ethernet communication failure to the south field flex rack NCU
-,28137,"Sep 18, 2023 11:50:00 AM","Sep 22, 2023 10:00:00 AM","Sep 22, 2023 03:37:00 PM",DGA syringes
-Gibson,28077,"Sep 18, 2023 11:59:00 AM","Sep 19, 2023 03:41:00 PM","Sep 19, 2023 03:41:00 PM",Duke MOA Inspections Remediations 
-Raeford,28078,"Sep 18, 2023 12:01:00 PM",,,Duke MOA Inspections Remediations 
-Dement,28079,"Sep 18, 2023 12:03:00 PM",,,Duke MOA Inspections Remediations 
-Duplin,28080,"Sep 18, 2023 12:04:00 PM",,,Duke MOA Inspections Remediations 
-,27844,"Sep 18, 2023 01:48:00 PM",,,"Inspection ""Fail"": Check wiper blades and washer operation Follow on work order for ""WO 27811"" (triggered by SM1577) for VEH-306 by lbiddlecome.
-Technician notes: Need new wiper blades "
-Exhibit Court,27867,"Sep 18, 2023 02:03:00 PM",,,Exhibit Court - Leyline Semi-Annual Inspection
-,28081,"Sep 18, 2023 02:25:00 PM",,,"60"" ZT not starting. "
-,28082,"Sep 18, 2023 02:49:00 PM","Sep 24, 2023 07:04:00 PM",,EA 704 Offline 
-Beaufort,28085,"Sep 18, 2023 03:39:00 PM",,,"a) Take delivery of SDWAN hardware from client
-b) Confirm available power source.
-c) Install starlink dish, cradle point antennas & associated power cabling
-d) Confirm connectivity with client monitoring group/Operations center"
-Sonne Two,27790,"Sep 19, 2023 08:00:00 AM","Sep 19, 2023 05:00:00 PM","Sep 19, 2023 05:00:00 PM",Sonne Two - NESM/Exus UAV Inspection
-County Home,27791,"Sep 19, 2023 08:00:00 AM","Sep 19, 2023 04:30:00 PM","Sep 19, 2023 05:00:00 PM",County Home - NESM/Exus UAV Inspection
-Thornton,28089,"Sep 19, 2023 08:17:00 AM","Sep 21, 2023 02:52:00 PM","Sep 21, 2023 03:37:00 PM",Inv 1 offline
-Freemont,28090,"Sep 19, 2023 09:12:00 AM",,,Install CTs on INV A Recombiner when received form TMEIC
-West Newberry,28091,"Sep 19, 2023 09:36:00 AM",,,Inv 05 offline - replace AC breaker in panelboard
-Fort Rock Solar I,28093,"Sep 19, 2023 10:30:00 AM","Sep 20, 2023 01:57:00 PM",,INV 8 offline with hardware fault
-Chiloquin,28247,"Sep 19, 2023 01:00:00 PM",,,"INVs 8.06, 8.12, & 11.03 are not communicating"
-Gastonia Solar,28129,"Sep 19, 2023 01:10:00 PM","Sep 22, 2023 11:44:00 AM",,Inv 2.02.05 Offline with grid voltage errors
-Chiloquin,28116,"Sep 19, 2023 01:40:00 PM",,,INV 5.11 offline (Communication abnormal (DSP no response))
-Lane,28095,"Sep 19, 2023 01:45:00 PM","Sep 21, 2023 12:15:00 PM","Sep 21, 2023 01:15:00 PM",Lane INV 4 offline with phase imbalance alarm
-Riley Solar I,28096,"Sep 19, 2023 01:45:00 PM","Sep 20, 2023 07:13:00 PM",,INV 5 offline with hardware fault
-Anderson,27563,"Sep 19, 2023 01:48:00 PM","Oct 02, 2023 12:00:00 PM",,Anderson - Soltage Annual (+Triannual) Inspection
-Tiburon,28087,"Sep 19, 2023 01:56:00 PM",,,"Mow/graze, spot spray as needed"
-Penny Hill,27645,"Sep 19, 2023 02:00:00 PM","Sep 19, 2023 07:00:00 PM","Sep 20, 2023 12:23:00 PM",Mow array and spot spray as needed
-Gastonia Solar,28094,"Sep 19, 2023 02:20:00 PM",,,INV 2.02.04 and INV 2.02.05 offline with grid voltage errors
-Bartow,27229,"Sep 19, 2023 03:32:00 PM","Sep 25, 2023 02:00:00 PM","Sep 25, 2023 02:00:00 PM",Bartow - Alchemy UAV Inspection
-Bartow,28097,"Sep 19, 2023 03:40:00 PM",,,INV 3A.1 offline (Grid Under Frequency)
-Best Lane Collector Station,28105,"Sep 20, 2023 03:45:00 AM","Sep 20, 2023 08:35:00 AM",,Substation offline
-Riley Solar I,28106,"Sep 20, 2023 03:45:00 AM","Sep 20, 2023 08:35:00 AM",,Site offline
-Starvation Ridge Collector Station,28107,"Sep 20, 2023 03:45:00 AM","Sep 20, 2023 08:35:00 AM",,Substation offline
-Starvation Solar I,28108,"Sep 20, 2023 03:45:00 AM","Sep 20, 2023 08:35:00 AM",,Site offline
-Rock Garden Collector Station,28109,"Sep 20, 2023 05:00:00 AM","Sep 20, 2023 11:15:00 AM","Sep 20, 2023 11:15:00 AM",Rock Garden Substation (Fort Rock IV and Rock Garden Solar) offline due to relay lockout
-Fort Rock Solar IV,28110,"Sep 20, 2023 05:00:00 AM",,,Rock Garden Substation (Fort Rock IV and Rock Garden Solar) offline due to relay lockout.
-PCSP 4,27792,"Sep 20, 2023 09:13:00 AM","Sep 20, 2023 11:10:00 AM","Sep 20, 2023 11:00:00 AM",PCSP4 - Carolina Solar Energy UAV Inspection
-PCSP 3,27782,"Sep 20, 2023 09:14:00 AM","Sep 20, 2023 11:00:00 AM","Sep 20, 2023 11:00:00 AM",PCSP3 - Carolina Solar Energy UAV Inspection
-PCSP 1,27783,"Sep 20, 2023 09:15:00 AM","Sep 20, 2023 11:54:00 AM","Sep 20, 2023 12:00:00 PM",PCSP1 - Carolina Solar Energy UAV Inspection
-Riley Solar I,28114,"Sep 20, 2023 10:30:00 AM","Sep 20, 2023 07:13:00 PM",,INVs 5 & 6 limited to ~750 kW (erroneous Module 2 current)
-Arba,27522,"Sep 20, 2023 12:00:00 PM","Sep 20, 2023 03:00:00 PM","Sep 22, 2023 08:05:00 AM",Mow array and spot spray as needed
-Briarwood,28118,"Sep 20, 2023 12:00:00 PM","Sep 21, 2023 11:42:00 AM",,INV 15 offline (Grid voltage unbalance)
-Beaufort,28112,"Sep 20, 2023 12:06:00 PM","Sep 20, 2023 06:13:00 PM","Sep 20, 2023 06:53:00 PM",Site Offline
-,28113,"Sep 20, 2023 02:00:00 PM",,,Order 4 Bussman 170M6116 1250 A 690 V common buss fuses
-1634,28115,"Sep 20, 2023 02:30:00 PM",,,1634 Zone Controller not reachable by IP Address
-Lane,28122,"Sep 20, 2023 02:45:00 PM","Sep 21, 2023 12:15:00 PM","Sep 21, 2023 01:14:00 PM",Lane INV 8 offline with phase imbalance 
-Quarter Horse,28117,"Sep 20, 2023 03:00:00 PM","Oct 05, 2023 10:44:00 AM",,Modem - VPN + Remote Equip. Access
-Starvation Solar I,28274,"Sep 21, 2023 04:30:00 AM",,,Zone Controller 6 unreachable and likely stalled
-Woodsdale,27973,"Sep 21, 2023 06:59:00 AM","Sep 28, 2023 12:28:00 PM",,"Woodsdale - Alchemy Quarterly Inspection
+"Railroad Solar Farm, LLC",28659,"Oct 24, 2023 08:30:00 AM","Oct 25, 2023 09:00:00 AM","Oct 25, 2023 11:14:00 AM",INV 3A - Offline (event code - 0804)
+,28717,"Oct 24, 2023 08:30:00 AM",,,"Check engine light - ""Reduced Engine Power"" & Tire Pressure Sensor Calibration "
+Sadiebrook,28661,"Oct 24, 2023 09:15:00 AM",,,Site - No Comms
+Riley Solar I,28664,"Oct 24, 2023 09:15:00 AM","Oct 24, 2023 10:30:00 AM",,Site offline due to utility trip and reclose
+Starvation Ridge Collector Station,28665,"Oct 24, 2023 09:15:00 AM","Oct 24, 2023 10:42:00 AM",,Substation offline due to utility trip and reclose
+Starvation Solar I,28666,"Oct 24, 2023 09:15:00 AM","Oct 24, 2023 10:42:00 AM",,Site offline due to utility trip and reclose
+Augusta,28668,"Oct 24, 2023 09:15:00 AM","Oct 25, 2023 09:34:00 AM",,INV 8 - Offline (010 - AC Power Failure)
+Best Lane Collector Station,28662,"Oct 24, 2023 09:30:00 AM","Oct 24, 2023 10:15:00 AM",,Substation offilne due to utility trip and reclose
+Sarah,28663,"Oct 24, 2023 10:46:00 AM",,,"UAV Follow Up @ Sarah: 1 CB Offline (CB A-7), 5 String Anomalies, 2 Strings w/ Electrical Damage, 2 Damaged Modules"
+"Franklin Solar, LLC",28667,"Oct 24, 2023 11:24:00 AM",,,Repair/replace overheating Polaris lugs in DC Discos 1 & 2. 
+Amethyst,28670,"Oct 24, 2023 02:20:00 PM","Oct 25, 2023 01:15:00 PM",,Site offline with SEL Protection Relay alarms on both inverters
+Bird Dog ,28696,"Oct 24, 2023 04:00:00 PM",,,Technical Inspection of Bird Dog Site 
+South Robeson,28673,"Oct 24, 2023 05:00:00 PM",,,Inv. D2 replace faulted key switch
+"Carnes Creek Solar, LLC",28734,"Oct 24, 2023 08:00:00 PM",,,Sitewide - Trackers Stalled
+Albertson,28643,"Oct 25, 2023 07:13:00 AM",,,Albertson - Soltage Annual (+Triannual) Inspection
+Four Oaks,28675,"Oct 25, 2023 10:20:00 AM","Oct 27, 2023 03:00:00 PM",,MV Dip Pole - Failed Surge Arrestor
+1634,28672,"Oct 25, 2023 10:22:00 AM",,,1634 underperformance investigation
+Arba,28681,"Oct 25, 2023 10:55:00 AM","Oct 27, 2023 02:44:00 PM","Oct 30, 2023 07:32:00 AM",INV 1 (140303-12 SGI 500XT) - Offline (No Comms)
+Bartow,28809,"Oct 25, 2023 12:00:00 PM",,,"INV 3D.6 - Offline (Fault0080, Fault0050, Fault0020)"
+Rose Acre Solar Energy Storage,28676,"Oct 25, 2023 01:04:00 PM",,,"UAV Follow Up @ Rose Acre: 1 String Inverter Offline, 1 Misaligned Tracker, 28 String Anomalies, 23 Damaged Modules, 5 Modules w/ Faulty Bypass Diodes, 36 Modules w/ Cell level Hotspots."
+"Linkville Solar, LLC",28652,"Oct 25, 2023 01:24:00 PM",,,"Mob Fee WO -  $10,261.24 for linkville mobilization"
+Brightwood,28677,"Oct 25, 2023 01:30:00 PM","Oct 25, 2023 12:45:00 PM",,INV 1 - Intermittent Offline (DC Overvoltage)
+,28642,"Oct 26, 2023 07:11:00 AM",,,Landscaping North vegetative equipment hour meter reading entry
+Mariposa,28339,"Oct 26, 2023 07:14:00 AM","Oct 26, 2023 04:00:00 PM","Oct 26, 2023 04:00:00 PM",Mariposa - NESM/Exus UAV Inspection
+Freemont,28340,"Oct 26, 2023 07:14:00 AM","Oct 26, 2023 04:00:00 PM","Oct 26, 2023 04:00:00 PM",Freemont - NESM/Exus UAV Inspection
+Wolfskin,28697,"Oct 26, 2023 08:00:00 AM",,,Technical Inspection of Wolfskin Site 
+Amethyst,28678,"Oct 26, 2023 08:07:00 AM",,,Track Eaton RMA for a PSG240e power supply to restock Menlo Inventory. 
+South Robeson,28679,"Oct 26, 2023 11:32:00 AM",,,INV D2 - No Comms
+"Cosper Creek Solar, LLC",27800,"Oct 26, 2023 03:40:00 PM","Oct 25, 2023 06:14:00 PM",,Cosper Creek - hep Petra UAV Inspection
+"Sesqui-C Solar, LLC",27804,"Oct 26, 2023 03:41:00 PM","Oct 25, 2023 06:17:00 PM",,Sesqui-C- hep Petra UAV Inspection
+"Fruitland Creek Solar, LLC",27802,"Oct 26, 2023 04:00:00 PM",,,Fruitland Creek - hep Petra UAV Inspection
+Drift Creek,28735,"Oct 26, 2023 04:00:00 PM",,,INV 18 - Underperforming ~25%
+NC Solar I,28683,"Oct 27, 2023 07:21:00 AM",,,XFMR 1 DGA-Request a Furan analysis in addition to test life expectancy of XFMR
+Lane,28690,"Oct 27, 2023 07:30:00 AM","Oct 27, 2023 02:18:00 PM","Oct 30, 2023 07:33:00 AM",INV 7 - Offline (0619 - Ground CB Open or Tripped)
+GE Aviation,28325,"Oct 27, 2023 08:00:00 AM","Oct 27, 2023 12:00:00 PM","Oct 27, 2023 12:00:00 PM",GE Aviation - UAV Inspection
+Sonne Two,28692,"Oct 27, 2023 08:00:00 AM","Nov 02, 2023 10:00:00 AM",,Sonne Two Inverters Not Communicating in AlsoEnergy
+County Home,28686,"Oct 27, 2023 10:05:00 AM",,,2023 Q4 Punchlist Repairs
+Strider,28688,"Oct 27, 2023 10:11:00 AM",,,Inv 3A Repairs: External on/off switch R2 & DC cabinet door handle R2. 
+RCCC,28680,"Oct 27, 2023 10:16:00 AM",,,Shell WO for RCCC Remediation from WO 26425
+Quarter Horse,28698,"Oct 27, 2023 12:15:00 PM","Nov 02, 2023 11:52:00 AM","Nov 02, 2023 12:00:00 PM",INV B2-04 - Offline (301 - Abnormal Grid Voltage)
+,28691,"Oct 27, 2023 01:00:00 PM",,,Pull substation and solar farm meter data for NSE
+Anderson,28700,"Oct 27, 2023 02:15:00 PM","Oct 30, 2023 11:10:00 AM",,INV 16 - Offline
+Quarter Horse,28728,"Oct 27, 2023 03:00:00 PM","Nov 02, 2023 11:52:00 AM","Nov 02, 2023 12:01:00 PM",INV B1-16 offline
+NC Solar I,28699,"Oct 27, 2023 03:33:00 PM","Nov 01, 2023 03:30:00 PM","Nov 02, 2023 07:10:00 AM",INV 1B - Persistent Cycling
+Gauss,28701,"Oct 27, 2023 04:30:00 PM","Oct 27, 2023 05:35:00 PM",,Site offline due to transfer trip
+Fayetteville PWC,28702,"Oct 28, 2023 04:30:00 AM",,"Oct 29, 2023 10:10:00 PM",Inverters on AC panelboard PV1 offline (Inverters 1 through 5) 
+Four Oaks,28703,"Oct 28, 2023 07:00:00 AM",,,Four Oaks INV 2 offline (INV 1 in the field) following site outage
+Best Lane Collector Station,24436,"Oct 28, 2023 11:00:00 AM",,,Cancelled - Deenergize and reenergize substation around planned outage #23-02489
+Riley Solar I,24437,"Oct 28, 2023 11:00:00 AM",,,Cancelled - Deenergize and reenergize site around planned outage #23-02489
+Starvation Ridge Collector Station,24438,"Oct 28, 2023 11:00:00 AM",,,Cancelled Deenergize and reenergize substation around planned outage #23-02489
+Starvation Solar I,24439,"Oct 28, 2023 11:00:00 AM",,,Cancelled - Deenergize and reenergize site around planned outage #23-02489
+Faison,28705,"Oct 29, 2023 11:00:00 AM",,,"INV 2 offline with latching non-restartable fault, system fault, drive fault"
+Brightwood,28704,"Oct 29, 2023 11:45:00 AM","Oct 30, 2023 12:19:00 PM",,Site offline with recloser open
+Star,28814,"Oct 29, 2023 04:54:00 PM",,,Site (No Comms) - PE Daily Production Confirmation (DEC call)
+Fort Rock Solar I,28718,"Oct 29, 2023 05:45:00 PM",,,Fort Rock - INV 7 offline with DC overvoltage fault
+Woodline,28720,"Oct 30, 2023 06:15:00 AM","Oct 30, 2023 01:28:00 PM",,Site offline with recloser open
+,28712,"Oct 30, 2023 07:20:00 AM",,"Oct 31, 2023 07:28:00 AM",Landscaping South vegetative equipment hour meter reading entry
+Albertson,28142,"Oct 30, 2023 07:21:00 AM","Nov 02, 2023 01:11:00 PM","Nov 02, 2023 04:15:00 PM",Mow array and spot spray as needed. 
+,28706,"Oct 30, 2023 07:22:00 AM","Oct 31, 2023 08:00:00 AM","Nov 03, 2023 07:16:00 AM",Landscaping East vegetative equipment hour meter reading entry
+GE Aviation,28553,"Oct 30, 2023 07:39:00 AM",,,GE Aviation - Annual Inspection
+Sarah,28554,"Oct 30, 2023 07:40:00 AM",,,Sarah - NESM/Radian Semi-Annual Inspection
+Lafayette,28557,"Oct 30, 2023 07:42:00 AM","Nov 01, 2023 01:06:00 PM",,"Lafayette - Alchemy Quarterly Inspection
 
-See Files tab for a list of which 25% of equipment to inspect for each inspection.
-"
-South River H4 Solar Energy Storage,27702,"Sep 21, 2023 07:00:00 AM","Sep 21, 2023 12:00:00 PM","Sep 21, 2023 03:18:00 PM",Mow array and spot spray as needed
-Sadiebrook,28123,"Sep 21, 2023 07:00:00 AM","Sep 29, 2023 11:30:00 AM","Sep 29, 2023 03:48:00 PM",Sadiebrook INV 6 offline (and INV 5)
-Jersey Solar,28228,"Sep 21, 2023 07:00:00 AM","Oct 04, 2023 04:09:00 PM","Oct 04, 2023 04:09:00 PM",CB 3.02 offline
-Cotten Farm,28120,"Sep 21, 2023 08:00:00 AM",,,"UAV Follow Up @ Cotten Farm: 8 String Anomalies, 2 Damaged Modules"
-Augusta,28124,"Sep 21, 2023 09:15:00 AM","Sep 22, 2023 10:00:00 AM",,INV 7 offline with islanding alarm
-Agate Bay,28126,"Sep 21, 2023 09:45:00 AM","Sep 21, 2023 11:22:00 AM",,Site offline due to grid disturbance 
-"Fruitland Creek Solar, LLC",28300,"Sep 21, 2023 09:55:00 AM",,,INVs 6 & 7 intermittent comms
-Interstate,28229,"Sep 21, 2023 10:00:00 AM",,,CB 1.15 (2.03 in the DAS) offline
-Faison,28125,"Sep 21, 2023 10:21:00 AM",,,Procure spare parts for bus balance circuit. 
-Bartow,28136,"Sep 21, 2023 10:40:00 AM",,,"Wire Management throughout site
-String repairs as needed"
-,27184,"Sep 21, 2023 10:44:00 AM",,,EA-704 MX5800 Tractor Hourly Maintenance
-,28139,"Sep 21, 2023 11:00:00 AM","Sep 29, 2023 11:54:00 AM",,Hackberry Solar PVsyst
-,28200,"Sep 21, 2023 11:11:00 AM",,,PGR - Portfolio-wide -  Remote Access/Controls verification request
-Grand Ronde,28127,"Sep 21, 2023 11:32:00 AM",,,"Take photos of property adjacent to Grand Ronde for presence of squatters. There was a report of a car with broken windows at the entry way. Please do not approach any individuals if anyone is there. 
-Purchase and install no trespassing signs on gate. "
-,28243,"Sep 21, 2023 12:52:00 PM",,,Uno-PS/350-900DC/24DC/60W Power Supply DC/DC converter w/ Dins Rail-5 each
-Gastonia Solar,28128,"Sep 21, 2023 12:59:00 PM","Sep 22, 2023 11:04:00 AM",,INV 2.02.04: Offline with grid voltage errors
-"Cosper Creek Solar, LLC",28141,"Sep 21, 2023 01:10:00 PM",,,INV 5 is not communicating
-Gastonia Solar,28131,"Sep 21, 2023 01:25:00 PM","Sep 27, 2023 10:45:00 AM",,INV 1.04.11: Offline/degraded Faults 12 and 39
-Gastonia Solar,28132,"Sep 21, 2023 01:32:00 PM","Sep 27, 2023 12:28:00 PM",,INV 1.12.32: Degraded Performance: DC-side SPD faults
-Gastonia Solar,28133,"Sep 21, 2023 01:37:00 PM",,,INV 1.03.08 underperformance w/ Fault 555 + 556
-,28138,"Sep 21, 2023 03:43:00 PM",,,Truck wash due
-,27788,"Sep 21, 2023 03:49:00 PM",,,Ford Ranger #008 - State Inspection - VIN 1FTER1FH5LLA05261
-"Cosper Creek Solar, LLC",28148,"Sep 21, 2023 05:00:00 PM","Sep 22, 2023 12:50:00 PM",,Meter is not communicating
-Arba Solar Energy Storage,27739,"Sep 22, 2023 08:00:00 AM","Sep 27, 2023 06:00:00 PM","Sep 28, 2023 08:20:00 AM",Mow array and spot spray as needed
-Hamlet Solar Energy Storage,27741,"Sep 22, 2023 08:00:00 AM","Sep 25, 2023 12:48:00 PM","Sep 25, 2023 12:54:00 PM",Mow array and spot spray as needed
-Fort Rock Solar I,28150,"Sep 22, 2023 09:00:00 AM","Sep 22, 2023 03:44:00 PM",,Inverter 6 Offline
-"Cosper Creek Solar, LLC",28149,"Sep 22, 2023 09:30:00 AM","Sep 22, 2023 04:05:00 PM",,Cosper creek site not communicating
-Valley Creek,28233,"Sep 22, 2023 10:15:00 AM","Oct 02, 2023 02:08:00 PM",,CB 1.18 offline
-PCSP 3,28151,"Sep 22, 2023 12:12:00 PM",,,"UAV Follow Up @ PCSP 3: 131 Modules with Electrical Damage, 36 String Anomalies, 20 Damaged Modules, 3 Failed Modules"
-Gastonia Solar,28221,"Sep 22, 2023 12:20:00 PM",,,INV 2.02.04 offline
-Gastonia Solar,28222,"Sep 22, 2023 12:20:00 PM",,,INV 2.02.05 offline (islanding)
-Woodsdale,28154,"Sep 22, 2023 12:46:00 PM","Sep 22, 2023 01:00:00 PM",,Inv displaying 'PV Output Current Event' FLT
-Valley Creek,28287,"Sep 22, 2023 01:00:00 PM","Oct 02, 2023 03:31:00 PM",,CB 1 Zone 23 (1.15 in the field) underperforming by > 50%
-PCSP 4,28156,"Sep 22, 2023 01:06:00 PM",,,UAV Follow Up @ PCSP 4: 1 String Anomaly
-Davis Lane,28162,"Sep 22, 2023 10:20:00 PM","Sep 24, 2023 03:00:00 PM","Sep 25, 2023 07:46:00 AM",Site offline (utility outage)
-Ridgeback,28160,"Sep 23, 2023 01:50:00 AM","Sep 23, 2023 08:40:00 AM",,Site offline
-Woodsdale,28161,"Sep 23, 2023 01:50:00 AM","Sep 23, 2023 08:40:00 AM",,Site offline
-Fayetteville PWC,28188,"Sep 23, 2023 08:00:00 AM",,,INV 3 offline
-Pamlico,28163,"Sep 23, 2023 08:30:00 AM","Sep 23, 2023 09:45:00 PM","Sep 24, 2023 06:54:00 PM",Site not communicating
-Sarah,28159,"Sep 23, 2023 08:45:00 AM","Sep 24, 2023 12:00:00 PM",,INV 3 offline (ground fault)
-Ridgeback,28164,"Sep 23, 2023 04:20:00 PM","Sep 23, 2023 04:52:00 PM",,Site offline
-Adams,28167,"Sep 23, 2023 04:25:00 PM",,,INV 9 offline (Bus Imbalance - Protect0070)
-Augusta,28166,"Sep 23, 2023 07:09:00 PM","Sep 23, 2023 08:30:00 PM",,Site offline
-Collier,28165,"Sep 23, 2023 07:30:00 PM","Sep 23, 2023 08:25:00 PM",,INV 3 offline (AC ground fault)
-Pamlico,28171,"Sep 24, 2023 07:00:00 AM",,,INV 1 offline
-Bartow,28225,"Sep 24, 2023 07:00:00 AM",,,INV 2C-3 offline (Bus differential high)
-Nitro,28168,"Sep 24, 2023 07:45:00 AM","Sep 24, 2023 03:10:00 PM",,INV B offline (DC subsystem fault)
-Princeton,28170,"Sep 24, 2023 07:50:00 AM","Sep 24, 2023 05:15:00 PM",,INV 1 offline (ground fault)
-Augusta,28169,"Sep 24, 2023 08:26:00 AM","Sep 24, 2023 08:35:00 AM",,Site offline
-Faison,28172,"Sep 24, 2023 08:50:00 AM","Sep 24, 2023 01:15:00 PM",,INV 1 offline (ground fault)
-Chiloquin,28227,"Sep 24, 2023 09:45:00 AM",,,"Inverters 3.15, 4.05, 4.09, 4.14, 5.04, and 5.09 not communicating (TGW 1)"
-"Cosper Creek Solar, LLC",28197,"Sep 24, 2023 10:30:00 AM","Sep 27, 2023 07:31:00 PM",,INV 9 offline (PV Isolation protection error)
-Minnie,28203,"Sep 24, 2023 11:30:00 AM","Sep 26, 2023 03:00:00 PM",,INV 1 is not communicating
-Bartow,28173,"Sep 24, 2023 12:00:00 PM","Sep 24, 2023 12:45:00 PM",,Site offline
-Davis Lane,28275,"Sep 24, 2023 02:00:00 PM",,,UPS battery is not charging
-Davis Lane,28174,"Sep 24, 2023 02:15:00 PM","Sep 27, 2023 02:00:00 PM","Sep 28, 2023 07:27:00 AM",INV 1 offline (ground fault)
-Gauss,28192,"Sep 24, 2023 11:10:00 PM","Sep 25, 2023 09:00:00 AM",,Site offline (transfer trip)
-Cottonwood,28193,"Sep 25, 2023 02:35:00 AM","Sep 25, 2023 09:05:00 AM",,Site offline
-,28267,"Sep 25, 2023 06:00:00 AM",,,AE Powertrack - Intermittent Comms Issues - Skytron Sites (PGR)
-Brightwood,28191,"Sep 25, 2023 06:12:00 AM","Sep 25, 2023 01:11:00 PM",,Site offline
-Jersey Solar,27880,"Sep 25, 2023 07:00:00 AM",,,"Mow array and buffer, spot spray as needed"
-,28175,"Sep 25, 2023 07:00:00 AM",,,Landscaping East vegetative equipment hour meter reading entry
-Weaver,28187,"Sep 25, 2023 07:00:00 AM","Sep 26, 2023 10:14:00 AM","Sep 27, 2023 08:32:00 AM",INV 11 intermittent late startups
-Faison,28204,"Sep 25, 2023 07:00:00 AM","Sep 26, 2023 11:00:00 AM",,INV 1 offline (Array fault - PV ground overcurrent)
-Lane,28207,"Sep 25, 2023 07:00:00 AM","Sep 26, 2023 10:16:00 AM","Sep 26, 2023 03:45:00 PM",INV 7 offline (ground fault)
-,28181,"Sep 25, 2023 07:35:00 AM",,"Sep 28, 2023 08:19:00 AM",Landscaping South vegetative equipment hour meter reading entry
-,28176,"Sep 25, 2023 07:47:00 AM","Oct 01, 2023 07:29:00 PM",,Landscaping West vegetative equipment hour meter reading entry
-Faison,28029,"Sep 25, 2023 07:48:00 AM",,,"Mow/graze, spot spray as needed"
-"Franklin Solar, LLC",28119,"Sep 25, 2023 07:49:00 AM",,,Mow array and spot spray as needed
-Princeton,28143,"Sep 25, 2023 07:50:00 AM",,,"Mow/graze, spot spray as needed"
-,28027,"Sep 25, 2023 10:00:00 AM",,,Inspection of Fire Extinguishers in CSS Campus Buildings
-,28028,"Sep 25, 2023 10:00:00 AM",,,CSS Campus monthly building inspection
-,28058,"Sep 25, 2023 10:00:00 AM",,,CSS Campus - Routine Maintenance
-Sadiebrook,28230,"Sep 25, 2023 12:30:00 PM","Sep 26, 2023 03:40:00 PM","Sep 29, 2023 03:43:00 PM",Combiner 3.03 (3.15 in the field) offline
-Anderson,28220,"Sep 25, 2023 01:00:00 PM",,,2nd Powerhead and Wire box failure - RMA return of both items
-,28180,"Sep 25, 2023 02:00:00 PM",,,CSS Campus - Routine Maintenance
-Drift Creek,28223,"Sep 25, 2023 03:10:00 PM","Sep 25, 2023 06:17:00 PM",,Site offline
-Brush Creek,28224,"Sep 25, 2023 03:10:00 PM","Sep 25, 2023 05:52:00 PM",,Site offline
-Cotten Farm,28231,"Sep 25, 2023 05:26:00 PM","Sep 26, 2023 03:30:00 PM",,Cotten - Site - Offline
-Dairy,27879,"Sep 25, 2023 06:00:00 PM","Oct 02, 2023 06:00:00 PM",,Dairy - NESM/Exus Semi-Annual Inspection
-Meeks,28246,"Sep 25, 2023 08:30:00 PM",,,INV 1B is not communicating
-Atkinson 2,27970,"Sep 26, 2023 07:00:00 AM","Sep 26, 2023 03:00:00 PM","Sep 27, 2023 07:42:00 AM",Atkinson II - Pine Gate Renewables Semi Annual Inspection
-"Fruitland Creek Solar, LLC",28239,"Sep 26, 2023 07:00:00 AM",,,Fruitland Creek - Site Spray
-Briarwood,28062,"Sep 26, 2023 07:18:00 AM","Sep 29, 2023 10:50:00 AM",,Briarwood - Soltage Tri-Annual Inspection
-Adams,28232,"Sep 26, 2023 07:28:00 AM",,,Complete RMA for Inv 09
-Kohl's Beaverton,28235,"Sep 26, 2023 09:05:00 AM","Sep 28, 2023 03:25:00 PM",, Overheating DC feeder
-Cottonwood,28240,"Sep 26, 2023 09:05:00 AM","Sep 26, 2023 10:20:00 AM",,Site offline (transfer trip)
-Walgreens - Portland - 82nd,28236,"Sep 26, 2023 09:10:00 AM","Sep 26, 2023 02:57:00 PM",,Inverter 1 Zero Gen
-Broadway Solar,28237,"Sep 26, 2023 09:47:00 AM",,,Duke MOA Inspections Remediations 
-Red Hill,28238,"Sep 26, 2023 09:48:00 AM",,,Duke MOA Inspections Remediations 
-,28242,"Sep 26, 2023 12:00:00 PM",,,Breaker Orders for NESM Chiloquin and Tumbleweed
-ART 3,28244,"Sep 26, 2023 01:28:00 PM",,,AC Disconnect overheating AC phase. 
-Weaver,28245,"Sep 26, 2023 02:11:00 PM",,,INV 11 late startups - PE investigation
-Meeks,28266,"Sep 26, 2023 03:00:00 PM",,,INV B Production Confirmation Tracking
-Faison,28253,"Sep 27, 2023 07:10:00 AM","Oct 04, 2023 03:38:00 PM",,INV 1 offline (ground fault)
-Sarah,28251,"Sep 27, 2023 07:25:00 AM",,,"Mow/graze, spot spray as needed"
-County Home,28249,"Sep 27, 2023 07:30:00 AM",,,"Mow array and buffer, spot spray as needed"
-Sonne Two,28250,"Sep 27, 2023 07:31:00 AM",,,"Mow array and buffer, spot spray as needed"
-Turkey Hill,25676,"Sep 27, 2023 08:00:00 AM",,,Turkey Hill - NESM/Exus Semi-Annual Inspection
-Cotten Farm,28179,"Sep 27, 2023 08:00:00 AM",,,Cotten Farm - NESM/Exus Semi-Annual Inspection
-Briarwood,28254,"Sep 27, 2023 09:27:00 AM","Oct 03, 2023 11:37:00 AM",,Replace the arc damaged fuseholder on CB 11. 
-Ararat Rock ,28256,"Sep 27, 2023 10:42:00 AM",,,CSS administers the Duke MOA Self Inspection
-Chocowinity Solar ,28257,"Sep 27, 2023 10:45:00 AM",,,CSS administers the Duke MOA Self Inspection
-Cirrus Solar,28258,"Sep 27, 2023 10:47:00 AM",,,CSS administers the Duke MOA Self Inspection
-Montgomery Solar,28259,"Sep 27, 2023 10:50:00 AM",,,CSS administers the Duke MOA Self Inspection
-Progress Solar I,28260,"Sep 27, 2023 10:52:00 AM",,,CSS administers the Duke MOA Self Inspection
-Progress Solar II,28261,"Sep 27, 2023 10:55:00 AM",,,CSS administers the Duke MOA Self Inspection
-Progress Solar III,28262,"Sep 27, 2023 10:55:00 AM",,,CSS administers the Duke MOA Self Inspection
-Rockwell,28263,"Sep 27, 2023 10:57:00 AM",,,CSS administers the Duke MOA Self Inspection
-Sandy Cross,28264,"Sep 27, 2023 10:58:00 AM",,,CSS administers the Duke MOA Self Inspection
-Yadkinville Solar,28265,"Sep 27, 2023 11:01:00 AM",,,CSS administers the Duke MOA Self Inspection
-Chiloquin,28288,"Sep 27, 2023 11:09:00 AM",,,"Next time someone is at Chiloquin, can they send me close up photos of the module backsheets where the fire was greatest? Id be looking for any delamination or pin size holes caused by the embers."
-Bartow,28268,"Sep 27, 2023 11:58:00 AM",,,"UAV Follow Up @ Bartow: 4 String Inverters Offline, 47 Electrically Damaged Modules, 12 String Anomalies, 7 Damaged Modules, 3 Failed Modules"
-1634,28269,"Sep 27, 2023 12:45:00 PM",,,1634 Solar - Tracker Issues: 7qty - 8.8% tracking impacted
-Bani,28270,"Sep 27, 2023 02:34:00 PM",,,Bani - Tracker Issues: 9qty - 10.2% tracking impacted
-County Home,28271,"Sep 27, 2023 02:36:00 PM",,,"UAV Follow Up @ County Home: 1 String Inverter 7-3 Offline WO 27931, 5 String Anomalies, 2 Damaged Modules"
-Davis Lane,28273,"Sep 27, 2023 02:51:00 PM","Sep 28, 2023 12:53:00 PM","Sep 28, 2023 02:19:00 PM",INV 1 offline (GFDI tripped)
-Brush Creek,28272,"Sep 27, 2023 02:52:00 PM",,,Tracker Issues: 2 total issues affecting 1.8% of the site
-Cottonwood,28285,"Sep 27, 2023 06:28:00 PM","Sep 28, 2023 10:59:00 AM",,Site offline (transfer trip)
-"Cosper Creek Solar, LLC",28301,"Sep 27, 2023 07:00:00 PM",,,Repair String 1 on Inverter 9
-Gauss,28290,"Sep 27, 2023 08:16:00 PM","Sep 28, 2023 08:04:00 AM",,Site offline (transfer trip)
-Aulander,27815,"Sep 28, 2023 07:00:00 AM",,,"Mow array and buffer, spot spray as needed"
-Ridgeback,28283,"Sep 28, 2023 07:27:00 AM","Sep 28, 2023 10:47:00 AM",,Site offline
-NC Solar I,27781,"Sep 28, 2023 07:33:00 AM","Sep 28, 2023 03:06:00 PM","Sep 28, 2023 03:00:00 PM",NC Solar I - NESM/Radian UAV Inspection
-NC Solar II,27780,"Sep 28, 2023 07:34:00 AM","Sep 28, 2023 03:00:00 PM","Sep 28, 2023 03:00:00 PM",NC Solar II - NESM/Radian UAV Inspection
-Pecan,28277,"Sep 28, 2023 07:50:00 AM",,,perform clean vs dirty I/V curve tests
-Carter,28278,"Sep 28, 2023 07:55:00 AM",,,perform clean vs dirty I/V curve tests
-Old Catawba,28279,"Sep 28, 2023 08:11:00 AM",,,Perform clean vs dirty I/V curve tests at this site
-Mattress Factory,28280,"Sep 28, 2023 08:17:00 AM",,,Perform clean vs dirty I/V curve tests at this site.
-Gold Mine,28282,"Sep 28, 2023 10:00:00 AM",,,Gold Mine Tracker Issues: 3 total issues affecting 6.3% of the site.
-"Kaiser Creek Solar, LLC",28291,"Sep 28, 2023 11:17:00 AM",,,Kaiser Creek Tracker Issues: 8 total issues affecting 9.1% of the site
-Pika,28297,"Sep 28, 2023 12:00:00 PM",,,Pika Tracker Issues: 39 total issues affecting 33.1% of the site
-Ridgeback,28298,"Sep 28, 2023 12:21:00 PM",,,Ridgeback Tracker Issues: Zone Controller 1 has 0 issues and Zone Controller 2 has 5 issues (affecting 8.1% of the site)
-Weaver,28299,"Sep 28, 2023 01:16:00 PM",,,Weaver Tracker Issues: 3 total issues affecting 4.7% of the site
-Gauss,28302,"Sep 28, 2023 05:30:00 PM","Sep 28, 2023 09:57:00 PM",,Gauss - Site - Offline (Transfer Trip)
-Lane,28307,"Sep 29, 2023 07:15:00 AM","Oct 02, 2023 01:20:00 PM","Oct 02, 2023 04:06:00 PM",INV 7 offline (ground fault)
-Strider,28312,"Sep 29, 2023 07:40:00 AM",,,"INV 3A offline (Phase Imbalance)
-"
-Cottonwood,28306,"Sep 29, 2023 07:50:00 AM","Sep 29, 2023 09:17:00 AM",,Site offline
-Bartow,28309,"Sep 29, 2023 10:56:00 AM","Sep 29, 2023 01:50:00 PM",,Site offline
-Augusta,27872,"Sep 29, 2023 11:19:00 AM","Oct 05, 2023 10:39:00 AM",,Augusta - Soltage Annual (+Triannual) Inspection
-PCSP 1,28308,"Sep 29, 2023 11:53:00 AM",,,"UAV Follow Up @ PCSP 1: 1 Damaged Module, 1 String Anomaly"
-Cedar Grove Property,28311,"Sep 29, 2023 01:53:00 PM",,,Fall Lambing - pasture prep (seeding) 
-Gauss,28315,"Sep 29, 2023 06:00:00 PM","Oct 05, 2023 07:55:00 AM",,Gauss - Site - Offline (transfer trip)
-Bartow,28305,"Sep 30, 2023 08:00:00 AM",,,Bartow - Weekly Utility Curtailment Tracking (09/30-10/06)
+See Files tab for a list of which 25% of equipment to inspect for each inspection."
+Blackwater,28694,"Oct 30, 2023 08:00:00 AM",,,Technical Inspection of Blackwater Site 
+Bartow,28807,"Oct 30, 2023 09:00:00 AM","Nov 02, 2023 05:00:00 PM",,"INV 3B.8 - Offline (Protect0070, Protect0090, Protect0110, Protect0610)"
+Dairy,28719,"Oct 30, 2023 09:35:00 AM","Oct 30, 2023 01:32:00 PM",,Dairy site offline due to transfer trip
+Dairy,28725,"Oct 30, 2023 10:35:00 AM","Oct 31, 2023 03:00:00 PM",,"INV 1.3.1 offline with ""repeated major fault"" after grid outage"
+Princeton,28723,"Oct 30, 2023 11:52:00 AM","Nov 02, 2023 04:00:00 PM",,INV 1 offline with ground fault
+Ridgeback,28726,"Oct 30, 2023 12:45:00 PM","Oct 30, 2023 03:50:00 PM",,Ridgeback site offline due to grid disturbance
+Turkey Hill,27812,"Oct 30, 2023 12:48:00 PM","Oct 20, 2023 08:24:00 PM",,Turkey Hill - NESM/Exus UAV Inspection
+Turkey Hill,28721,"Oct 30, 2023 12:54:00 PM",,,"UAV Follow Up @ Turkey Hill: 3 Misaligned Trackers, 149 String Anomalies, 1 Damaged Module"
+Anderson,28722,"Oct 30, 2023 01:48:00 PM",,,Track RMA for Inv 16
+"Carnes Creek Solar, LLC",28561,"Oct 30, 2023 03:00:00 PM",,,Carnes Creek - hep Petra Annual Inspection
+Augusta,28729,"Oct 30, 2023 06:00:00 PM","Oct 30, 2023 07:02:00 PM",,Augusta - Site - Offline
+Ridgeback,28730,"Oct 30, 2023 08:44:00 PM","Oct 31, 2023 07:46:00 AM",,Ridgeback - Site - Offline
+Brightwood,28731,"Oct 30, 2023 11:22:00 PM","Oct 31, 2023 01:15:00 PM",,Brightwood - Site - Offline (Grid Event) - Site Recloser Remains Open
+Gauss,28645,"Oct 31, 2023 07:09:00 AM",,,Gauss -  Semi-Annual Inspection
+,28724,"Oct 31, 2023 07:30:00 AM",,,EA-812 Zero Turn Maintenance by Hour Reading
+Gauss,28732,"Oct 31, 2023 09:00:00 AM",,,"UAV Follow Up @ Gauss: 1 Combiner Box Offline, 42 String Anomalies, 1 Damaged Module"
+Starvation Solar I,28733,"Oct 31, 2023 09:45:00 AM","Oct 31, 2023 05:00:00 PM",,"INV 5 - Offline (Fault - 33,554,432)"
+"Carnes Creek Solar, LLC",28387,"Oct 31, 2023 01:13:00 PM",,,Change Gate Code next time on site 
+Hobnail,28695,"Oct 31, 2023 08:00:00 PM",,,Technical Inspection of Hobnail Site 
