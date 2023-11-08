@@ -43,8 +43,7 @@ def column_wind(df):
         df.rename(columns={wind[0]: "Wind Speed"}, inplace=True)
     else:
         new_wind_col = pd.Series(np.nan, index=df.index, name="Wind Speed")
-
-    df = pd.concat([df, new_wind_col], axis=1)
+        df = pd.concat([df, new_wind_col], axis=1)
     return df
 
 

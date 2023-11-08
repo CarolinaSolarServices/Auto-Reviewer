@@ -153,7 +153,7 @@ Here are filled records within the daytime.(Only showing the first 20 records.)
 |  322  | 2023-10-04 08:00:00 |    39.17202    |   57.38293  |  0.648653  |    20.67896   |   678.2394  |    nan     |  135.7937  |  134.574   |  133.8546  |  146.3367  |    Day    |
 |  323  | 2023-10-04 08:15:00 |    44.43939    |   59.88457  |  1.460616  |    20.81664   |   980.4654  |    nan     |  192.5356  |  193.284   |  197.581   |  209.608   |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
-Besides, there are still 365 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
+Besides, there are still 284 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_5 | Inverter_6 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+

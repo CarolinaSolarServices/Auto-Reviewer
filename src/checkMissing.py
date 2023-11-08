@@ -198,9 +198,9 @@ def check_and_autofill_inverter_and_voltage(df):
             INV_avg = INV_sum / (non_missing_count)
 
             try:
-                estimate_on = round((row["Meter Power"] * 1.03 / INV_avg))
                 if INV_avg == 0:
                     raise ZeroDivisionError("INV_avg is zero, cannot divide by zero.")
+                estimate_on = round((row["Meter Power"] * 1.03 / INV_avg))
                 to_be_filled = (
                     min(estimate_on, (missing_count + non_missing_count))
                     - non_missing_count
@@ -256,10 +256,16 @@ def check_and_autofill_voltage(df):
     )
 
     if condition_can_be_filled.sum() > 0:
-        average_voltage = df["Meter Voltage"].mean()
-        df.loc[condition_can_be_filled, "Meter Voltage"].fillna(
-            average_voltage, inplace=True
-        )
+        average_voltage = round(df["Meter Voltage"].mean(), 6)
+        df.loc[condition_can_be_filled, "Meter Voltage"] = df.loc[
+            condition_can_be_filled, "Meter Voltage"
+        ].fillna(average_voltage)
+        # print("Rows after fillna:\n", df.loc[condition_can_be_filled, "Meter Voltage"])
+        # df.loc[condition_can_be_filled, "Meter Voltage"].fillna(
+        #     average_voltage, inplace=True
+        # )
+
+    return df
 
 
 def missing(df):
