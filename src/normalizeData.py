@@ -16,6 +16,8 @@ def custom_to_datetime(df):
         "%m-%d-%y %H:%M",
         "%Y-%m-%d %H:%M:%S",
         "%d/%m/%Y %H:%M:%S",
+        "%m/%d/%Y %H:%M",
+        "%Y-%m-%d %H:%M",
     ]
 
     # print(df["Timestamp"].head())
