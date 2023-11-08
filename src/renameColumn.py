@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 
 def column_temperature(df):
@@ -41,7 +42,9 @@ def column_wind(df):
     if wind:
         df.rename(columns={wind[0]: "Wind Speed"}, inplace=True)
     else:
-        df["Wind Speed"] = np.nan
+        new_wind_col = pd.Series(np.nan, index=df.index, name="Wind Speed")
+
+    df = pd.concat([df, new_wind_col], axis=1)
     return df
 
 
