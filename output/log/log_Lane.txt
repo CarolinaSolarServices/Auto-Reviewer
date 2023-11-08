@@ -1,0 +1,40 @@
+
+I.
+
+Detected 3 missing values in the 'POA Irradiance' column.
+All have been filled with a placeholder value of -999.
+Detected 3 missing values during the daytime.
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records here.)
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_7 | Inverter_8 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
+|  808  | 2023-10-09 09:30:00 |     -999.0     |     nan     |    nan     |    13.79872   |   3244.366  |    nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  809  | 2023-10-09 09:45:00 |     -999.0     |     nan     |    nan     |    13.79645   |   3509.989  |    nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  810  | 2023-10-09 10:00:00 |     -999.0     |     nan     |    nan     |    13.7999    |   3776.417  |    nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
+
+II.
+
+All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+III.
+
+All good! The 'Meter Power' column has no missing values during daytime.
+
+IV.
+
+Besides, there are still 3 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_7 | Inverter_8 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
+|  808  | 2023-10-09 09:30:00 |     -999.0     |    -999.0   |   -999.0   |    13.79872   |   3244.366  |    nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  809  | 2023-10-09 09:45:00 |     -999.0     |    -999.0   |   -999.0   |    13.79645   |   3509.989  |    nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  810  | 2023-10-09 10:00:00 |     -999.0     |    -999.0   |   -999.0   |    13.7999    |   3776.417  |    nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
+
+V.
+
+No missing records to be fetched from the work order.

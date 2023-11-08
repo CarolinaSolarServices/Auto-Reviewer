@@ -6,6 +6,7 @@ from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
 import os
+import shutil
 
 
 def process_files(file_path):
@@ -40,6 +41,12 @@ def process_files(file_path):
     with open(f"../output/log/log_{site_name}.txt", "w") as file:
         for message in getInfo.log_messages:
             file.write(message + "\n")
+
+    processed_directory = "../data/processed"
+    if not os.path.exists(processed_directory):
+        os.makedirs(processed_directory)
+
+    shutil.move(file_path, f"{processed_directory}/{os.path.basename(file_path)}")
 
 
 def main(directory="../data"):

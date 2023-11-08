@@ -30,13 +30,12 @@ def check_missing_irradiance(df):
         log("All good! The 'POA Irradiance' column has no missing values.")
 
     # non_numeric_rows = df[df['POA Irradiance'].apply(lambda x: not isinstance(x, (int, float)))]
-    # print(non_numeric_rows['POA Irradiance'])   
+    # print(non_numeric_rows['POA Irradiance'])
     # If POA Irradiance > 1, modify any corresponding "Day/Night" info to "Day".
     condition_day_2 = df["POA Irradiance"] > 1
     df.loc[condition_day_2, "Day/Night"] = "Day"
 
     return df
-
 
 
 def check_and_autofill_temperature_and_wind(df):
@@ -151,6 +150,7 @@ def check_and_autofill_inverter_and_voltage(df):
         | ((df["Meter Power"] != -999) & (df["Meter Power"] <= 0))
     )
 
+    df = check_and_autofill_voltage(df)
     # Fill missings with -999 when the corresponding meter power is -999.
     df = autofill(
         df, condition_missing & condition_definite_missing, cols_to_check, -999
@@ -198,8 +198,9 @@ def check_and_autofill_inverter_and_voltage(df):
             INV_avg = INV_sum / (non_missing_count)
 
             try:
+                if INV_avg == 0:
+                    raise ZeroDivisionError("INV_avg is zero, cannot divide by zero.")
                 estimate_on = round((row["Meter Power"] * 1.03 / INV_avg))
-
                 to_be_filled = (
                     min(estimate_on, (missing_count + non_missing_count))
                     - non_missing_count
@@ -213,7 +214,7 @@ def check_and_autofill_inverter_and_voltage(df):
                     filled.append(index)
                 else:
                     unfilled.append(index)
-            except:
+            except ZeroDivisionError:
                 unfilled.append(index)
 
     if len(filled) > 0:
@@ -243,6 +244,28 @@ def check_and_autofill_inverter_and_voltage(df):
         )
     else:
         log("\nAll good! No more missing voltage or inverter values during daytime!")
+
+
+def check_and_autofill_voltage(df):
+    condition_voltage_missing = df["Meter Voltage"].isna()
+    inverter_cols = [col for col in df.columns if col.startswith("Inverter_")]
+    condition_inverter_missing = df[inverter_cols].isna().any(axis=1)
+    condition_inverter_all_reporting = ~condition_inverter_missing
+    condition_can_be_filled = (
+        condition_voltage_missing & condition_inverter_all_reporting
+    )
+
+    if condition_can_be_filled.sum() > 0:
+        average_voltage = round(df["Meter Voltage"].mean(), 6)
+        df.loc[condition_can_be_filled, "Meter Voltage"] = df.loc[
+            condition_can_be_filled, "Meter Voltage"
+        ].fillna(average_voltage)
+        # print("Rows after fillna:\n", df.loc[condition_can_be_filled, "Meter Voltage"])
+        # df.loc[condition_can_be_filled, "Meter Voltage"].fillna(
+        #     average_voltage, inplace=True
+        # )
+
+    return df
 
 
 def missing(df):

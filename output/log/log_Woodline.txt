@@ -84,12 +84,11 @@ Here are filled records within the daytime.(Only showing the first 20 records.)
 |  2825 | 2023-10-30 09:45:00 |     -999.0     |    -999.0   |   -999.0   |      0.0      |     0.0     |    nan     |    nan     |    nan     |    nan     |    Day    |
 |  2826 | 2023-10-30 10:00:00 |     -999.0     |    -999.0   |   -999.0   |      0.0      |     0.0     |    nan     |    nan     |    nan     |    nan     |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-Besides, there are still 12 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
+Besides, there are still 11 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 |  526  | 2023-10-06 11:00:00 |    712.0565    |    -999.0   |  1.01722   |    7.127457   |   5329.77   |  1824.07   |  1741.93   |   1799.4   |    nan     |    Day    |
-|  1402 | 2023-10-15 14:00:00 |    676.232     |   75.52227  |  3.27538   |      nan      |   6717.63   |   1683.3   |  1702.51   |  1632.93   |  1698.89   |    Day    |
 |  2817 | 2023-10-30 07:45:00 |     -999.0     |    -999.0   |   -999.0   |      0.0      |     0.0     |    nan     |    nan     |    nan     |    nan     |    Day    |
 |  2818 | 2023-10-30 08:00:00 |     -999.0     |    -999.0   |   -999.0   |      0.0      |     0.0     |    nan     |    nan     |    nan     |    nan     |    Day    |
 |  2819 | 2023-10-30 08:15:00 |     -999.0     |    -999.0   |   -999.0   |      0.0      |     0.0     |    nan     |    nan     |    nan     |    nan     |    Day    |
