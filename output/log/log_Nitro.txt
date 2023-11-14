@@ -5,10 +5,12 @@ All good! The 'POA Irradiance' column has no missing values.
 
 II.
 
-Detected 1087 missing values in the Temperature column when 'POA Irradiance' >= 100.
-These have been filled with a placeholder value of -999. (Only showing the first 20 records.)
+Detected 2976 missing values in the Temperature column.
+All have been filled with a placeholder value of -999.
 There is no need to document this discrepancy in the 'Data Issues' spreadsheet.
-Details of missing rows:
+
+Significantly, 1087 of these missings occure when 'POA Irradiance' >= 100.
+Details of these missing rows:
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Inverter_5 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
@@ -33,10 +35,12 @@ Details of missing rows:
 |   52  | 2023-10-01 12:30:00 |    861.6713    |    -999.0   |    nan     |    13.67909   |   4032.902  |  814.2505  |  784.4094  |  834.9901  |  813.1703  |  878.3957  |    Day    |
 |   53  | 2023-10-01 12:45:00 |    763.5112    |    -999.0   |    nan     |    13.67688   |   3169.063  |  497.5217  |  613.3826  |  757.9025  |  705.7994  |  844.7699  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
-Detected 1087 missing values in the Wind Speed column when 'POA Irradiance' >= 100.
-These have been filled with a placeholder value of -999. (Only showing the first 20 records.)
+Detected 2976 missing values in the Wind Speed column.
+All have been filled with a placeholder value of -999.
 There is no need to document this discrepancy in the 'Data Issues' spreadsheet.
-Details of missing rows:
+
+Significantly, 1087 of these missings occure when 'POA Irradiance' >= 100.
+Details of these missing rows:
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Inverter_5 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+------------+-----------+

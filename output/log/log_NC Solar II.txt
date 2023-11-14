@@ -5,10 +5,12 @@ All good! The 'POA Irradiance' column has no missing values.
 
 II.
 
-Detected 1129 missing values in the Temperature column when 'POA Irradiance' >= 100.
-These have been filled with a placeholder value of -999. (Only showing the first 20 records.)
+Detected 2976 missing values in the Temperature column.
+All have been filled with a placeholder value of -999.
 There is no need to document this discrepancy in the 'Data Issues' spreadsheet.
-Details of missing rows:
+
+Significantly, 1129 of these missings occure when 'POA Irradiance' >= 100.
+Details of these missing rows:
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
@@ -42,8 +44,10 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-8 rows with missing voltage or inverter values have been auto-filled with 0.
-There were no records filled out during the daytime.
+8 rows with missing voltage or inverter values have been auto-filled with 0 since the site is off.
+
+It seems that all the missing values occur during night time hours.
+
 
 All good! No more missing voltage or inverter values during daytime!
 

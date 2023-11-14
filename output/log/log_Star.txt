@@ -4,7 +4,7 @@ I.
 Detected 293 missing values in the 'POA Irradiance' column.
 All have been filled with a placeholder value of -999.
 Detected 129 missing values during the daytime.
-Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records here.)
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records.)
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
@@ -32,7 +32,15 @@ Kindly document this discrepancy in the 'Data Issues' spreadsheet for further re
 
 II.
 
+Detected 267 missing values in the Temperature column.
+All have been filled with a placeholder value of -999.
+There is no need to document this discrepancy in the 'Data Issues' spreadsheet.
+
 All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+Detected 267 missing values in the Wind Speed column.
+All have been filled with a placeholder value of -999.
+There is no need to document this discrepancy in the 'Data Issues' spreadsheet.
 
 All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
 
@@ -77,58 +85,37 @@ Summary of missing dates:
 
 IV.
 
-293 rows with missing voltage or inverter values have been auto-filled with -999.Details of filled rows (only showing the first 20 records here):
+293 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows (only showing the first 20 records here):
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
-|  2685 | 2023-10-28 22:45:00 |     -999.0     |     17.9    |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2686 | 2023-10-28 23:00:00 |     -999.0     |     17.3    |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2687 | 2023-10-28 23:15:00 |     -999.0     |    16.967   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2688 | 2023-10-28 23:30:00 |     -999.0     |    16.733   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2689 | 2023-10-28 23:45:00 |     -999.0     |    17.267   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2690 | 2023-10-29 00:00:00 |     -999.0     |    17.233   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2691 | 2023-10-29 00:15:00 |     -999.0     |    16.633   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2692 | 2023-10-29 00:30:00 |     -999.0     |    17.533   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2693 | 2023-10-29 00:45:00 |     -999.0     |     16.9    |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2694 | 2023-10-29 01:00:00 |     -999.0     |     16.4    |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2695 | 2023-10-29 01:15:00 |     -999.0     |    15.633   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2696 | 2023-10-29 01:30:00 |     -999.0     |    16.033   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2697 | 2023-10-29 01:45:00 |     -999.0     |    16.367   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2698 | 2023-10-29 02:00:00 |     -999.0     |     16.6    |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2699 | 2023-10-29 02:15:00 |     -999.0     |    16.367   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2700 | 2023-10-29 02:30:00 |     -999.0     |    15.433   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2701 | 2023-10-29 02:45:00 |     -999.0     |    15.067   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2702 | 2023-10-29 03:00:00 |     -999.0     |    14.467   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2703 | 2023-10-29 03:15:00 |     -999.0     |    14.167   |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
-|  2704 | 2023-10-29 03:30:00 |     -999.0     |     14.4    |    0.0     |      nan      |    -999.0   |    nan     |    nan     |    nan     |   Night   |
+|  2685 | 2023-10-28 22:45:00 |     -999.0     |     17.9    |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2686 | 2023-10-28 23:00:00 |     -999.0     |     17.3    |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2687 | 2023-10-28 23:15:00 |     -999.0     |    16.967   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2688 | 2023-10-28 23:30:00 |     -999.0     |    16.733   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2689 | 2023-10-28 23:45:00 |     -999.0     |    17.267   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2690 | 2023-10-29 00:00:00 |     -999.0     |    17.233   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2691 | 2023-10-29 00:15:00 |     -999.0     |    16.633   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2692 | 2023-10-29 00:30:00 |     -999.0     |    17.533   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2693 | 2023-10-29 00:45:00 |     -999.0     |     16.9    |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2694 | 2023-10-29 01:00:00 |     -999.0     |     16.4    |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2695 | 2023-10-29 01:15:00 |     -999.0     |    15.633   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2696 | 2023-10-29 01:30:00 |     -999.0     |    16.033   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2697 | 2023-10-29 01:45:00 |     -999.0     |    16.367   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2698 | 2023-10-29 02:00:00 |     -999.0     |     16.6    |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2699 | 2023-10-29 02:15:00 |     -999.0     |    16.367   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2700 | 2023-10-29 02:30:00 |     -999.0     |    15.433   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2701 | 2023-10-29 02:45:00 |     -999.0     |    15.067   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2702 | 2023-10-29 03:00:00 |     -999.0     |    14.467   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2703 | 2023-10-29 03:15:00 |     -999.0     |    14.167   |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
+|  2704 | 2023-10-29 03:30:00 |     -999.0     |     14.4    |    0.0     |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   Night   |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
-164 rows with missing voltage or inverter values have been auto-filled with 0.
-There were no records filled out during the daytime.
-Besides, there are still 129 rows with missing voltage or inverter values cannot be filled.Only showing the first 20 records here.For more insights and to cross-verify, please refer to the relevant work order records.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
-|  2721 | 2023-10-29 07:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2722 | 2023-10-29 08:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2723 | 2023-10-29 08:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2724 | 2023-10-29 08:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2725 | 2023-10-29 08:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2726 | 2023-10-29 09:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2727 | 2023-10-29 09:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2728 | 2023-10-29 09:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2729 | 2023-10-29 09:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2730 | 2023-10-29 10:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2731 | 2023-10-29 10:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2732 | 2023-10-29 10:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2733 | 2023-10-29 10:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2734 | 2023-10-29 11:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2735 | 2023-10-29 11:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2736 | 2023-10-29 11:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2737 | 2023-10-29 11:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2738 | 2023-10-29 12:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2739 | 2023-10-29 12:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-|  2740 | 2023-10-29 12:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    Day    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+164 rows with missing voltage or inverter values have been auto-filled with 0 since the site is off.
+
+It seems that all the missing values occur during night time hours.
+
+
+All good! No more missing voltage or inverter values during daytime!
 
 V.
 
