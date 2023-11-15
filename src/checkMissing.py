@@ -1,6 +1,7 @@
 from getInfo import log, get_info
 import numpy as np
 import pandas as pd
+import Summary
 
 
 def check_missing_irradiance(df):
@@ -20,6 +21,7 @@ def check_missing_irradiance(df):
 
         # Only document the missings during daytime
         if condition_day_missing.sum() > 0:
+            Summary.irradiance_status = "x"
             log(
                 f"Detected {condition_day_missing.sum()} missing values during the daytime.\n"
                 f"Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records.)\n"
@@ -86,6 +88,7 @@ def check_and_autofill_Meter(df):
 
     df.loc[condition_missing, "Meter Power"] = -999
     if condition_day_missing.sum() > 0:
+        Summary.production_status = "x"
         log(
             f"Detected {condition_day_missing.sum()} missing 'Meter Power' values during daytime."
         )
