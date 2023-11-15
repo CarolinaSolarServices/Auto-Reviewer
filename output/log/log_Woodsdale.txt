@@ -1,10 +1,16 @@
 
+Notes:
+If the record count exceeds 20, only the first 20 rows will be displayed in this log.
+If the number of inverter columns exceeds 12, only the first 9 and the last 3 columns will be displayed.
+The inverter names are standardized in this log according to the order of inverter columns in the original dataset.
+
+
 I.
 
 Detected 479 missing values in the 'POA Irradiance' column.
 All have been filled with a placeholder value of -999.
 Detected 227 missing values during the daytime.
-Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records.)
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -30,6 +36,8 @@ Kindly document this discrepancy in the 'Data Issues' spreadsheet for further re
 |  843  | 2023-10-09 18:15:00 |     -999.0     |     nan     |    nan     |      nan      |     nan     |    nan     |    nan     |    nan     |     nan     |     nan     |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
+
+
 II.
 
 Detected 479 missing values in the Temperature column.
@@ -48,7 +56,7 @@ All good! When POA Irradiance >= 100, the Wind Speed column has no missing value
 III.
 
 Detected 227 missing 'Meter Power' values during daytime.
-The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.(Only showing the first 20 records.)
+The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.
 These have been filled with a placeholder value of -999.
 Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-----------+------------+
@@ -85,9 +93,10 @@ Summary of missing dates:
 2023-10-14: 53 missing
 
 
+
 IV.
 
-479 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows (only showing the first 20 records here):
+479 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows:
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -112,9 +121,11 @@ IV.
 |  842  | 2023-10-09 18:00:00 |     -999.0     |    -999.0   |   -999.0   |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |    -999.0   |    -999.0   |    Day    |
 |  843  | 2023-10-09 18:15:00 |     -999.0     |    -999.0   |   -999.0   |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |    -999.0   |    -999.0   |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-1549 rows with missing voltage or inverter values have been auto-filled with 0 since the site is off.
 
-Here are filled records within the daytime.(Only showing the first 20 records.)
+
+1549 rows with missing inverter values have been auto-filled with 0 since the site is off.
+
+Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -124,9 +135,11 @@ Here are filled records within the daytime.(Only showing the first 20 records.)
 |  596  | 2023-10-07 04:30:00 |    1.934938    |   65.99241  |    4.0     |    13637.0    |  -3.559093  |    0.0     |    0.0     |    0.0     |     0.0     |     0.0     |    Day    |
 |  2431 | 2023-10-26 07:15:00 |    1.860653    |   47.57363  |    0.0     |    13635.0    |  -2.709775  | 0.1083713  | 0.03283617 | 0.07270144 |  0.1331095  |  0.05716735 |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-Missing inverter values in 52 rows with have been auto-filled with 0 since these inverters should be off.
 
-Here are filled records within the daytime.(Only showing the first 20 records.)
+
+Missing inverter values in 52 rows have been auto-filled with 0 since these inverters should be off.
+
+Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -151,7 +164,9 @@ Here are filled records within the daytime.(Only showing the first 20 records.)
 |  1878 | 2023-10-20 13:00:00 |    74.50652    |   66.7991   |    6.0     |    13650.67   |   170.1326  |  5.46842   |  5.335617  |  5.31262   |   6.190569  |   5.80123   |    Day    |
 |  1879 | 2023-10-20 13:15:00 |    42.74226    |   64.53173  |    7.0     |    13668.0    |   84.17561  |   2.8065   |  2.597102  |  2.550429  |   2.854535  |   3.30634   |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-86 rows with missing inverter values have been auto-filled with 1.Only showing the first 20 records here.
+
+
+86 rows with missing inverter values have been auto-filled with 1.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -176,15 +191,17 @@ Here are filled records within the daytime.(Only showing the first 20 records.)
 |  1670 | 2023-10-18 09:00:00 |    377.1767    |   58.96466  |    0.0     |    13685.33   |   801.9069  |  21.81934  |  22.29493  |  21.89864  |   32.92602  |   34.54729  |    Day    |
 |  1671 | 2023-10-18 09:15:00 |    455.2915    |   60.37722  |    1.0     |    13692.67   |   990.2336  |  29.71662  |  29.98955  |  26.43627  |   33.90376  |   34.92793  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-2 rows with missing inverter values should have more inverters on.But it is hard to decide how many more inverters should be on based on the data.Showing the first 20 records during daytime here for your reference.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
+
+
+2 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 |  1797 | 2023-10-19 16:45:00 |    151.9084    |   68.12141  |    5.0     |    13706.0    |   279.0184  |  7.992288  |   8.3094   |  8.232786  |   8.771449  |   9.685493  |    Day    |
 |  2088 | 2023-10-22 17:30:00 |    33.80922    |   68.1189   |    4.0     |    13667.0    |   93.84769  |  4.848599  |  5.007545  |  5.089227  |   1.815531  |   3.883291  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
+
+
 Besides, there are still 7 rows with missing voltage or inverter values cannot be filled.
-Only showing the first 20 records here.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -195,7 +212,9 @@ Only showing the first 20 records here.
 |  2144 | 2023-10-23 07:30:00 |    8.25171     |   34.64162  |    1.0     |    13650.67   |   9.346594  | 0.8588766  |  0.758425  | 0.7352904  |  0.4478973  |  0.6574083  |    Day    |
 |  2187 | 2023-10-23 18:15:00 |    4.418328    |   59.66401  |    0.0     |    13628.0    |   6.624177  |  0.644939  | 0.7097341  | 0.7041443  |  0.6138313  |  0.6336089  |    Day    |
 |  2667 | 2023-10-28 18:15:00 |    3.374478    |   77.2762   |    0.0     |    13601.0    |   1.508696  | 0.3669165  | 0.4722105  | 0.3406835  |  0.5316625  |  0.2490903  |    Day    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+For more insights and to cross-verify, please refer to the relevant work order records.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
+
+For more insights and to cross-verify, please refer to the relevant work order records.
 
 
 V.

@@ -1,10 +1,16 @@
 
+Notes:
+If the record count exceeds 20, only the first 20 rows will be displayed in this log.
+If the number of inverter columns exceeds 12, only the first 9 and the last 3 columns will be displayed.
+The inverter names are standardized in this log according to the order of inverter columns in the original dataset.
+
+
 I.
 
 Detected 2976 missing values in the 'POA Irradiance' column.
 All have been filled with a placeholder value of -999.
 Detected 1397 missing values during the daytime.
-Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.(Only showing the first 20 records.)
+Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power |  Inverter_1 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+-------------+-----------+
@@ -29,6 +35,8 @@ Kindly document this discrepancy in the 'Data Issues' spreadsheet for further re
 |   49  | 2023-10-01 11:45:00 |     -999.0     |     nan     |    nan     |   0.2890582   |   392.5467  |   399.7033  |    Day    |
 |   50  | 2023-10-01 12:00:00 |     -999.0     |     nan     |    nan     |   0.2887769   |   404.1425  |   411.1419  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+-------------+-----------+
+
+
 
 II.
 

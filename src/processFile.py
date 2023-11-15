@@ -13,6 +13,12 @@ import Summary
 
 
 def process_file(file_path):
+    log(
+        f"\nNotes:\n"
+        f"If the record count exceeds 20, only the first 20 rows will be displayed in this log.\n"
+        f"If the number of inverter columns exceeds 12, only the first 9 and the last 3 columns will be displayed.\n"
+        f"The inverter names are standardized in this log according to the order of inverter columns in the original dataset.\n"
+    )
     site_name = file_path.split("_")[-1].replace(" Monthly.csv", "")
 
     sitedata = read_site(file_path)

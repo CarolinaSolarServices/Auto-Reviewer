@@ -1,4 +1,10 @@
 
+Notes:
+If the record count exceeds 20, only the first 20 rows will be displayed in this log.
+If the number of inverter columns exceeds 12, only the first 9 and the last 3 columns will be displayed.
+The inverter names are standardized in this log according to the order of inverter columns in the original dataset.
+
+
 I.
 
 All good! The 'POA Irradiance' column has no missing values.
@@ -16,18 +22,20 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-143 rows with missing voltage or inverter values have been auto-filled with 0 since the site is off.
+143 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
 It seems that all the missing values occur during night time hours.
 
-Missing inverter values in 1 rows with have been auto-filled with 0 since these inverters should be off.
+Missing inverter values in 1 rows have been auto-filled with 0 since these inverters should be off.
 
-Here are filled records within the daytime.(Only showing the first 20 records.)
+Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 |  2832 | 2023-10-30 11:30:00 |    575.246     |    71.796   |  8.35667   |    7.29039    |   5019.41   |    0.0     |  2491.53   |  2578.03   |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+
+
 
 All good! No more missing voltage or inverter values during daytime!
 

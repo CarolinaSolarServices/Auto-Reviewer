@@ -1,4 +1,10 @@
 
+Notes:
+If the record count exceeds 20, only the first 20 rows will be displayed in this log.
+If the number of inverter columns exceeds 12, only the first 9 and the last 3 columns will be displayed.
+The inverter names are standardized in this log according to the order of inverter columns in the original dataset.
+
+
 I.
 
 Detected 64 missing values in the 'POA Irradiance' column.
@@ -27,7 +33,7 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-10 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows (only showing the first 20 records here):
+10 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows:
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
@@ -42,16 +48,17 @@ IV.
 |  2976 | 2023-10-31 23:30:00 |  0.009444632   |   27.55351  | 0.8664265  |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |    0.0     |   Night   |
 |  2977 | 2023-10-31 23:45:00 |     -999.0     |    -999.0   |   -999.0   |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |   -999.0   |  Unknown  |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-31 rows with missing voltage or inverter values have been auto-filled with 0 since the site is off.
+
+
+31 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
 It seems that all the missing values occur during night time hours.
 
-Missing inverter values in 19 rows with have been auto-filled with 0 since these inverters should be off.
+Missing inverter values in 19 rows have been auto-filled with 0 since these inverters should be off.
 
 It seems that all the missing values occur during night time hours.
 
-5 rows with missing inverter values should have more inverters on.But it is hard to decide how many more inverters should be on based on the data.Showing the first 20 records during daytime here for your reference.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+5 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 |  134  | 2023-10-02 09:00:00 |     -999.0     |    -999.0   |   -999.0   |    20.34587   |   2677.063  |  869.721   |  829.3578  |    nan     |  917.6445  |  Unknown  |
@@ -60,6 +67,8 @@ It seems that all the missing values occur during night time hours.
 |  139  | 2023-10-02 10:15:00 |     -999.0     |    -999.0   |   -999.0   |    20.19539   |   6292.916  |  2084.991  |  1971.164  |    nan     |  2191.211  |  Unknown  |
 |  140  | 2023-10-02 10:30:00 |     -999.0     |    -999.0   |   -999.0   |    20.18451   |   6209.957  |  2053.347  |  1874.251  |    nan     |  2190.945  |  Unknown  |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
+
+
 
 All good! No more missing voltage or inverter values during daytime!
 
