@@ -1,4 +1,4 @@
-Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC 2.7MW Inverter 1.1.1, Active Power P","TMEIC 2.7MW Inverter 1.2.1, Active Power P","TMEIC 2.7MW Inverter 1.3.1, Active Power P","TMEIC 2.7MW Inverter 1.4.1, Active Power P",Day/Night
+Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"ABB Ultra 1500 Inverter - 1, 3phase Power","ABB Ultra 1500 Inverter - 2, 3phase Power","ABB Ultra 1500 Inverter - 3, 3phase Power","ABB Ultra 1500 Inverter - 4, 3phase Power",Day/Night
 2023-10-01 00:00:00,0.0,60.46981,0.0,20031.33,-12.908,0.0,0.0,0.0,0.0,Night
 2023-10-01 00:15:00,0.0,60.39172,0.0,20042.67,-12.923,0.0,0.0,0.0,0.0,Night
 2023-10-01 00:30:00,0.0,59.98582,0.0,20062.67,-12.976,0.0,0.0,0.0,0.0,Night

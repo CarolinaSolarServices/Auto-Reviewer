@@ -72,14 +72,6 @@ Summary of missing dates:
 
 IV.
 
-1 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows:
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_11 | Inverter_12 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-|  225  | 2023-10-03 07:45:00 |     -999.0     |    -999.0   |   -999.0   |     -999.0    |    -999.0   |   -999.0   |   -999.0   |   -999.0   |    -999.0   |    -999.0   |    Day    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-
-
 4 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
 Here are filled records within the daytime.
@@ -100,10 +92,11 @@ Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
 
-Besides, there are still 4 rows with missing voltage or inverter values cannot be filled.
+Besides, there are still 5 rows with missing voltage or inverter values cannot be filled.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_11 | Inverter_12 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
+|  225  | 2023-10-03 07:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |     nan     |     nan     |    Day    |
 |  243  | 2023-10-03 12:15:00 |     -999.0     |    -999.0   |   -999.0   |    7.523876   |    1036.5   |  101.172   |  115.402   |  117.461   |     nan     |     nan     |    Day    |
 |  2159 | 2023-10-23 11:15:00 |     -999.0     |    -999.0   |   -999.0   |    7.571896   |   1399.46   |    nan     |    nan     |    nan     |     nan     |     nan     |    Day    |
 |  2160 | 2023-10-23 11:30:00 |     -999.0     |    -999.0   |   -999.0   |    7.55185    |   773.749   |    nan     |    nan     |    nan     |     nan     |     nan     |    Day    |

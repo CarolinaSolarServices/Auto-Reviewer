@@ -1,4 +1,4 @@
-Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC 2.7MW Inverter 1.1.1, Active Power P",Day/Night
+Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"Satcon PVS - 1, Output KW",Day/Night
 2023-10-01 00:00:00,-999.0,-999.0,-999.0,0.2849394,0.0,-0.4213697,Night
 2023-10-01 00:15:00,-999.0,-999.0,-999.0,0.2850412,0.0,-0.383797,Night
 2023-10-01 00:30:00,-999.0,-999.0,-999.0,0.2852478,0.0,-0.4182415,Night

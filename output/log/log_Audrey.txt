@@ -59,6 +59,24 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
+3 rows with missing inverter values have been auto-filled with 1.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+-----------+
+|  940  | 2023-10-10 18:30:00 |     -999.0     |    -999.0   |   -999.0   |    7453.333   |    10.127   |    0.0     |   6.367    |    Day    |
+|  2091 | 2023-10-22 18:15:00 |     -999.0     |    -999.0   |   -999.0   |    7433.333   |    8.223    |    0.0     |    4.0     |    Day    |
+|  2666 | 2023-10-28 18:00:00 |     -999.0     |    -999.0   |   -999.0   |     7420.0    |    16.153   |    0.0     |    6.1     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+-----------+
+
+
+2 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+-----------+
+|  173  | 2023-10-02 18:45:00 |     -999.0     |    -999.0   |   -999.0   |    7456.667   |    2.263    |    0.0     |   1.767    |    Day    |
+|  2186 | 2023-10-23 18:00:00 |     -999.0     |    -999.0   |   -999.0   |     7435.0    |    15.41    |    0.0     |    11.9    |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+-----------+
+
+
 
 All good! No more missing voltage or inverter values during daytime!
 

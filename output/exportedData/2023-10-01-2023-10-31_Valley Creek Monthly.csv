@@ -1,4 +1,4 @@
-Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC 2.7MW Inverter 1.1.1, Active Power P",Day/Night
+Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"Inverter 1, AC Active Power (Total)",Day/Night
 2023-10-01 00:00:00,0.0,46.44411,0.5105,7.3634,-2.55758,0.0,Night
 2023-10-01 00:15:00,0.0,44.47285,0.5325,7.371227,-2.56387,0.0,Night
 2023-10-01 00:30:00,0.0,43.39235,0.336556,7.37741,-2.57324,0.0,Night
@@ -2974,4 +2974,4 @@ Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC
 2023-10-31 23:00:00,0.0,43.38434,0.299549,7.394993,-2.60136,0.0,Night
 2023-10-31 23:15:00,0.0,43.86804,0.544284,7.38876,-2.59959,0.0,Night
 2023-10-31 23:30:00,0.0,44.18757,0.426653,7.373013,-2.58572,0.0,Night
-2023-10-31 23:45:00,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,Night
+2023-10-31 23:45:00,-999.0,-999.0,-999.0,,-999.0,0.0,Night

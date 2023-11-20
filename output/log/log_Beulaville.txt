@@ -101,7 +101,7 @@ Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
 
-1014 rows with missing inverter values have been auto-filled with 1.
+1015 rows with missing inverter values have been auto-filled with 1.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_79 | Inverter_80 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
@@ -128,9 +128,10 @@ Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
 
-357 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
+384 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_79 | Inverter_80 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
+|   30  | 2023-10-01 07:00:00 |     -999.0     |    -999.0   |   -999.0   |     280.0     |   8.478333  | 0.1278333  |   0.122    | 0.1248333  |     0.0     |     0.0     |   Night   |
 |   36  | 2023-10-01 08:30:00 |     -999.0     |    -999.0   |   -999.0   |     290.0     |    598.82   |  7.609667  |  7.501167  |  7.553333  |     1.0     |     nan     |    Day    |
 |   38  | 2023-10-01 09:00:00 |     -999.0     |    -999.0   |   -999.0   |    282.1667   |   852.655   |   11.078   |  11.00883  |  11.09633  |     nan     |     nan     |    Day    |
 |   49  | 2023-10-01 11:45:00 |     -999.0     |    -999.0   |   -999.0   |     286.0     |   1650.727  |  21.19783  |  20.84383  |  21.00733  |     nan     |     nan     |    Day    |
@@ -149,8 +150,7 @@ Here are filled records within the daytime.
 |   74  | 2023-10-01 18:00:00 |     -999.0     |    -999.0   |   -999.0   |     280.0     |   169.9767  |  1.831167  |  2.173333  |  2.206333  |     1.0     |     nan     |    Day    |
 |   75  | 2023-10-01 18:15:00 |     -999.0     |    -999.0   |   -999.0   |     280.0     |   80.46334  | 0.9371667  |  1.063833  |  1.021833  |     nan     |     nan     |    Day    |
 |   76  | 2023-10-01 18:30:00 |     -999.0     |    -999.0   |   -999.0   |     280.0     |   27.75333  | 0.3928333  | 0.3891667  |   0.401    |     nan     |     nan     |    Day    |
-|  127  | 2023-10-02 07:15:00 |     -999.0     |    -999.0   |   -999.0   |    280.3333   |   30.86167  |   0.4185   | 0.3866667  | 0.4246667  |     1.0     |     nan     |    Day    |
-|  168  | 2023-10-02 17:30:00 |     -999.0     |    -999.0   |   -999.0   |     280.0     |    378.24   |  4.716333  |   4.605    |  4.660333  |     1.0     |     nan     |    Day    |
+|  126  | 2023-10-02 07:00:00 |     -999.0     |    -999.0   |   -999.0   |     280.0     |    7.085    |   0.119    | 0.1051667  | 0.1141667  |     0.0     |     0.0     |   Night   |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
 

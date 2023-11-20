@@ -1,4 +1,4 @@
-Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC 2.7MW Inverter 1.1.1, Active Power P","TMEIC 2.7MW Inverter 1.2.1, Active Power P","TMEIC 2.7MW Inverter 1.3.1, Active Power P","TMEIC 2.7MW Inverter 1.4.1, Active Power P",Inverter_5,Inverter_6,Inverter_7,Day/Night
+Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"Schneider XC733-NA 733kW Inverter - 1A, Line kW","Schneider XC733-NA 733kW Inverter - 1B, Line kW","Schneider XC733-NA 733kW Inverter - 1C, Line kW","Schneider XC733-NA 733kW Inverter - 2A, Line kW","Schneider XC733-NA 733kW Inverter - 2B, Line kW","Schneider XC733-NA 733kW Inverter - 3A, Line kW","Schneider XC733-NA 733kW Inverter - 3B, Line kW",Day/Night
 2023-10-01 00:00:00,0.0,59.29487,0,14974.33,-10.24433,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Night
 2023-10-01 00:15:00,0.0,58.85612,0,14985.67,-10.267,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Night
 2023-10-01 00:30:00,0.0,58.53849,0,14987.0,-10.27033,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Night

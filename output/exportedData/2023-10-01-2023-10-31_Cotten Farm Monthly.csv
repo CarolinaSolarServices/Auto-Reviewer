@@ -1,4 +1,4 @@
-Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC 2.7MW Inverter 1.1.1, Active Power P","TMEIC 2.7MW Inverter 1.2.1, Active Power P","TMEIC 2.7MW Inverter 1.3.1, Active Power P","TMEIC 2.7MW Inverter 1.4.1, Active Power P",Inverter_5,Inverter_6,Day/Night
+Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"SMA SC-800CP-US - A1, Pac","SMA SC-800CP-US - A2, Pac","SMA SC-800CP-US - B1, Pac","SMA SC-800CP-US - B2, Pac","SMA SC-800CP-US - C1, Pac","SMA SC-800CP-US - C2, Pac",Day/Night
 2023-10-01 00:00:00,0.0,59.03482,0,13.79533,-8.950758,0.0,0.0,0.0,0.0,0.0,0.0,Night
 2023-10-01 00:15:00,0.0,59.05172,0,13.80667,-8.975331,0.0,0.0,0.0,0.0,0.0,0.0,Night
 2023-10-01 00:30:00,0.0,59.06192,0,13.81633,-9.007056,0.0,0.0,0.0,0.0,0.0,0.0,Night

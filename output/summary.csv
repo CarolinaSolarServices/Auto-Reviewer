@@ -1,93 +1,93 @@
-Site Name,Production,Irradiance
-1634,,
-Adams,,
-Agate Bay,x,x
-Albertson,x,x
-Amethyst,x,
-Anderson,,
-Atkinson 2,,
-Audrey,,x
-Augusta,x,
-Aulander,,
-Bani,,
-Bartow,,x
-Beulaville,,x
-Big Horn,,
-Briarwood,x,
-Briarwood,x,
-Brightwood,,
-Brush Creek,,
-Chiloquin,,
-Collier,x,x
-Colton,,
-Cotten Farm,,
-Cottonwood,x,
-County Home,,
-Dairy,x,
-Davis Lane,x,x
-Dayton Cutoff,,x
-Drift Creek,,
-Eagle Point,,x
-Facile Solar,x,
-Faison,,
-Fayetteville PWC,,
-Fort Rock Solar I,x,x
-Fort Rock Solar IV,x,x
-Four Oaks,x,x
-Freemont,,
-Garner 1,,
-Garner 2,,
-Gastonia,,
-Gauss,x,x
-Gold Mine,x,x
-Grand Ronde,,
-Interstate,,
-Jersey,x,x
-Lafayette,,
-Lakeview,x,
-Lane,,x
-Mariposa,,
-Meeks,,x
-Merrill,x,
-Mill Creek,,
-Milo,,
-Minke,x,
-Minnie,x,x
-Monroe Moore,,
-NC Solar I,x,x
-NC Solar II,,
-Nitro,,
-Owen,,
-PCSP 1,,x
-PCSP 3,x,
-Pamlico,x,
-Penny Hill,,
-Pika,,
-Princeton,x,x
-Quarter Horse,,
-Railroad,,
-Red Oak,x,x
-Ridgeback,,
-Riley,,
-Sadiebrook,,
-Sarah,x,x
-Schell,,
-Sedberry,,
-Sheep,,
-Siler 421,,
-Silverton,,
-Soluga IV,,
-Sonne Two,x,x
-Sophie,,
-South Robeson,,x
-Star,x,x
-Starvation Solar I,x,x
-Strider,,
-Test,,
-Tiburon,,
-Tumbleweed,,
-Turkey Hill,,
-Valley Creek,,
-Weaver,,
-Woodline,x,x
-Woodsdale,x,x
+Site Name,Production,Irradiance,Inverter
+1634,,,x
+Adams,,,x
+Agate Bay,x,x,x
+Albertson,x,x,x
+Amethyst,x,,x
+Anderson,,,
+Atkinson 2,,,
+Audrey,,x,
+Augusta,x,,x
+Aulander,,,x
+Bani,,,
+Bartow,,x,x
+Beulaville,,x,x
+Big Horn,,,
+Briarwood,x,,x
+Briarwood,x,,x
+Brightwood,,,
+Brush Creek,,,
+Chiloquin,,,x
+Collier,x,x,x
+Colton,,,
+Cotten Farm,,,x
+Cottonwood,x,,x
+County Home,,,x
+Dairy,x,,x
+Davis Lane,x,x,x
+Dayton Cutoff,,x,
+Drift Creek,,,
+Eagle Point,,x,x
+Facile Solar,x,,x
+Faison,,,x
+Fayetteville PWC,,,x
+Fort Rock Solar I,x,x,x
+Fort Rock Solar IV,x,x,x
+Four Oaks,x,x,x
+Freemont,,,
+Garner 1,,,x
+Garner 2,,,x
+Gastonia,,,x
+Gauss,x,x,x
+Gold Mine,x,x,x
+Grand Ronde,,,
+Interstate,,,
+Jersey,x,x,x
+Lafayette,,,x
+Lakeview,x,,x
+Lane,,x,x
+Mariposa,,,
+Meeks,,x,x
+Merrill,x,,x
+Mill Creek,,,
+Milo,,,
+Minke,x,,x
+Minnie,x,x,x
+Monroe Moore,,,
+NC Solar I,x,x,x
+NC Solar II,,,
+Nitro,,,
+Owen,,,
+PCSP 1,,x,
+PCSP 3,x,,x
+Pamlico,x,,x
+Penny Hill,,,
+Pika,,,
+Princeton,x,x,x
+Quarter Horse,,,
+Railroad,,,x
+Red Oak,x,x,x
+Ridgeback,,,x
+Riley,,,x
+Sadiebrook,,,
+Sarah,x,x,x
+Schell,,,
+Sedberry,,,x
+Sheep,,,
+Siler 421,,,x
+Silverton,,,
+Soluga IV,,,
+Sonne Two,x,x,x
+Sophie,,,
+South Robeson,,x,x
+Star,x,x,x
+Starvation Solar I,x,x,x
+Strider,,,x
+Test,,,
+Tiburon,,,x
+Tumbleweed,,,x
+Turkey Hill,,,
+Valley Creek,,,
+Weaver,,,x
+Woodline,x,x,
+Woodsdale,x,x,x

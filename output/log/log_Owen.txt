@@ -22,6 +22,21 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
+1 rows with missing inverter values have been auto-filled with 1.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+|  128  | 2023-10-02 07:30:00 |     11.333     |    12.667   |    0.0     |    7443.333   |    14.517   |   6.067    |    0.0     |   3.567    |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+
+
+1 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+|   32  | 2023-10-01 07:30:00 |     11.333     |    15.933   |    0.0     |     7450.0    |    17.357   |   13.233   |    0.0     |   3.633    |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+
+
 
 All good! No more missing voltage or inverter values during daytime!
 

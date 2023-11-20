@@ -1,4 +1,4 @@
-Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"TMEIC 2.7MW Inverter 1.1.1, Active Power P","TMEIC 2.7MW Inverter 1.2.1, Active Power P",Day/Night
+Timestamp,POA Irradiance,Temperature,Wind Speed,Meter Voltage,Meter Power,"NC1 - Milo Solar - Eaton Inverter #01 - Measured AC Power, avg, (kW)","NC1 - Milo Solar - Eaton Inverter #02 - Measured AC Power, avg, (kW)",Day/Night
 2023-10-01 00:00:00,-3.0,14.567,0.0,7150.0,-6.497,0.0,0.0,Night
 2023-10-01 00:15:00,-3.0,14.367,0.0,7173.333,-6.507,0.0,0.0,Night
 2023-10-01 00:30:00,-3.0,14.2,0.0,7186.667,-6.557,0.0,0.0,Night

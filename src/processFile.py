@@ -3,7 +3,7 @@ import renameColumn
 import pandas as pd
 from getInfo import log
 from readData import read_site
-from renameColumn import rename, name_mapping
+from renameColumn import rename
 from normalizeData import normalize
 from checkMissing import missing
 from checkWorkorder import fetch_workorder
@@ -34,7 +34,7 @@ def process_file(file_path):
     else:
         log("No missing records to be fetched from the work order.")
 
-    site_df.rename(columns=name_mapping, inplace=True)
+    site_df.rename(columns=renameColumn.name_mapping, inplace=True)
     renameColumn.name_mapping = {}
 
     output_directory = "../output/exportedData/"
@@ -55,6 +55,7 @@ def process_file(file_path):
         "Site Name": site_name,
         "Production": Summary.production_status,
         "Irradiance": Summary.irradiance_status,
+        "Inverter": Summary.inverter_status,
     }
 
     Summary.summary = pd.concat(
@@ -62,3 +63,4 @@ def process_file(file_path):
     )
     Summary.production_status = ""
     Summary.irradiance_status = ""
+    Summary.inverter_status = ""

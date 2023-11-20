@@ -33,14 +33,6 @@ All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-1 rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power.Details of filled rows:
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+-----------+
-|  2977 | 2023-10-31 23:45:00 |     -999.0     |    -999.0   |   -999.0   |     -999.0    |    -999.0   |   -999.0   |   Night   |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+-----------+
-
-
 1 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
 It seems that all the missing values occur during night time hours.
