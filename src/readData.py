@@ -2,6 +2,12 @@ import pandas as pd
 from getInfo import log
 
 
+def detect_separator(line):
+    if ";" in line:
+        return ";"
+    return ","
+
+
 #  Read in the data file
 def read_site(file_path):
     lines = []
@@ -25,8 +31,9 @@ def read_site(file_path):
         print(error_message)
         exit()
 
+    separator = detect_separator(lines[header_index])
     # The index of the found header is exactly the number of rows to skip when reading the data
-    df = pd.read_csv(file_path, skiprows=header_index, header=0)
+    df = pd.read_csv(file_path, skiprows=header_index, header=0, sep=separator)
     # print(df.loc[0,:])
 
     # Check whether the second row in the dataframe is an extra unit row
