@@ -48,25 +48,21 @@ All good! When POA Irradiance >= 100, the Wind Speed column has no missing value
 
 III.
 
-All good! The 'Meter Power' column has no missing values during daytime.
-
-IV.
-
 8 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
 It seems that all the missing values occur during night time hours.
 
-1 rows with missing inverter values have been auto-filled with 1.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-|  126  | 2023-10-02 07:00:00 |    2.310103    |    -999.0   |  1.110994  |   0.08926523  |   2.031735  | 0.04458455 |    0.0     | 0.01091899 | 0.01182852 |    Day    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 
+IV.
 
-
-All good! No more missing voltage or inverter values during daytime!
+All good! The 'Meter Power' column has no missing values during daytime.
 
 V.
+
+
+For more insights and to cross-verify, please refer to the relevant work order records.
+
+
+VI.
 
 No missing records to be fetched from the work order.

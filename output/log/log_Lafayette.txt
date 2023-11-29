@@ -18,11 +18,8 @@ All good! When POA Irradiance >= 100, the Wind Speed column has no missing value
 
 III.
 
-All good! The 'Meter Power' column has no missing values during daytime.
-
-IV.
-
-Missing inverter values in 5 rows have been auto-filled with 0 since these inverters should be off.
+Missing inverter values in 5 rows have been automatically set to 0, indicating these inverters are off.
+This is based on the small difference between the meter power value and the sum of existing inverters, suggesting the missing inverters are inactive.
 
 Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
@@ -36,16 +33,27 @@ Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 
 
-Besides, there are still 1 rows with missing voltage or inverter values cannot be filled.
+There are still 1 rows with missing inverter values cannot be automatically filled.
+
+Here are still missing records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 |  2914 | 2023-10-31 08:00:00 |    12.57098    |   56.71104  |     4      |     7536.0    |   1.237486  | 0.7353824  |    nan     |  3.819701  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 
+
+
+IV.
+
+All good! The 'Meter Power' column has no missing values during daytime.
+
+V.
+
+
 For more insights and to cross-verify, please refer to the relevant work order records.
 
 
-V.
+VI.
 
 No missing records to be fetched from the work order.

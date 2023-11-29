@@ -13,7 +13,7 @@ Bani,,,
 Bartow,,x,x
 Beulaville,,x,x
 Big Horn,,,
-Briarwood,x,,x
+Briarwood,,,x
 Briarwood,x,,x
 Brightwood,,,
 Brush Creek,,,
@@ -35,8 +35,8 @@ Fort Rock Solar I,x,x,x
 Fort Rock Solar IV,x,x,x
 Four Oaks,x,x,x
 Freemont,,,
-Garner 1,,,x
-Garner 2,,,x
+Garner 1,,,
+Garner 2,x,,x
 Gastonia,,,x
 Gauss,x,x,x
 Gold Mine,x,x,x
@@ -58,7 +58,7 @@ NC Solar I,x,x,x
 NC Solar II,,,
 Nitro,,,
 Owen,,,
-PCSP 1,,x,
+PCSP 1,,,
 PCSP 3,x,,x
 Pamlico,x,,x
 Penny Hill,,,
@@ -89,5 +89,5 @@ Tumbleweed,,,x
 Turkey Hill,,,
 Valley Creek,,,
 Weaver,,,x
-Woodline,x,x,
+Woodline,,x,
 Woodsdale,x,x,x

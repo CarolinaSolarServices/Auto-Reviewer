@@ -78,13 +78,17 @@ Details of these missing rows:
 
 III.
 
-All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-
-All good! No more missing voltage or inverter values during daytime!
+All good! The 'Meter Power' column has no missing values during daytime.
 
 V.
+
+
+For more insights and to cross-verify, please refer to the relevant work order records.
+
+
+VI.
 
 No missing records to be fetched from the work order.

@@ -36,23 +36,6 @@ All good! When POA Irradiance >= 100, the Wind Speed column has no missing value
 
 III.
 
-Detected 1 missing 'Meter Power' values during daytime.
-The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.
-These have been filled with a placeholder value of -999.
-Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |    Date    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
-|  1033 | 2023-10-11 17:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-11 |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
-
-Summary of missing dates:
-2023-10-11: 1 missing
-
-
-
-IV.
-
 120 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
 Here are filled records within the daytime.
@@ -82,34 +65,40 @@ Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 
 
-9 rows with missing inverter values have been auto-filled with 1.
-+-------+---------------------+----------------+-------------+-------------+---------------+-------------+------------+------------+------------+------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature |  Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
-+-------+---------------------+----------------+-------------+-------------+---------------+-------------+------------+------------+------------+------------+-----------+
-|  460  | 2023-10-05 18:30:00 |      3.0       |   84.81333  |   1.243333  |    12.33955   |    43.426   |  4.083333  |    4.59    |  4.663333  |    0.0     |    Day    |
-|  556  | 2023-10-06 18:30:00 |      1.0       |   90.84666  | 0.003333333 |    12.26744   |   33.44367  |    1.24    |    0.0     |  1.276667  |    0.0     |   Night   |
-|  1088 | 2023-10-12 07:30:00 |      11.0      |   41.51333  |   1.646667  |    12.33489   |    56.545   |    1.02    |    0.0     |    0.0     |    0.0     |    Day    |
-|  1664 | 2023-10-18 07:30:00 |      10.0      |   46.70333  |   1.826667  |     12.27     |   40.58333  |  2.933333  |    0.0     |    0.0     |    0.0     |    Day    |
-|  1995 | 2023-10-21 18:15:00 |      5.0       |    63.07    |   4.086667  |    12.26655   |   17.86567  |    0.56    |    0.0     | 0.7833334  | 0.4933333  |    Day    |
-|  2278 | 2023-10-24 17:00:00 |      11.5      |   52.12667  |     1.24    |    12.28522   |   90.93933  |    0.0     |    0.0     |    0.54    |    0.0     |    Day    |
-|  2338 | 2023-10-25 08:00:00 |      8.5       |    43.17    |     1.45    |    12.28855   |   36.84067  |    0.0     |    0.0     |    0.54    |    0.0     |    Day    |
-|  2721 | 2023-10-29 07:45:00 |      11.5      |    30.38    |   5.193333  |    12.30311   |   65.87267  |    0.0     |    0.0     |    1.76    |  1.143333  |    Day    |
-|  2817 | 2023-10-30 07:45:00 |      16.0      |   28.78333  |   1.433333  |    12.21855   |    60.301   |    0.0     |    0.0     |  1.433333  |    0.86    |    Day    |
-+-------+---------------------+----------------+-------------+-------------+---------------+-------------+------------+------------+------------+------------+-----------+
+There are still 3 rows with missing inverter values cannot be automatically filled.
 
-
-Besides, there are still 3 rows with missing voltage or inverter values cannot be filled.
+Here are still missing records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-|  1033 | 2023-10-11 17:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    |
+|  1033 | 2023-10-11 17:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
 |  2057 | 2023-10-22 09:45:00 |     117.0      |   57.75667  |  1.946667  |    12.25522   |   59.56467  |  815.6544  |  764.9927  |  742.7206  |    nan     |    Day    |
 |  2158 | 2023-10-23 11:00:00 |     672.0      |     59.0    |  3.083333  |    12.34167   |   424.4433  |  1812.316  |  1777.268  |    nan     |  1843.224  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 
-For more insights and to cross-verify, please refer to the relevant work order records.
+
+
+IV.
+
+Detected 1 missing 'Meter Power' values during daytime.
+The missing 'Meter Power' values in the following rows have been flagged as an issue in the 'Data Issues' spreadsheet for further review, as their corresponding inverters are not fully reporting.
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |    Date    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+|  1033 | 2023-10-11 17:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |    -999.0   |    nan     |    nan     |    nan     |    nan     |    Day    | 2023-10-11 |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+------------+
+
+Summary of dates that have production data issue:
+2023-10-11: 1 missing
+
 
 
 V.
+
+
+For more insights and to cross-verify, please refer to the relevant work order records.
+
+
+VI.
 
 No work orders found for site Agate Bay on the missing dates.

@@ -76,22 +76,24 @@ def check_and_autofill_temperature_and_wind(df):
 
 
 def check_and_autofill_Meter(df):
-    log("\nIII.\n")
+    log("\nIV.\n")
     condition_missing = df["Meter Power"].isna()
     condition_day = df["Day/Night"] == "Day"
     condition_day_missing = condition_missing & condition_day
 
     inverter_cols = [col for col in df.columns if col.startswith("Inverter_")]
     condition_missing_inverter = df[inverter_cols].isna().any(axis=1)
-    condition_can_be_filled = condition_missing & ~condition_missing_inverter
-    condition_cannot_be_filled = condition_missing & condition_missing_inverter
+    condition_no_issue = condition_missing & ~condition_missing_inverter
+    condition_with_issue = condition_missing & condition_missing_inverter
+
+    condition_at_least_one_inverter = df[inverter_cols].notna().any(axis=1)
+    condition_can_be_filled = condition_missing & condition_at_least_one_inverter
 
     df.loc[condition_missing, "Meter Power"] = -999
     if condition_day_missing.sum() > 0:
         log(
             f"Detected {condition_day_missing.sum()} missing 'Meter Power' values during daytime."
         )
-
         if condition_can_be_filled.sum() > 0:
             df.loc[condition_can_be_filled, "Meter Power"] = df.loc[
                 condition_can_be_filled, inverter_cols
@@ -101,21 +103,25 @@ def check_and_autofill_Meter(df):
                 f"{get_info(df.loc[condition_can_be_filled])}\n\n"
             )
 
-        if condition_cannot_be_filled.sum() > 0:
+        if condition_no_issue.sum() > 0:
+            log(
+                f"{condition_no_issue.sum()} rows with missing 'Meter Power' have all corresponding inverters reporting. No production data issue will be marked for these cases.\n"
+                f"{get_info(df.loc[condition_no_issue])}\n\n"
+            )
+
+        if condition_with_issue.sum() > 0:
             Summary.production_status = "x"
-            unfilled = df.loc[condition_cannot_be_filled].copy()
-            unfilled["Date"] = unfilled["Timestamp"].dt.date
-            missing_by_day = unfilled.groupby("Date").size()
+            with_issue = df.loc[condition_with_issue].copy()
+            with_issue["Date"] = with_issue["Timestamp"].dt.date
+            missing_by_day = with_issue.groupby("Date").size()
             missing_dates = missing_by_day.index.tolist()
             missing_dates_str = "\n".join(
                 [f"{date}: {count} missing" for date, count in missing_by_day.items()]
             )
             log(
-                f"The missing 'Meter Power' values in the following rows cannot be auto-filled due to missing inverter values.\n"
-                f"These have been filled with a placeholder value of -999.\n"
-                f"Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.\n"
-                f"{get_info(unfilled)}\n"
-                f"\nSummary of missing dates:\n{missing_dates_str}\n\n"
+                f"The missing 'Meter Power' values in the following rows have been flagged as an issue in the 'Data Issues' spreadsheet for further review, as their corresponding inverters are not fully reporting.\n"
+                f"{get_info(with_issue)}\n"
+                f"\nSummary of dates that have production data issue:\n{missing_dates_str}\n\n"
             )
 
             return df, missing_dates
@@ -129,36 +135,20 @@ def check_and_autofill_Meter(df):
     return df, None
 
 
-def check_and_autofill_inverter_and_voltage(df):
-    log("\nIV.\n")
+def check_and_autofill_inverter(df):
+    log("\nIII.\n")
 
-    # Initial Conditions
     inverter_cols = [col for col in df.columns if col.startswith("Inverter_")]
-    cols_all = ["Meter Voltage"] + inverter_cols
-    condition_missing_all = df[cols_all].isna().any(axis=1)
+    condition_missing = df[inverter_cols].isna().any(axis=1)
     condition_day = df["Day/Night"] == "Day"
     condition_night = df["Day/Night"] == "Night"
 
-    # # Step 1
-    # # A. Fill any voltage or inverter missings with -999 when the corresponding meter power itself is missing(-999).
-    # condition_definite_missing = df["Meter Power"] == -999
-    # condition_can_be_filled = condition_missing_all & condition_definite_missing
-    # if condition_can_be_filled.sum() > 0:
-    #     df.loc[condition_can_be_filled, cols_all] = df.loc[
-    #         condition_can_be_filled, cols_all
-    #     ].fillna(-999)
-    #     log(
-    #         f"{condition_can_be_filled.sum()} rows with missing voltage or inverter values have been auto-filled with -999 due to the missing Meter Power."
-    #         f"Details of filled rows:\n"
-    #         f"{get_info(df[condition_can_be_filled])}\n\n"
-    #     )
-
-    # B. Fill missing inverter values with 0 when the site is off.
+    # Step 1
+    # Fill missing inverter values with 0 when the site is off.
     # The site should be off during night time or when meter power is below 0.
-    # Leave the voltage missing blank since we can't determine whether the missing is due to site downtime or a grid connectivity issue.
-    condition_meter_off = (df["Meter Power"] != -999) & (df["Meter Power"] <= 0)
+    condition_meter_off = df["Meter Power"] <= 0
     condition_site_off = condition_meter_off | condition_night
-    condition_can_be_filled = condition_missing_all & condition_site_off
+    condition_can_be_filled = condition_missing & condition_site_off
 
     if condition_can_be_filled.sum() > 0:
         df.loc[condition_can_be_filled, inverter_cols] = df.loc[
@@ -178,39 +168,21 @@ def check_and_autofill_inverter_and_voltage(df):
             )
 
     # Step 2
-    # Fill voltage missings by the mean of existing voltages values when the meter power is greater than 0.
-    condition_missing_vol = df["Meter Voltage"].isna()
-    # condition_missing_inv = df[inverter_cols].isna().any(axis=1)
-    # condition_inv_all_reporting = ~condition_missing_inv
-    condition_meter_producing = df["Meter Power"] > 0
-    condition_can_be_filled = condition_missing_vol & condition_meter_producing
-    if condition_can_be_filled.sum() > 0:
-        valid_voltages = df["Meter Voltage"][(df["Meter Voltage"] > 0)]
-        average_voltage = round(valid_voltages.mean(), 6)
-        df.loc[condition_can_be_filled, "Meter Voltage"] = df.loc[
-            condition_can_be_filled, "Meter Voltage"
-        ].fillna(average_voltage)
-        log(
-            f"{condition_can_be_filled.sum()} rows with missing voltage have been auto-filled with the estimate mean of existing voltage values since all inverters are reporting normally.\n"
-            f"{get_info(df[condition_can_be_filled])}\n\n"
-        )
-
-    # Step 3
+    # Fill still missing inverters based on different situations.
     # A. If meter power is less than the sum of inverter values and the difference is within a range, the missing inverters can be off -> fill with 0
-    condition_missing_inv = df[inverter_cols].isna().any(axis=1)
+    condition_missing = df[inverter_cols].isna().any(axis=1)
     inverter_sum = df[inverter_cols].sum(axis=1)
-    condition_inv_off = (
-        (df["Meter Power"] != -999)
-        & (df["Meter Power"] <= inverter_sum)
-        & ((inverter_sum != 0) & (round(df["Meter Power"] / inverter_sum) == 1))
+    condition_inv_off = (df["Meter Power"] <= inverter_sum) & (
+        round(inverter_sum / df["Meter Power"]) == 1
     )
-    condition_can_be_filled = condition_missing_inv & condition_inv_off
+    condition_can_be_filled = condition_missing & condition_inv_off
     if condition_can_be_filled.sum() > 0:
         df.loc[condition_can_be_filled, inverter_cols] = df.loc[
             condition_can_be_filled, inverter_cols
         ].fillna(0)
         log(
-            f"Missing inverter values in {condition_can_be_filled.sum()} rows have been auto-filled with 0 since these inverters should be off.\n"
+            f"Missing inverter values in {condition_can_be_filled.sum()} rows have been automatically set to 0, indicating these inverters are off.\n"
+            f"This is based on the small difference between the meter power value and the sum of existing inverters, suggesting the missing inverters are inactive.\n"
         )
 
         if (condition_can_be_filled & condition_day).sum() > 0:
@@ -224,79 +196,114 @@ def check_and_autofill_inverter_and_voltage(df):
             )
 
     # B. If meter power is larger than the sum of inverter values and the difference is within a range, some missing inverters can be on -> fill with 1
-    condition_missing_inv = df[inverter_cols].isna().any(axis=1) | (
-        df[inverter_cols] == 0
-    ).any(axis=1)
-    filled = []
-    unfilled = []
-    for index, row in df.loc[condition_missing_inv].iterrows():
+    # condition_missing = df[inverter_cols].isna().any(axis=1) | (
+    #     df[inverter_cols] == 0
+    # ).any(axis=1)
+    condition_missing = df[inverter_cols].isna().any(axis=1)
+    filled_index = []
+    unfilled_index = []
+    for index, row in df.loc[condition_missing].iterrows():
         INV_sum = row[inverter_cols].sum()
-        nan_count = row[inverter_cols].isna().sum()
-        zero_count = (row[inverter_cols] == 0).sum()
-        missing_count = nan_count + zero_count
-        non_missing_count = (row[inverter_cols] > 0).sum()
-        if (row["Meter Power"] > INV_sum) & (non_missing_count > 0):
-            INV_avg = INV_sum / (non_missing_count)
+        count_nan = row[inverter_cols].isna().sum()
+        count_zero = (row[inverter_cols] == 0).sum()
+        count_not_reporting = count_nan + count_zero
+        count_reporting = (row[inverter_cols] > 0).sum()
+        if (row["Meter Power"] > INV_sum) & (count_reporting > 0):
+            INV_avg = INV_sum / count_reporting
 
             try:
-                if INV_avg == 0:
-                    raise ZeroDivisionError("INV_avg is zero, cannot divide by zero.")
-                # print(row["Meter Power"])
-                # print(INV_avg)
-                estimate_on_count = round((row["Meter Power"] * 1.02 / INV_avg))
-                to_be_filled_count = (
-                    min(estimate_on_count, (missing_count + non_missing_count))
-                    - non_missing_count
+                # if INV_avg == 0:
+                #     raise ZeroDivisionError()
+                count_estimated_on_total = round((row["Meter Power"] * 1.02 / INV_avg))
+                count_estimated_should_have_on = (
+                    min(
+                        count_estimated_on_total,
+                        (count_not_reporting + count_reporting),
+                    )
+                    - count_reporting
                 )
 
-                if to_be_filled_count == missing_count:
+                if count_estimated_should_have_on == count_nan:
                     df.loc[index, inverter_cols] = row[inverter_cols].fillna(1)
-                    filled.append(index)
+                    filled_index.append(index)
                 else:
-                    missing_inverters = row[inverter_cols].index[
+                    missing_indices = row[inverter_cols].index[
                         row[inverter_cols].isna()
                     ]
-                    fill_indices = missing_inverters[:to_be_filled_count]
+                    fill_indices = missing_indices[:count_estimated_should_have_on]
                     df.loc[index, fill_indices] = 1
-                    unfilled.append(index)
+                    unfilled_index.append(index)
 
             except ZeroDivisionError:
-                unfilled.append(index)
+                unfilled_index.append(index)
 
-    if len(filled) > 0:
+    if len(filled_index) > 0:
         log(
-            f"{len(filled)} rows with missing inverter values have been auto-filled with 1.\n"
-            f"{get_info(df.loc[filled])}\n\n"
+            f"{len(filled_index)} rows with missing inverter values have been auto-filled with 1.\n"
+            f"{get_info(df.loc[filled_index])}\n\n"
         )
-    if len(unfilled) > 0:
+    if len(unfilled_index) > 0:
         log(
-            f"{len(unfilled)} rows with missing inverter values should have more inverters on."
+            f"{len(unfilled_index)} rows with missing inverter values should have more inverters on."
             f"But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data."
             f"We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally."
-            f"{get_info(df.loc[unfilled])}\n\n"
+            f"{get_info(df.loc[unfilled_index])}\n\n"
         )
 
-    condition_missing_all = df[cols_all].isna().any(axis=1)
-    condition_important_still_missing = condition_missing_all & condition_day
-    if condition_important_still_missing.sum() > 0:
+    # If there are still missing inverters, document the issue in the summary table.
+    condition_missing = df[inverter_cols].isna().any(axis=1)
+    if condition_missing.sum() > 0:
+        Summary.inverter_status = "x"
         log(
-            f"Besides, there are still {condition_important_still_missing .sum() } rows with missing voltage or inverter values cannot be filled.\n"
-            f"{get_info(df[condition_important_still_missing])}\n\n"
-            f"For more insights and to cross-verify, please refer to the relevant work order records.\n"
+            f"There are still {condition_missing.sum() } rows with missing inverter values cannot be automatically filled.\n"
+        )
+        if (condition_missing & condition_day).sum() > 0:
+            log(
+                f"Here are still missing records within the daytime.\n"
+                f"{get_info(df[condition_missing & condition_day])}\n\n"
+            )
+        else:
+            log("\nGood! No more missing inverter values during daytime!")
+
+    return df
+
+
+def check_and_autofill_voltage(df):
+    log("\nV.\n")
+    condition_missing = df["Meter Voltage"].isna()
+
+    # Fill voltage missings by the mean of existing voltages values when the meter power is greater than 0.
+    if df["Meter Voltage"].isna().all():
+        df["Meter Voltage"].fillna(-999, inplace=True)
+        log(
+            "Meter Voltage column was completely empty and has been filled with -999.\n"
         )
     else:
-        log("\nAll good! No more missing voltage or inverter values during daytime!")
+        condition_meter_producing = df["Meter Power"] > 0
+        condition_can_be_filled = condition_missing & condition_meter_producing
+        if condition_can_be_filled.sum() > 0:
+            valid_voltages = df["Meter Voltage"][(df["Meter Voltage"] > 0)]
+            average_voltage = round(valid_voltages.mean(), 6)
+            df.loc[condition_can_be_filled, "Meter Voltage"] = df.loc[
+                condition_can_be_filled, "Meter Voltage"
+            ].fillna(average_voltage)
+            log(
+                f"{condition_can_be_filled.sum()} rows with missing voltage have been auto-filled with the estimate mean of existing voltage values since all inverters are reporting normally.\n"
+                f"{get_info(df[condition_can_be_filled])}\n\n"
+            )
 
-    condition_missing_inv = df[inverter_cols].isna().any(axis=1)
-    if condition_missing_inv.sum() > 0:
-        Summary.inverter_status = "x"
+    return df
 
 
-def missing(df):
+def check_missing(df):
     # Replace all " - " with NaN before handling missings.
     df.replace(" - ", np.nan, inplace=True)
     df = df.pipe(check_missing_irradiance).pipe(check_and_autofill_temperature_and_wind)
-    df, missing_dates = df.pipe(check_and_autofill_Meter)
-    df = check_and_autofill_inverter_and_voltage(df)
+    df = check_and_autofill_inverter(df)
+    df, missing_dates = check_and_autofill_Meter(df)
+    df = check_and_autofill_voltage(df)
+    log(
+        "\nFor more insights and to cross-verify, please refer to the relevant work order records.\n"
+    )
 
     return missing_dates

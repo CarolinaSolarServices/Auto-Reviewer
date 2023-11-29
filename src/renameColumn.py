@@ -53,20 +53,28 @@ def column_voltage(df):
     return df
 
 
+def find_keywords(column, keywords_list):
+    for keywords in keywords_list:
+        if all(keyword.lower() in column.lower() for keyword in keywords):
+            return True
+    return False
+
+
 def column_others(df):
     keyword_mapping = {
         "Timestamp": ["timestamp"],
         "POA Irradiance": ["poa"],
-        "Meter Power": ["meter", "power"],
+        "Meter Power": [["meter", "power"], ["electric", "power"]],
+        # "Meter Power": ["meter", "power"],
     }
 
     rename_mapping = {}
-    for new_name, keywords in keyword_mapping.items():
+    for new_name, keywords_list in keyword_mapping.items():
         found = False
         for col in df.columns:
-            if all(keyword.lower() in col.lower() for keyword in keywords):
+            found = find_keywords(col, keywords_list)
+            if found:
                 rename_mapping[col] = new_name
-                found = True
                 break
         if not found:
             df[new_name] = np.nan
@@ -91,6 +99,7 @@ def column_inverter(df):
         if col not in known_columns:
             new_name = "Inverter_" + str(inverter_index)
             df.rename(columns={col: new_name}, inplace=True)
+            # Used for renaming cols to their original names in the end of the processing
             name_mapping[new_name] = col
             inverter_index += 1
 

@@ -7,36 +7,7 @@ The inverter names are standardized in this log according to the order of invert
 
 I.
 
-Detected 2976 missing values in the 'POA Irradiance' column.
-All have been filled with a placeholder value of -999.
-Detected 1397 missing values during the daytime.
-Kindly document this discrepancy in the 'Data Issues' spreadsheet for further review.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+-------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power |  Inverter_1 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+-------------+-----------+
-|   31  | 2023-10-01 07:15:00 |     -999.0     |     nan     |    nan     |   0.2846442   |     0.0     |  -0.4031667 |    Day    |
-|   32  | 2023-10-01 07:30:00 |     -999.0     |     nan     |    nan     |   0.2844077   |  0.2380367  | -0.07005502 |    Day    |
-|   33  | 2023-10-01 07:45:00 |     -999.0     |     nan     |    nan     |   0.2843075   |   7.910043  |   8.476366  |    Day    |
-|   34  | 2023-10-01 08:00:00 |     -999.0     |     nan     |    nan     |   0.2844823   |   25.23677  |   26.26054  |    Day    |
-|   35  | 2023-10-01 08:15:00 |     -999.0     |     nan     |    nan     |   0.2847584   |   48.76067  |   49.98381  |    Day    |
-|   36  | 2023-10-01 08:30:00 |     -999.0     |     nan     |    nan     |   0.2848264   |   74.7023   |   76.57792  |    Day    |
-|   37  | 2023-10-01 08:45:00 |     -999.0     |     nan     |    nan     |   0.2849516   |   105.2221  |   107.3807  |    Day    |
-|   38  | 2023-10-01 09:00:00 |     -999.0     |     nan     |    nan     |   0.2850561   |   139.1129  |   141.9737  |    Day    |
-|   39  | 2023-10-01 09:15:00 |     -999.0     |     nan     |    nan     |   0.2872788   |   174.1066  |   177.6687  |    Day    |
-|   40  | 2023-10-01 09:30:00 |     -999.0     |     nan     |    nan     |   0.2874567   |    206.88   |   210.8887  |    Day    |
-|   41  | 2023-10-01 09:45:00 |     -999.0     |     nan     |    nan     |   0.2876336   |   234.0448  |   238.3955  |    Day    |
-|   42  | 2023-10-01 10:00:00 |     -999.0     |     nan     |    nan     |   0.2878309   |   258.511   |   263.3096  |    Day    |
-|   43  | 2023-10-01 10:15:00 |     -999.0     |     nan     |    nan     |   0.2881185   |   282.5529  |   287.836   |    Day    |
-|   44  | 2023-10-01 10:30:00 |     -999.0     |     nan     |    nan     |    0.288027   |   304.0124  |   309.4121  |    Day    |
-|   45  | 2023-10-01 10:45:00 |     -999.0     |     nan     |    nan     |   0.2879159   |   324.8476  |   330.7523  |    Day    |
-|   46  | 2023-10-01 11:00:00 |     -999.0     |     nan     |    nan     |   0.2876926   |   340.9838  |   347.2768  |    Day    |
-|   47  | 2023-10-01 11:15:00 |     -999.0     |     nan     |    nan     |   0.2875714   |   353.4826  |   359.5395  |    Day    |
-|   48  | 2023-10-01 11:30:00 |     -999.0     |     nan     |    nan     |    0.288426   |   354.8907  |   361.4066  |    Day    |
-|   49  | 2023-10-01 11:45:00 |     -999.0     |     nan     |    nan     |   0.2890582   |   392.5467  |   399.7033  |    Day    |
-|   50  | 2023-10-01 12:00:00 |     -999.0     |     nan     |    nan     |   0.2887769   |   404.1425  |   411.1419  |    Day    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+-------------+-----------+
-
-
+All good! The 'POA Irradiance' column has no missing values.
 
 II.
 
@@ -55,13 +26,17 @@ All good! When POA Irradiance >= 100, the Wind Speed column has no missing value
 
 III.
 
-All good! The 'Meter Power' column has no missing values during daytime.
 
 IV.
 
-
-All good! No more missing voltage or inverter values during daytime!
+All good! The 'Meter Power' column has no missing values during daytime.
 
 V.
+
+
+For more insights and to cross-verify, please refer to the relevant work order records.
+
+
+VI.
 
 No missing records to be fetched from the work order.

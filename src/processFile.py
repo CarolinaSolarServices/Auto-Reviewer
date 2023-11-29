@@ -5,7 +5,7 @@ from getInfo import log
 from readData import read_site
 from renameColumn import rename
 from normalizeData import normalize
-from checkMissing import missing
+from checkMissing import check_missing
 from checkWorkorder import fetch_workorder
 import os
 import shutil
@@ -26,9 +26,9 @@ def process_file(file_path):
 
     # Check and autofill columns of 'irradiance,' 'temperature,' 'wind speed,' and 'meter power',
     # and return the missing dates where missing meter power cannot be auto-filled.
-    missing_dates = missing(site_df)
+    missing_dates = check_missing(site_df)
 
-    log("\nV.\n")
+    log("\nVI.\n")
     if missing_dates:
         fetch_workorder(missing_dates, site_name)
     else:
