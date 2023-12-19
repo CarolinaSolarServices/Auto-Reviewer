@@ -6,31 +6,6 @@ from getInfo import log, format_workorder
 workorder = read_workorder()
 
 
-# def custom_to_datetime(df, col):
-#     formats = [
-#         "%m/%d/%Y %I:%M:%S %p",
-#         "%m/%d/%Y %H:%M:%S",
-#         "%Y-%m-%d %H:%M:%S",
-#         "%d/%m/%Y %H:%M:%S",
-#         "%m/%d/%y %H:%M:%S",
-#         "%m/%d/%y %H:%M",
-#         "%m-%d-%Y %H:%M:%S",
-#         "%m-%d-%y %H:%M:%S",
-#         "%m-%d-%Y %H:%M",
-#         "%m-%d-%y %H:%M",
-#     ]
-
-#     for fmt in formats:
-#         try:
-
-#             df[col] = pd.to_datetime(df[col], format=fmt)
-#             return df
-#         except ValueError:
-#             continue
-
-#     exit("No suitable format found for time columns.")
-
-
 def is_any_date_in_range(start, end, mark, missing_dates):
     if pd.notna(end):
         date_range = pd.date_range(start, end).date.tolist()

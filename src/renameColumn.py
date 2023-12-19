@@ -103,12 +103,6 @@ def column_inverter(df):
             name_mapping[new_name] = col
             inverter_index += 1
 
-    # mapping_df = pd.DataFrame(
-    #     list(name_mapping.items()),
-    #     columns=["Original Inverter Name", "Converted Inverter Name"],
-    # )
-    # log(f"NOTES ON INVERTER NAMES:\n{get_info(mapping_df)}")
-
     return df
 
 

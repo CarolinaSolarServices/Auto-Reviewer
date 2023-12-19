@@ -1,0 +1,69 @@
+@startuml
+
+package "main" {
+
+}
+
+package "processFile" {
+    [process_file]
+}
+
+package "readData" {
+    [read_site]
+    [read_workorder]
+}
+
+package "renameColumn" {
+    [rename]
+    [column_temperature]
+    [column_wind]
+    [column_voltage]
+    [column_others]
+    [column_inverter]
+    [column_reorder]
+}
+
+package "normalizeData" {
+    [normalize]
+    [custom_to_datetime]
+    [determine_day_night]
+}
+
+package "checkMissing" {
+    [check_missing]
+    [check_missing_irradiance]
+    [check_and_autofill_temperature_and_wind]
+    [check_and_autofill_Meter]
+    [check_and_autofill_inverter]
+    [check_and_autofill_voltage]
+}
+
+package "checkWorkOrder" {
+    [fetch_workorder]
+    [is_any_date_in_range]
+    [convert_time]
+}
+
+package "getGeoCoding" {
+    [getGeocoding]
+    [getTimeZone]
+    [getTargetTime]
+}
+
+package "getInfo" {
+    [log]
+    [get_info]
+    [get_subset]
+    [format_workorder]
+}
+
+main --> processFile : calls >>
+processFile --> readData : uses >>
+processFile --> renameColumn : uses >>
+processFile --> normalizeData : uses >>
+processFile --> checkMissing : uses >>
+processFile --> checkWorkOrder : uses >>
+processFile --> getGeoCoding : uses >>
+processFile --> getInfo : uses >>
+
+@enduml

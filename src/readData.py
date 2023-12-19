@@ -4,10 +4,8 @@ from getInfo import log
 
 def detect_separator(line):
     if "," in line:
-        # print(line)
-        # print("detected ,")
         return ","
-    # print("no ,")
+
     return ";"
 
 
@@ -35,7 +33,6 @@ def read_site(file_path):
         exit()
 
     separator = detect_separator(lines[header_index])
-    # print(f"separator is {separator}\n")
     # The index of the found header is exactly the number of rows to skip when reading the data
     df = pd.read_csv(file_path, skiprows=header_index, header=0, sep=separator)
     # print(df.loc[0,:])
