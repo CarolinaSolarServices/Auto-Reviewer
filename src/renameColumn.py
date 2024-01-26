@@ -6,14 +6,23 @@ name_mapping = {}
 
 
 def column_temperature(df):
-    temperature_cols = [col for col in df.columns if "temperature" in col.lower()]
+    keywords = ["temperature", "amb", "ambient", "°C"]
+    temperature_cols = [
+        col for col in df.columns if any(keyword in col.lower() for keyword in keywords)
+    ]
+
     if len(temperature_cols) == 1:
         df.rename(columns={temperature_cols[0]: "Temperature"}, inplace=True)
     elif len(temperature_cols) == 0:
         df["Temperature"] = np.nan
     else:
         # Check for columns with "ambient" in their name
-        ambient = [col for col in temperature_cols if "ambient" in col.lower()]
+        amb_keywords = ["amb", "ambient"]
+        ambient = [
+            col
+            for col in temperature_cols
+            if any(amb_keyword in col.lower() for amb_keyword in amb_keywords)
+        ]
 
         # If there's a column with "ambient", use that. Otherwise, use the first "temperature" column
         col_to_use = ambient[0] if ambient else temperature_cols[0]

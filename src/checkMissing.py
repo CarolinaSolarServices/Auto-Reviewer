@@ -232,6 +232,9 @@ def check_and_autofill_inverter(df):
                     ]
                     fill_indices = missing_indices[:count_estimated_should_have_on]
                     df.loc[index, fill_indices] = 1
+                    df.loc[index, inverter_cols] = df.loc[index, inverter_cols].fillna(
+                        0
+                    )
                     unfilled_index.append(index)
 
             except ZeroDivisionError:
