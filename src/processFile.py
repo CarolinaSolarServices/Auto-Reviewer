@@ -56,6 +56,7 @@ def process_file(file_path):
         "Production": Summary.production_status,
         "Irradiance": Summary.irradiance_status,
         "Inverter": Summary.inverter_status,
+        "Max Inverter Blanks": Summary.max_missing_count,
     }
 
     Summary.summary = pd.concat(
@@ -64,3 +65,4 @@ def process_file(file_path):
     Summary.production_status = ""
     Summary.irradiance_status = ""
     Summary.inverter_status = ""
+    Summary.max_missing_count = 0

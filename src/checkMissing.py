@@ -299,6 +299,12 @@ def check_and_autofill_voltage(df):
     return df
 
 
+def count_max_missing_inverter(df):
+    inverter_cols = [col for col in df.columns if col.startswith("Inverter_")]
+    missing_counts = df[inverter_cols].isna().sum()
+    Summary.max_missing_count = missing_counts.max()
+
+
 def check_missing(df):
     # Replace all " - " with NaN before handling missings.
     df.replace(" - ", np.nan, inplace=True)
@@ -306,6 +312,8 @@ def check_missing(df):
     df = check_and_autofill_inverter(df)
     df, missing_dates = check_and_autofill_Meter(df)
     df = check_and_autofill_voltage(df)
+    count_max_missing_inverter(df)
+
     log(
         "\nFor more insights and to cross-verify, please refer to the relevant work order records.\n"
     )
