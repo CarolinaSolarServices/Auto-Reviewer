@@ -62,8 +62,8 @@ def find_keywords(column, keywords_list):
 
 def column_others(df):
     keyword_mapping = {
-        "Timestamp": ["timestamp"],
-        "POA Irradiance": ["poa"],
+        "Timestamp": [["timestamp"]],
+        "POA Irradiance": [["poa"]],
         "Meter Power": [["meter", "power"], ["electric", "power"]],
         # "Meter Power": ["meter", "power"],
     }

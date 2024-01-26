@@ -1,53 +1,60 @@
 Site Name,Production,Irradiance,Inverter
-1634,,,x
+1634,,,
+Adams,,,x
 Agate Bay,x,x,x
-Albertson,x,x,x
-Amethyst,x,,x
+Albertson,x,x,
+Amethyst,x,,
 Anderson,,,
 Atkinson 2,,,
 Audrey,,x,
 Augusta,x,,x
 Aulander,,,x
+Bani,,,
 Bartow,,x,x
 Beulaville,,x,x
 Big Horn,,,
-Briarwood,x,,x
 Briarwood,,,x
+Briarwood,x,,
 Brightwood,,,
-Carnes Creek,,,x
+Brush Creek,,,
+Carnes Creek,,,
 Chiloquin,,,x
-Collier,x,x,x
+Collier,x,x,
 Colton,,,
 Cosper Creek,,,x
 Cotten Farm,,,x
-Cottonwood,x,,x
+Cottonwood,x,,
 County Home,,,x
-Dairy,x,,x
-Davis Lane,x,x,x
+Dairy,x,,
+Davis Lane,x,x,
 Dayton Cutoff,,x,
 Drift Creek,,,
 Eagle Point,,x,x
+Facile Solar,x,,
 Faison,,,x
 Fayetteville PWC,,,x
-Fort Rock Solar I,x,x,x
-Fort Rock Solar IV,x,x,x
+Fort Rock Solar I,x,x,
+Fort Rock Solar IV,x,x,
 Four Oaks,x,x,x
 Freemont,,,
 Fruitland Creek,,,x
 Garner 1,,,
+Garner 2,,,
 Gastonia,,,x
-Gauss,x,x,x
+Gauss,x,x,
 Gold Mine,x,x,x
 Grand Ronde,,,
 Interstate,,,
-Jersey,x,x,x
+Jersey,x,x,
 Kaiser Creek,,,x
-Lafayette,,,x
+Lafayette,,,
+Lakeview,x,,
 Lane,,x,x
 Mariposa,,,
 Meeks,,x,x
-Merrill,x,,x
+Merrill,x,,
 Mill Creek,,,
+Milo,,,
 Minke,x,,x
 Minnie,x,x,x
 Monroe Moore,,,
@@ -55,20 +62,20 @@ NC Solar I,x,x,x
 NC Solar II,,,
 Nitro,,,
 Owen,,,
-PCSP 1,,,
+PCSP 1,,x,
 PCSP 3,x,,x
 Pamlico,x,,x
 Penny Hill,,,
 Pika,,,
-Princeton,x,x,x
+Princeton,x,x,
 Quarter Horse,,,
 Railroad,,,x
-Red Oak,x,x,x
-Ridgeback,,,x
+Red Oak,x,x,
+Ridgeback,,,
 Riley,,,x
 Sadiebrook,,,
-Sandy River,,,x
-Sarah,x,x,x
+Sandy River,,,
+Sarah,x,x,
 Schell,,,
 Sedberry,,,x
 Sesqui-C,,,x
@@ -79,7 +86,7 @@ Soluga IV,,,
 Sonne Two,x,x,x
 Sophie,,,
 South Robeson,,x,x
-Star,x,x,x
+Star,x,x,
 Starvation Solar I,x,x,x
 Strider,,,x
 Test,,,
@@ -88,4 +95,5 @@ Tumbleweed,,,x
 Turkey Hill,,,
 Valley Creek,,,
 Weaver,,,x
+Woodline,,x,
 Woodsdale,x,x,x
