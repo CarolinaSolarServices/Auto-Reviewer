@@ -6,7 +6,7 @@ name_mapping = {}
 
 
 def column_temperature(df):
-    keywords = ["temperature", "amb", "ambient", "°C"]
+    keywords = ["temperature", "amb", "ambient", "°C", "temp"]
     temperature_cols = [
         col for col in df.columns if any(keyword in col.lower() for keyword in keywords)
     ]
@@ -71,7 +71,7 @@ def find_keywords(column, keywords_list):
 
 def column_others(df):
     keyword_mapping = {
-        "Timestamp": [["timestamp"]],
+        "Timestamp": [["timestamp"],["15m"]],
         "POA Irradiance": [["poa"]],
         "Meter Power": [["meter", "power"], ["electric", "power"]],
         # "Meter Power": ["meter", "power"],
