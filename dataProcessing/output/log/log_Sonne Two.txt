@@ -1,0 +1,42 @@
+
+Notes:
+If the record count exceeds 20, only the first 20 rows will be displayed in this log.
+If the number of inverter columns exceeds 12, only the first 9 and the last 3 columns will be displayed.
+The inverter names are standardized in this log according to the order of inverter columns in the original dataset.
+
+
+I.
+
+All good! The 'POA Irradiance' column has no missing values.
+
+II.
+
+All good! When POA Irradiance >= 100, the Temperature column has no missing values .
+
+All good! When POA Irradiance >= 100, the Wind Speed column has no missing values .
+
+
+III.
+
+2 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+|  1389 | 2023-12-15 10:45:00 |    770.5683    |   52.03366  |     0      |       0       |   2838.524  |    1443    |    1.0     |    0.0     |    Day    |
+|  1390 | 2023-12-15 11:00:00 |    796.0328    |   54.42614  |     0      |       0       |   2921.686  |    1485    |    1.0     |    0.0     |    Day    |
++-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
+
+
+
+IV.
+
+All good! The 'Meter Power' column has no missing values during daytime.
+
+V.
+
+
+For more insights and to cross-verify, please refer to the relevant work order records.
+
+
+VI.
+
+No missing records to be fetched from the work order.
