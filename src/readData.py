@@ -23,7 +23,7 @@ def read_site(file_path):
 
     # The first line where the word "timpestamps" (in any case) appears is the header line
     header_index = next(
-        (i for i, line in enumerate(lines) if "timestamp" in line.lower()), None
+        (i for i, line in enumerate(lines) if "timestamp" in line.lower() or "15m" in line.lower()), None
     )
 
     if header_index is None:
