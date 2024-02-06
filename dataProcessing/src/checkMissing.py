@@ -2,6 +2,7 @@ from getInfo import log, get_info
 import numpy as np
 import pandas as pd
 import Summary
+import renameColumn
 
 
 def check_missing_irradiance(df):
@@ -34,8 +35,8 @@ def check_missing_irradiance(df):
     else:
         log("All good! The 'POA Irradiance' column has no missing values.")
 
-    # If existing Irradiance > 1, modify any corresponding "Day/Night" info to "Day".
-    condition_day_irr = df["POA Irradiance"] > 1
+    # If existing Irradiance > 2, modify any corresponding "Day/Night" info to "Day".
+    condition_day_irr = df["POA Irradiance"] > 2
     condition_night_irr = (df["POA Irradiance"] != -999) & (df["POA Irradiance"] <= 1)
     df.loc[condition_day_irr, "Day/Night"] = "Day"
     df.loc[condition_night_irr, "Day/Night"] = "Night"
@@ -304,8 +305,20 @@ def check_and_autofill_voltage(df):
 
 def count_max_missing_inverter(df):
     inverter_cols = [col for col in df.columns if col.startswith("Inverter_")]
-    missing_counts = df[inverter_cols].isna().sum()
+    condition_irr = df["POA Irradiance"] > 100
+    missing_counts = df.loc[condition_irr, inverter_cols].isna().sum()
     Summary.max_missing_count = missing_counts.max()
+
+    max_missing_inverters = missing_counts[
+        missing_counts == missing_counts.max()
+    ].index.tolist()
+    original_names = [
+        renameColumn.name_mapping[name]
+        for name in max_missing_inverters
+        if name in renameColumn.name_mapping
+    ]
+    names_str = ", ".join(original_names)
+    Summary.max_missing_inverters = names_str
 
 
 def check_missing(df):

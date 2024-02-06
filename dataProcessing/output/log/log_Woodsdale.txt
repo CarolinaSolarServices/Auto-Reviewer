@@ -57,17 +57,7 @@ III.
 
 1549 rows with missing inverter values have been auto-filled with 0 since the site is off.
 
-Here are filled records within the daytime.
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-| Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_34 | Inverter_35 | Day/Night |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-|  414  | 2023-10-05 07:00:00 |    1.748986    |   52.88222  |    0.0     |    13835.67   |  -3.426542  | 0.1973929  | 0.07782172 | 0.01104996 |  0.1681761  | 0.001389837 |    Day    |
-|  510  | 2023-10-06 07:00:00 |    1.10035     |   61.47351  |    3.0     |    13893.33   |  -2.981708  |    0.0     | 0.09805005 | 0.1524204  |  0.09728298 |  0.06091177 |    Day    |
-|  595  | 2023-10-07 04:15:00 |    1.822954    |   66.31313  |    5.0     |    13643.67   |  -3.570524  |    0.0     |    0.0     |    0.0     |     0.0     |     0.0     |    Day    |
-|  596  | 2023-10-07 04:30:00 |    1.934938    |   65.99241  |    4.0     |    13637.0    |  -3.559093  |    0.0     |    0.0     |    0.0     |     0.0     |     0.0     |    Day    |
-|  2431 | 2023-10-26 07:15:00 |    1.860653    |   47.57363  |    0.0     |    13635.0    |  -2.709775  | 0.1083713  | 0.03283617 | 0.07270144 |  0.1331095  |  0.05716735 |    Day    |
-+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-
+It seems that all the missing values occur during night time hours.
 
 Missing inverter values in 49 rows have been automatically set to 0, indicating these inverters are off.
 This is based on the small difference between the meter power value and the sum of existing inverters, suggesting the missing inverters are inactive.
@@ -134,7 +124,7 @@ Here are filled records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
 
-There are still 237 rows with missing inverter values cannot be automatically filled.
+There are still 235 rows with missing inverter values cannot be automatically filled.
 
 Here are still missing records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+

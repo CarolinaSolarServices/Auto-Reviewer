@@ -99,11 +99,11 @@ Here are filled records within the daytime.
 1 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
-|  1760 | 2023-10-19 07:30:00 |    37.66296    |   40.88744  |    0.0     |    20.2869    |   22.94937  |    nan     |  12.58586  |  7.590183  |    Day    |
+|  1760 | 2023-10-19 07:30:00 |    37.66296    |   40.88744  |    0.0     |    20.2869    |   22.94937  |    0.0     |  12.58586  |  7.590183  |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 
 
-There are still 21 rows with missing inverter values cannot be automatically filled.
+There are still 20 rows with missing inverter values cannot be automatically filled.
 
 Here are still missing records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
@@ -125,10 +125,10 @@ Here are still missing records within the daytime.
 |  1186 | 2023-10-13 08:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
 |  1187 | 2023-10-13 08:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
 |  1188 | 2023-10-13 08:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
-|  1760 | 2023-10-19 07:30:00 |    37.66296    |   40.88744  |    0.0     |    20.2869    |   22.94937  |    nan     |  12.58586  |  7.590183  |    Day    |
 |  2565 | 2023-10-27 16:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
 |  2566 | 2023-10-27 17:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
 |  2567 | 2023-10-27 17:15:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
+|  2926 | 2023-10-31 11:00:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 
 

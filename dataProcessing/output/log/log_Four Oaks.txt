@@ -151,7 +151,7 @@ Here are still missing records within the daytime.
 
 IV.
 
-Detected 1217 missing 'Meter Power' values during daytime.
+Detected 1205 missing 'Meter Power' values during daytime.
 2463 rows with missing 'Meter Power' have been auto-filled based on the sum of inverter values.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Day/Night |

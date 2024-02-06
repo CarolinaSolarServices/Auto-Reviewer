@@ -13,3 +13,4 @@ production_status = ""
 irradiance_status = ""
 inverter_status = ""
 max_missing_count = 0
+max_missing_inverters = ""

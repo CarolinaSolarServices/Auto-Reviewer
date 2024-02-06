@@ -41,15 +41,15 @@ It seems that all the missing values occur during night time hours.
 5 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-|  134  | 2023-10-02 09:00:00 |     -999.0     |    -999.0   |   -999.0   |    20.34587   |   2677.063  |  869.721   |  829.3578  |    nan     |  917.6445  |  Unknown  |
-|  135  | 2023-10-02 09:15:00 |     -999.0     |    -999.0   |   -999.0   |    20.33508   |   2807.721  |  941.0883  |  822.4678  |    nan     |  999.2162  |  Unknown  |
-|  136  | 2023-10-02 09:30:00 |     -999.0     |    -999.0   |   -999.0   |    20.33904   |   2389.917  |  787.2479  |  754.3533  |    nan     |  827.3976  |  Unknown  |
-|  139  | 2023-10-02 10:15:00 |     -999.0     |    -999.0   |   -999.0   |    20.19539   |   6292.916  |  2084.991  |  1971.164  |    nan     |  2191.211  |  Unknown  |
-|  140  | 2023-10-02 10:30:00 |     -999.0     |    -999.0   |   -999.0   |    20.18451   |   6209.957  |  2053.347  |  1874.251  |    nan     |  2190.945  |  Unknown  |
+|  134  | 2023-10-02 09:00:00 |     -999.0     |    -999.0   |   -999.0   |    20.34587   |   2677.063  |  869.721   |  829.3578  |    0.0     |  917.6445  |  Unknown  |
+|  135  | 2023-10-02 09:15:00 |     -999.0     |    -999.0   |   -999.0   |    20.33508   |   2807.721  |  941.0883  |  822.4678  |    0.0     |  999.2162  |  Unknown  |
+|  136  | 2023-10-02 09:30:00 |     -999.0     |    -999.0   |   -999.0   |    20.33904   |   2389.917  |  787.2479  |  754.3533  |    0.0     |  827.3976  |  Unknown  |
+|  139  | 2023-10-02 10:15:00 |     -999.0     |    -999.0   |   -999.0   |    20.19539   |   6292.916  |  2084.991  |  1971.164  |    0.0     |  2191.211  |  Unknown  |
+|  140  | 2023-10-02 10:30:00 |     -999.0     |    -999.0   |   -999.0   |    20.18451   |   6209.957  |  2053.347  |  1874.251  |    0.0     |  2190.945  |  Unknown  |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 
 
-There are still 14 rows with missing inverter values cannot be automatically filled.
+There are still 9 rows with missing inverter values cannot be automatically filled.
 
 
 Good! No more missing inverter values during daytime!

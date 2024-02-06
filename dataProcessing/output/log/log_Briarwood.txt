@@ -42,17 +42,16 @@ Here are filled records within the daytime.
 1 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_15 | Inverter_16 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-|  227  | 2023-10-03 08:15:00 |    237.7455    |   58.26425  |    0.0     |    7.52861    |   88.46953  |    1.0     |    nan     |    0.0     |     0.0     |     0.0     |    Day    |
+|  227  | 2023-10-03 08:15:00 |    237.7455    |   58.26425  |    0.0     |    7.52861    |   88.46953  |    1.0     |    0.0     |    0.0     |     0.0     |     0.0     |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 
 
-There are still 3 rows with missing inverter values cannot be automatically filled.
+There are still 2 rows with missing inverter values cannot be automatically filled.
 
 Here are still missing records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_15 | Inverter_16 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+
-|  227  | 2023-10-03 08:15:00 |    237.7455    |   58.26425  |    0.0     |    7.52861    |   88.46953  |    1.0     |    nan     |    0.0     |     0.0     |     0.0     |    Day    |
 |  2169 | 2023-10-23 13:45:00 |    704.4372    |   71.96851  |    3.0     |    7.571802   |   1087.549  |    nan     |    nan     |    nan     |     nan     |     nan     |    Day    |
 |  2170 | 2023-10-23 14:00:00 |    783.3023    |   72.93391  |    2.0     |    7.587252   |   240.1142  |    nan     |    nan     |    nan     |     nan     |     nan     |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+-------------+-------------+-----------+

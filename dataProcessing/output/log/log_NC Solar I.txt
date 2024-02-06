@@ -68,17 +68,16 @@ Here are filled records within the daytime.
 1 rows with missing inverter values should have more inverters on.But it is hard to automatically decide how many more inverters or which inverters exactly should be on based on the data.We have automatically filled the first <n> missing inverters with 1, where <n> is the estimated number of inverters expected to be operational but not reporting normally.+-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-|  146  | 2023-10-02 12:00:00 |    789.4157    |   84.52322  |    2.0     |      0.0      |   1142.987  |  343.0897  |    1.0     |  339.4503  |    nan     |    Day    |
+|  146  | 2023-10-02 12:00:00 |    789.4157    |   84.52322  |    2.0     |      0.0      |   1142.987  |  343.0897  |    1.0     |  339.4503  |    0.0     |    Day    |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 
 
-There are still 10 rows with missing inverter values cannot be automatically filled.
+There are still 9 rows with missing inverter values cannot be automatically filled.
 
 Here are still missing records within the daytime.
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
 | Index |      Timestamp      | POA Irradiance | Temperature | Wind Speed | Meter Voltage | Meter Power | Inverter_1 | Inverter_2 | Inverter_3 | Inverter_4 | Day/Night |
 +-------+---------------------+----------------+-------------+------------+---------------+-------------+------------+------------+------------+------------+-----------+
-|  146  | 2023-10-02 12:00:00 |    789.4157    |   84.52322  |    2.0     |      0.0      |   1142.987  |  343.0897  |    1.0     |  339.4503  |    nan     |    Day    |
 |  1571 | 2023-10-17 08:15:00 |    181.1223    |   47.83211  |    0.0     |      0.0      |   5.863838  |    nan     |    nan     |    nan     |    nan     |    Day    |
 |  1572 | 2023-10-17 08:30:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
 |  1573 | 2023-10-17 08:45:00 |     -999.0     |    -999.0   |   -999.0   |      nan      |     nan     |    nan     |    nan     |    nan     |    nan     |    Day    |
