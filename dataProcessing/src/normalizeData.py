@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from suntime import Sun
 from getGeocoding import getGeocoding, getTargetTime, getTimeZone
 
