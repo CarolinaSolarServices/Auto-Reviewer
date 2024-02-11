@@ -256,7 +256,7 @@ def check_and_autofill_inverter(df):
 
     # If there are still missing inverters, document the issue in the summary table.
     condition_missing = df[inverter_cols].isna().any(axis=1)
-    condition_high_irradiance = df["Meter Power"] >= 100
+    condition_high_irradiance = df["POA Irradiance"] >= 100
     condition_log = condition_missing & condition_high_irradiance
     if condition_log.sum() > 0:
         Summary.inverter_status = "x"
