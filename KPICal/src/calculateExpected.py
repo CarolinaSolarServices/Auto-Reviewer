@@ -28,9 +28,7 @@ def process_inverter(df_copy, avg_top_20_series):
     inverter_cols = [col for col in df_copy.columns if col.startswith("Inverter_")]
 
     for col in inverter_cols:
-        mask = ((df_copy[col] <= 0) | (pd.isnull(df_copy[col]))) & pd.notnull(
-            df_copy["Avg_Top_20%"]
-        )
+        mask = (df_copy[col] <= 0) & pd.notnull(df_copy["Avg_Top_20%"])
         df_copy.loc[mask, col] = df_copy.loc[mask, "Avg_Top_20%"]
 
     return df_copy

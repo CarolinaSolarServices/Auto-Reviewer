@@ -1,6 +1,8 @@
 import pandas as pd
 
-summary = pd.DataFrame(columns=["Site Name", "Year-Month", "Availability"])
+summary1 = pd.DataFrame(columns=["Site Name", "Year-Month", "Availability"])
+
+summary2 = pd.DataFrame(columns=["Site Name", "Year-Month", "Availability"])
 
 
 def update_summary(summary, site_name, year_month, availability):
