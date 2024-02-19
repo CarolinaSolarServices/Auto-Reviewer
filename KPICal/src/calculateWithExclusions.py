@@ -190,8 +190,8 @@ def mark_exclusive_outages(df, outages):
 
 
 def calculate_with_exclusions(df, site_name, input_method):
-    if input_method == "1":
-        outages = prompt_for_outages()
+    if input_method == 1:
+        outages = prompt_for_outages(site_name)
     else:
         outages = read_outages_from_csv(site_name)
 
